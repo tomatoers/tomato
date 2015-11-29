@@ -1,0 +1,91 @@
+tomato (1.0.0) trusty; urgency=medium
+
+  * Fist stable version
+  * Fixed minor bugs
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Thu, 09 Jul 2015 16:10:38 -0300
+
+tomato (0.2.0) trusty; urgency=medium
+
+  * Implemented pomodoro sound
+  * Fixed some bugs
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Wed, 08 Jul 2015 10:58:08 -0300
+
+tomato (0.1.9) trusty; urgency=medium
+
+  [ Sam Thomas ]
+  *Updated total time display based on community comments
+
+  [ Luiz Augusto Morais ]
+  * Improved total time behavior
+  * Notification warning implemented
+
+ -- Sam Thomas <samthomas@samthomas>  Fri, 03 Jul 2015 23:25:44 -0700
+
+tomato (0.1.8) trusty; urgency=medium
+
+  * Fixed the bug #1471225 related to button sensitivity
+  * Refactored some code
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Fri, 03 Jul 2015 11:38:01 -0300
+
+tomato (0.1.7) trusty; urgency=medium
+
+  [ Sam Thomas ]
+  * Added support for translations
+
+  [ Luiz Augusto Morais ]
+  * Added time info on the launcher
+
+  [ Sam Thomas ]
+  * Made progress bar appear when window is not visible
+
+ -- Sam Thomas <samthomas@samthomas>  Wed, 01 Jul 2015 21:30:13 -0700
+
+tomato (0.1.6) trusty; urgency=medium
+
+  * Added more break messages
+  * Included break messages on notifications
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Tue, 30 Jun 2015 16:21:25 -0300
+
+tomato (0.1.5) trusty; urgency=high
+
+  * Fixed a bug that affected Tomato UI
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Mon, 29 Jun 2015 19:11:51 -0300
+
+tomato (0.1.4) trusty; urgency=medium
+
+  * Revamped the icon.
+  * App saves its states when closed.
+  * Now pomodoro count starts at 1.
+  * Added an option to automatically reset pomodoros everyday.
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Sun, 28 Jun 2015 01:21:17 -0300
+
+tomato (0.1.3) trusty; urgency=medium
+
+  * Fixed bug that affected close button behavior.
+  * Hid maximize button and make the window not resizable.
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Thu, 25 Jun 2015 15:13:10 -0300
+
+tomato (0.1.2) trusty; urgency=medium
+
+  * First build.
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Thu, 25 Jun 2015 01:04:18 -0300
+
+tomato (0.1.1) trusty; urgency=medium
+
+  * Fixed minor bugs
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Wed, 24 Jun 2015 23:24:48 -0300
+
+tomato (0.1.0) trusty; urgency=medium
+
+  * Tomato's first build.
+
+ -- Luiz Augusto Morais <luizaugustomm@gmail.com>  Wed, 24 Jun 2015 16:51:39 -0300

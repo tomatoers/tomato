@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <enum id="org.pantheon.tomato.windowstate">
+        <value value="0" nick="normal"/>
+        <value value="1" nick="maximized"/>
+        <value value="2" nick="hidden"/>
+    </enum>
+    <schema path="/org/pantheon/tomato/settings/" id="org.pantheon.tomato.settings" gettext-domain="tomato">
+        <key name="pomodoro-count" type="i">
+            <default>0</default>
+            <summary>Number of pomodoros achieved.</summary>
+            <description>How many pomodoros the user achieved in the current day.</description>
+        </key>
+        <key name="pomodoro-duration" type="i">
+            <default>25</default>
+            <summary>Duration of pomodoros in minutes.</summary>
+            <description>It defines how long is a pomodoro.</description>
+        </key>
+        <key name="short-break-duration" type="i">
+            <default>5</default>
+            <summary>Duration of short breaks in minutes.</summary>
+            <description>It defines how long is a short break.</description>
+        </key>
+        <key name="long-break-duration" type="i">
+            <default>15</default>
+            <summary>Duration of long breaks in minutes.</summary>
+            <description>It defines how long is a long break.</description>
+        </key>
+        <key name="long-break-delay" type="i">
+            <default>4</default>
+            <summary>Number of pomodoros for a long break.</summary>
+            <description>How many pomodoros are needed to take a long break.</description>
+        </key>
+    </schema>
+
+    <schema path="/org/pantheon/tomato/preferences/" id="org.pantheon.tomato.preferences">
+        <key name="pomodoro-sound-enabled" type="b">
+            <default>true</default>
+            <summary>Pomodoro sound.</summary>
+            <description>A sound is played when a pomodoro is completed.</description>
+        </key>
+        <key name="notifications-blocked" type="b">
+            <default>false</default>
+            <summary>Notifications</summary>
+            <description>Notifications are showed when a pomodoro is completed.</description>
+        </key>
+    </schema>
+</schemalist>

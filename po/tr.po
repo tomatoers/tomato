@@ -1,0 +1,251 @@
+# Turkish translation for tomatoapp
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the tomatoapp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tomatoapp\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-08-31 14:51-0300\n"
+"PO-Revision-Date: 2015-08-24 09:12+0000\n"
+"Last-Translator: Deniz CAN <denizcan72@hotmail.de>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-09-01 05:42+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
+
+#: src/Util/Timer.vala:29
+msgid "hour"
+msgstr "saat"
+
+#: src/Util/Timer.vala:29
+msgid "hours"
+msgstr "saatler"
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
+#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
+#: src/Windows/PreferencesDialog.vala:112
+#: src/Windows/PreferencesDialog.vala:115
+msgid "minute"
+msgstr "dakika"
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
+#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
+#: src/Windows/PreferencesDialog.vala:112
+#: src/Windows/PreferencesDialog.vala:115
+msgid "minutes"
+msgstr "dakikalar"
+
+#: src/Util/Timer.vala:51
+msgid " and "
+msgstr " ve "
+
+#: src/Managers/LauncherManager.vala:93 src/Windows/MainWindow.vala:64
+msgid "Resume"
+msgstr "Devam et"
+
+#: src/Managers/LauncherManager.vala:96 src/Windows/MainWindow.vala:65
+msgid "Pause"
+msgstr "Duraklat"
+
+#: src/Managers/LauncherManager.vala:99 src/Windows/MainWindow.vala:66
+msgid "Stop"
+msgstr "Dur"
+
+#: src/Managers/LauncherManager.vala:102 src/Windows/MainWindow.vala:67
+msgid "Skip"
+msgstr "Atla"
+
+#: src/Managers/NotificationManager.vala:35
+msgid "Pomodoro Time"
+msgstr "Domates Zamanı"
+
+#: src/Managers/NotificationManager.vala:36
+msgid "Get back to work!"
+msgstr "Çalışmaya geri dön!"
+
+#: src/Managers/NotificationManager.vala:38 src/Windows/MainWindow.vala:100
+msgid "Short Break"
+msgstr "Kısa Mola"
+
+#: src/Managers/NotificationManager.vala:41
+msgid "Long Break!"
+msgstr "Uzun Mola"
+
+#: src/Windows/MainWindow.vala:60
+msgid "Preferences…"
+msgstr "Tercihler..."
+
+#: src/Windows/MainWindow.vala:63
+msgid "Start"
+msgstr "Başlat"
+
+#: src/Windows/MainWindow.vala:97
+msgid "Welcome"
+msgstr "Hoşgeldiniz"
+
+#: src/Windows/MainWindow.vala:103
+msgid "Long Break"
+msgstr "Uzun Mola"
+
+#: src/Windows/MainWindow.vala:131
+msgid " of work"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:60
+#: src/Windows/PreferencesDialog.vala:136
+msgid "Preferences"
+msgstr "Seçenekler"
+
+#: src/Windows/PreferencesDialog.vala:92
+msgid "pomodoro"
+msgstr "Domates"
+
+#: src/Windows/PreferencesDialog.vala:92
+msgid "pomodoros"
+msgstr "Domatesler"
+
+#: src/Windows/PreferencesDialog.vala:123
+msgid "Default Settings"
+msgstr "Varsayılan Ayarlar"
+
+#: src/Windows/PreferencesDialog.vala:124
+msgid "Reset Work"
+msgstr "Çalışmayı Sıfırla"
+
+#: src/Windows/PreferencesDialog.vala:132
+msgid "Timing"
+msgstr "Zamanlama"
+
+#: src/Windows/PreferencesDialog.vala:141
+msgid "Close"
+msgstr "Kapat"
+
+#: src/Windows/PreferencesDialog.vala:171
+msgid "Pomodoro duration:"
+msgstr "Domates zamanı:"
+
+#: src/Windows/PreferencesDialog.vala:175
+msgid "Short break duration:"
+msgstr "Kısa ara zamanı:"
+
+#: src/Windows/PreferencesDialog.vala:179
+msgid "Long break duration:"
+msgstr "Uzun ara zamanı:"
+
+#: src/Windows/PreferencesDialog.vala:183
+msgid "Long break delay:"
+msgstr "Uzun ara süresi"
+
+#: src/Windows/PreferencesDialog.vala:191
+msgid "Reset:"
+msgstr "Sıfırla"
+
+#: src/Windows/PreferencesDialog.vala:203
+msgid "Behavior:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:206
+msgid "Reset work everyday:"
+msgstr "Çalışmayı Her Gün Sıfırla:"
+
+#: src/Windows/PreferencesDialog.vala:209
+msgid "Start new pomodoro manually:"
+msgstr "El ile yeni pomodoro başlat:"
+
+#: src/Windows/PreferencesDialog.vala:212
+msgid "Sound and notifications:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:215
+msgid "Pomodoro sound:"
+msgstr "Pomodoro sesi:"
+
+#: src/Windows/PreferencesDialog.vala:218
+msgid "Warning notifications:"
+msgstr "Uyarı bildirimleri:"
+
+#: src/Windows/PreferencesDialog.vala:221
+msgid "Animations:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:224
+msgid "Transition animations:"
+msgstr "Geçiş animasyonları:"
+
+#: src/Windows/PreferencesDialog.vala:228
+msgid "Extras:"
+msgstr ""
+
+#: src/Tomato.vala:35
+msgid "Go have a coffee"
+msgstr "Git bir kahve al"
+
+#: src/Tomato.vala:36
+msgid "Check your emails"
+msgstr "E-postalarınızı kontrol edin"
+
+#: src/Tomato.vala:37
+msgid "Drink some water"
+msgstr "Biraz su iç"
+
+#: src/Tomato.vala:38
+msgid "Get up and dance!"
+msgstr "Kalk ve dans et!"
+
+#: src/Tomato.vala:39
+msgid "Have a break, have a tomato"
+msgstr "Ara ver, bir domates al"
+
+#: src/Tomato.vala:40
+msgid "Get up! Stand up! Fight for your fingers!"
+msgstr "Kalk! Ayağa kalk! Parmakların için savaş!"
+
+#: src/Tomato.vala:41
+msgid "Take a break, save a life"
+msgstr "Ara ver, bir hayat kurtar"
+
+#: src/Tomato.vala:42
+msgid "Woot! Break time, baby!"
+msgstr "Heey! Ara zamanı, bebek!"
+
+#: src/Tomato.vala:43
+msgid "It's coffee time!"
+msgstr "Kahve zamanı!"
+
+#: src/Tomato.vala:44
+msgid "What about a beer?"
+msgstr "Bir biraya ne dersin?"
+
+#: src/Tomato.vala:45
+msgid "You can check Facebook notifications"
+msgstr "Facebook bildirimlerini kontrol edebilirsiniz"
+
+#: src/Tomato.vala:46
+msgid "You can use Twitter now!"
+msgstr "Artık Twitter kullanabilirsiniz!"
+
+#: src/Tomato.vala:47
+msgid "Take a walk outside"
+msgstr "Dışarıda biraz yürüyüşe çık"
+
+#: src/Tomato.vala:48
+msgid "Step away from the machine!"
+msgstr "Makineden uzak dur!"
+
+#: src/Tomato.vala:150
+msgid "Tomato has been paused for a long time!"
+msgstr "Tomato uzun bir süredir durduruldu!"
+
+#: src/Tomato.vala:150
+msgid "Shouldn't you be working?"
+msgstr "Çalışman gerekmiyor mu?"
+
+#~ msgid "Reset Pomodoros"
+#~ msgstr "Domatesi Sıfırla"
+
+#~ msgid "Reset pomodoros everyday:"
+#~ msgstr "Domates'i hergün sıfırla"

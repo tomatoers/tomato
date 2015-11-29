@@ -1,0 +1,6 @@
+/home/lamm/Dropbox/Codes/ValaProjects/tomato/tomatoapp/build/CMakeFiles/uninstall.dir
+/home/lamm/Dropbox/Codes/ValaProjects/tomato/tomatoapp/build/CMakeFiles/dist.dir
+/home/lamm/Dropbox/Codes/ValaProjects/tomato/tomatoapp/build/CMakeFiles/pot_file.dir
+/home/lamm/Dropbox/Codes/ValaProjects/tomato/tomatoapp/build/CMakeFiles/tomato.dir
+/home/lamm/Dropbox/Codes/ValaProjects/tomato/tomatoapp/build/po/CMakeFiles/pot.dir
+/home/lamm/Dropbox/Codes/ValaProjects/tomato/tomatoapp/build/po/CMakeFiles/i18n.dir

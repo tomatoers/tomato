@@ -1,0 +1,251 @@
+# Italian translation for tomatoapp
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the tomatoapp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tomatoapp\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-08-31 14:51-0300\n"
+"PO-Revision-Date: 2015-09-27 15:27+0000\n"
+"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
+"Language-Team: Italian <it@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-09-28 06:26+0000\n"
+"X-Generator: Launchpad (build 17754)\n"
+
+#: src/Util/Timer.vala:29
+msgid "hour"
+msgstr "ora"
+
+#: src/Util/Timer.vala:29
+msgid "hours"
+msgstr "ore"
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
+#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
+#: src/Windows/PreferencesDialog.vala:112
+#: src/Windows/PreferencesDialog.vala:115
+msgid "minute"
+msgstr "minuto"
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
+#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
+#: src/Windows/PreferencesDialog.vala:112
+#: src/Windows/PreferencesDialog.vala:115
+msgid "minutes"
+msgstr "minuti"
+
+#: src/Util/Timer.vala:51
+msgid " and "
+msgstr " e "
+
+#: src/Managers/LauncherManager.vala:93 src/Windows/MainWindow.vala:64
+msgid "Resume"
+msgstr "Riprendi"
+
+#: src/Managers/LauncherManager.vala:96 src/Windows/MainWindow.vala:65
+msgid "Pause"
+msgstr "Pausa"
+
+#: src/Managers/LauncherManager.vala:99 src/Windows/MainWindow.vala:66
+msgid "Stop"
+msgstr "Ferma"
+
+#: src/Managers/LauncherManager.vala:102 src/Windows/MainWindow.vala:67
+msgid "Skip"
+msgstr "Salta"
+
+#: src/Managers/NotificationManager.vala:35
+msgid "Pomodoro Time"
+msgstr "Pomodoro Time"
+
+#: src/Managers/NotificationManager.vala:36
+msgid "Get back to work!"
+msgstr "Torna al lavoro!"
+
+#: src/Managers/NotificationManager.vala:38 src/Windows/MainWindow.vala:100
+msgid "Short Break"
+msgstr "Pausa breve"
+
+#: src/Managers/NotificationManager.vala:41
+msgid "Long Break!"
+msgstr "Pausa lunga"
+
+#: src/Windows/MainWindow.vala:60
+msgid "Preferences…"
+msgstr "Preferenze"
+
+#: src/Windows/MainWindow.vala:63
+msgid "Start"
+msgstr "Avvia"
+
+#: src/Windows/MainWindow.vala:97
+msgid "Welcome"
+msgstr "Benvenuto"
+
+#: src/Windows/MainWindow.vala:103
+msgid "Long Break"
+msgstr "Pausa lunga"
+
+#: src/Windows/MainWindow.vala:131
+msgid " of work"
+msgstr " di lavoro"
+
+#: src/Windows/PreferencesDialog.vala:60
+#: src/Windows/PreferencesDialog.vala:136
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: src/Windows/PreferencesDialog.vala:92
+msgid "pomodoro"
+msgstr "pomodoro"
+
+#: src/Windows/PreferencesDialog.vala:92
+msgid "pomodoros"
+msgstr "pomodori"
+
+#: src/Windows/PreferencesDialog.vala:123
+msgid "Default Settings"
+msgstr "Impostazioni predefinite"
+
+#: src/Windows/PreferencesDialog.vala:124
+msgid "Reset Work"
+msgstr "Azzera lavoro"
+
+#: src/Windows/PreferencesDialog.vala:132
+msgid "Timing"
+msgstr "Cronometraggio"
+
+#: src/Windows/PreferencesDialog.vala:141
+msgid "Close"
+msgstr "Chiudi"
+
+#: src/Windows/PreferencesDialog.vala:171
+msgid "Pomodoro duration:"
+msgstr "Durata pomodoro:"
+
+#: src/Windows/PreferencesDialog.vala:175
+msgid "Short break duration:"
+msgstr "Durata della pausa breve:"
+
+#: src/Windows/PreferencesDialog.vala:179
+msgid "Long break duration:"
+msgstr "Durata della pausa lunga"
+
+#: src/Windows/PreferencesDialog.vala:183
+msgid "Long break delay:"
+msgstr "Ritardo pausa lunga:"
+
+#: src/Windows/PreferencesDialog.vala:191
+msgid "Reset:"
+msgstr "Azzera:"
+
+#: src/Windows/PreferencesDialog.vala:203
+msgid "Behavior:"
+msgstr "Comportamento:"
+
+#: src/Windows/PreferencesDialog.vala:206
+msgid "Reset work everyday:"
+msgstr "Azzera lavoro ogni giorno:"
+
+#: src/Windows/PreferencesDialog.vala:209
+msgid "Start new pomodoro manually:"
+msgstr "Avvia un nuovo pomodoro manualmente:"
+
+#: src/Windows/PreferencesDialog.vala:212
+msgid "Sound and notifications:"
+msgstr "Suono e notifiche:"
+
+#: src/Windows/PreferencesDialog.vala:215
+msgid "Pomodoro sound:"
+msgstr "Suono notifica Pomodoro"
+
+#: src/Windows/PreferencesDialog.vala:218
+msgid "Warning notifications:"
+msgstr "Notifiche di avviso:"
+
+#: src/Windows/PreferencesDialog.vala:221
+msgid "Animations:"
+msgstr "Animazioni:"
+
+#: src/Windows/PreferencesDialog.vala:224
+msgid "Transition animations:"
+msgstr "Transizione animazioni:"
+
+#: src/Windows/PreferencesDialog.vala:228
+msgid "Extras:"
+msgstr "Extra:"
+
+#: src/Tomato.vala:35
+msgid "Go have a coffee"
+msgstr "Vai a prendere un caffè"
+
+#: src/Tomato.vala:36
+msgid "Check your emails"
+msgstr "Controlla le tue e-mail"
+
+#: src/Tomato.vala:37
+msgid "Drink some water"
+msgstr "Bevi dell'acqua"
+
+#: src/Tomato.vala:38
+msgid "Get up and dance!"
+msgstr "Alzati e balla!"
+
+#: src/Tomato.vala:39
+msgid "Have a break, have a tomato"
+msgstr "Prenditi una pausa, prenditi un pomodoro"
+
+#: src/Tomato.vala:40
+msgid "Get up! Stand up! Fight for your fingers!"
+msgstr "Alzati! Alzati! Lotta per le tue dita!"
+
+#: src/Tomato.vala:41
+msgid "Take a break, save a life"
+msgstr "Prenditi una pausa, salva una vita"
+
+#: src/Tomato.vala:42
+msgid "Woot! Break time, baby!"
+msgstr "Wow! Ora della pausa, baby!"
+
+#: src/Tomato.vala:43
+msgid "It's coffee time!"
+msgstr "E' il momento del caffè!"
+
+#: src/Tomato.vala:44
+msgid "What about a beer?"
+msgstr "Che ne dici di una birra?"
+
+#: src/Tomato.vala:45
+msgid "You can check Facebook notifications"
+msgstr "Puoi controllare le notifiche di Facebook"
+
+#: src/Tomato.vala:46
+msgid "You can use Twitter now!"
+msgstr "Puoi utilizzare Twitter ora!"
+
+#: src/Tomato.vala:47
+msgid "Take a walk outside"
+msgstr "Fai una passeggiata all'esterno"
+
+#: src/Tomato.vala:48
+msgid "Step away from the machine!"
+msgstr "Allontanati dalla macchina!"
+
+#: src/Tomato.vala:150
+msgid "Tomato has been paused for a long time!"
+msgstr "Il timer è stato messo in pausa per un lungo periodo di tempo!"
+
+#: src/Tomato.vala:150
+msgid "Shouldn't you be working?"
+msgstr "Non dovresti lavorare?"
+
+#~ msgid "Reset Pomodoros"
+#~ msgstr "Azzera pomodori"
+
+#~ msgid "Reset pomodoros everyday:"
+#~ msgstr "Azzera i pomodori ogni giorno:"

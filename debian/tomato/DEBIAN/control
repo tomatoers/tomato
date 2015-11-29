@@ -1,0 +1,10 @@
+Package: tomato
+Version: 0.1.0
+Architecture: amd64
+Maintainer: Luiz Augusto Morais <luizaugustomm@gmail.com>
+Installed-Size: 278
+Section: x11
+Priority: extra
+Description: A simple and clean pomodoro app
+ Tomato is a pomodoro app developed for elementary os, which is intended to be simple, clean and intuitive.
+ It follows the principles of pomodoro technique and try to make you more focused on your tasks.

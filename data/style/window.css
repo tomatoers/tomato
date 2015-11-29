@@ -1,0 +1,30 @@
+.pomodoro-window {
+    background-color: #F34B4B;
+    border-color: darker(#F34B4B);
+}
+.pomodoro-button {
+    padding: 5px;
+    color: #2f2f2f;
+    /*background-color: #DF4B4B;
+    border: 1px solid darker(#DF4B4B);*/
+}
+.break-window {
+    background-color: #00B351;
+    border-color: darker(#00B351);
+}
+.break-button {
+    padding: 5px;
+    color: #2f2f2f;
+    /*background-color: #009F51;
+    border: 1px solid darker(#008F43);*/
+}
+.countdown {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: Open Sans Light;
+}
+.total-time {
+    color: #ebebeb;
+    font-size: 14px;
+    font-family: Open Sans Light;
+}

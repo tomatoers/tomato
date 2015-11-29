@@ -1,0 +1,16 @@
+66fc84ee8f28273931d9fd000d6749c2  usr/bin/tomato
+ac08a2e0f0bcb84c1047e02afe2e53df  usr/share/applications/tomato.desktop
+67f1c18be18a5ee0fbf80e1169bf9e7f  usr/share/doc/tomato/changelog.gz
+28a7a8a32fa3e7774c1ffb44fe426fd7  usr/share/doc/tomato/copyright
+aabeb3c363aacdc4d7c539d5ccec8855  usr/share/glib-2.0/schemas/org.pantheon.tomato.gschema.xml
+ba464fcd937f67fee99fed3198f0f9a9  usr/share/icons/hicolor/128x128/apps/tomato.png
+b3bcd749f1008bd05009db59c98d76e7  usr/share/icons/hicolor/16x16/apps/tomato.png
+ce0b5f3548d36c82da5f11fe84686b9d  usr/share/icons/hicolor/22x22/apps/tomato.png
+382ac1014c5b80aeb70528d6084fa498  usr/share/icons/hicolor/24x24/apps/tomato.png
+f2fb6b8d7726e9535a787b10b35b09f8  usr/share/icons/hicolor/32x32/apps/tomato.png
+7eb78fcf0387e88c0ed5a348a15fefbf  usr/share/icons/hicolor/48x48/apps/tomato.png
+cc8b81e7315f0e15933b14de6a04ddea  usr/share/icons/hicolor/64x64/apps/tomato.png
+d11085f9a13c92fb60de73464b7809d5  usr/share/icons/hicolor/scalable/apps/tomato.svg
+5816be435008656c80135ed1e5556083  usr/share/icons/hicolor/tomato.svg
+d11085f9a13c92fb60de73464b7809d5  usr/share/pixmaps/tomato.svg
+d31fb043c16453d2ec6bc024e313c93d  usr/share/tomato/style/window.css

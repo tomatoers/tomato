@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <enum id="org.pantheon.tomato.status">
+        <value value="0" nick="start"/>
+        <value value="1" nick="pomodoro"/>
+        <value value="2" nick="short-break"/>
+        <value value="3" nick="long-break"/>
+    </enum>
+
+    <schema path="/org/pantheon/tomato/saved/" id="org.pantheon.tomato.saved" gettext-domain="tomato">
+        <key name="date" type="s">
+            <default>'2000-01-01'</default>
+            <summary>Last date saved.</summary>
+            <description>The last date Tomato was opened.</description>
+        </key>
+        <key enum="org.pantheon.tomato.status" name="status">
+            <default>'start'</default>
+            <summary>Last saved status.</summary>
+            <description>The last status before Tomato was closed.</description>
+        </key>
+        <key name="countdown" type="i">
+            <default>1500</default>
+            <summary>Last saved countdown.</summary>
+            <description>The last countdown time before Tomato was closed in seconds.</description>
+        </key>
+        <key name="total-time" type="i">
+            <default>0</default>
+            <summary>Last saved total time.</summary>
+            <description>The last total time before tomato was shut down in minutes.</description>
+        </key>
+        <key name="pomodoro-count" type="i">
+            <default>0</default>
+            <summary>Number of pomodoros achieved.</summary>
+            <description>How many pomodoros the user achieved in the current day.</description>
+        </key>
+    </schema>
+
+    <schema path="/org/pantheon/tomato/settings/" id="org.pantheon.tomato.settings" gettext-domain="tomato">
+        <key name="pomodoro-duration" type="i">
+            <default>25</default>
+            <summary>Duration of pomodoros in minutes.</summary>
+            <description>It defines how long is a pomodoro.</description>
+        </key>
+        <key name="short-break-duration" type="i">
+            <default>5</default>
+            <summary>Duration of short breaks in minutes.</summary>
+            <description>It defines how long is a short break.</description>
+        </key>
+        <key name="long-break-duration" type="i">
+            <default>15</default>
+            <summary>Duration of long breaks in minutes.</summary>
+            <description>It defines how long is a long break.</description>
+        </key>
+        <key name="long-break-delay" type="i">
+            <default>4</default>
+            <summary>Number of pomodoros for a long break.</summary>
+            <description>How many pomodoros are needed to take a long break.</description>
+        </key>
+    </schema>
+
+    <schema path="/org/pantheon/tomato/preferences/" id="org.pantheon.tomato.preferences">
+        <key name="reset-work-everyday" type="b">
+            <default>true</default>
+            <summary>Work reset everyday</summary>
+            <description>The entire app and work results are reset when a new day starts.</description>
+        </key>
+        <key name="pause-after-break" type="b">
+            <default>false</default>
+            <summary>Pause after break</summary>
+            <description>The user has to start the new pomodoro manually after break time.</description>
+        </key>
+        <key name="warning-notification" type="b">
+            <default>true</default>
+            <summary>Warning notification</summary>
+            <description>If a notification should be shown when the pause button is pressed for a long time when it's pomodoro time.</description>
+        </key>
+        <key name="pomodoro-sound-enabled" type="b">
+            <default>true</default>
+            <summary>Pomodoro sound</summary>
+            <description>A sound is played when a pomodoro is completed.</description>
+        </key>
+        <key name="animations-enabled" type="b">
+            <default>true</default>
+            <summary>Transition animations</summary>
+            <description>Animations are shown when this option is activated.</description>
+        </key>
+        <key name="notifications-blocked" type="b">
+            <default>true</default>
+            <summary>Notifications</summary>
+            <description>Notifications are showed when a pomodoro is completed.</description>
+        </key>
+        <key name="debug-mode" type="b">
+            <default>false</default>
+            <summary>Debug Mode</summary>
+            <description>Debug mode that sets makes pomodoros super short.</description>
+        </key>
+    </schema>
+</schemalist>

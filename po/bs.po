@@ -1,0 +1,251 @@
+# Bosnian translation for tomatoapp
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the tomatoapp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tomatoapp\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-08-31 14:51-0300\n"
+"PO-Revision-Date: 2015-08-24 09:56+0000\n"
+"Last-Translator: aleksandar-todorovic <aleksandar.todorovic@mail.ru>\n"
+"Language-Team: Bosnian <bs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-09-01 05:41+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
+
+#: src/Util/Timer.vala:29
+msgid "hour"
+msgstr "sat"
+
+#: src/Util/Timer.vala:29
+msgid "hours"
+msgstr "sati"
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
+#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
+#: src/Windows/PreferencesDialog.vala:112
+#: src/Windows/PreferencesDialog.vala:115
+msgid "minute"
+msgstr "minut"
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
+#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
+#: src/Windows/PreferencesDialog.vala:112
+#: src/Windows/PreferencesDialog.vala:115
+msgid "minutes"
+msgstr "minuta"
+
+#: src/Util/Timer.vala:51
+msgid " and "
+msgstr " i "
+
+#: src/Managers/LauncherManager.vala:93 src/Windows/MainWindow.vala:64
+msgid "Resume"
+msgstr "Nastavi"
+
+#: src/Managers/LauncherManager.vala:96 src/Windows/MainWindow.vala:65
+msgid "Pause"
+msgstr "Pauziraj"
+
+#: src/Managers/LauncherManager.vala:99 src/Windows/MainWindow.vala:66
+msgid "Stop"
+msgstr "Zaustavi"
+
+#: src/Managers/LauncherManager.vala:102 src/Windows/MainWindow.vala:67
+msgid "Skip"
+msgstr "Preskoči"
+
+#: src/Managers/NotificationManager.vala:35
+msgid "Pomodoro Time"
+msgstr "Pomodoro vrijeme"
+
+#: src/Managers/NotificationManager.vala:36
+msgid "Get back to work!"
+msgstr "Nazad na posao!"
+
+#: src/Managers/NotificationManager.vala:38 src/Windows/MainWindow.vala:100
+msgid "Short Break"
+msgstr "Kratka pauza"
+
+#: src/Managers/NotificationManager.vala:41
+msgid "Long Break!"
+msgstr "Duža pauza!"
+
+#: src/Windows/MainWindow.vala:60
+msgid "Preferences…"
+msgstr "Podešavanja"
+
+#: src/Windows/MainWindow.vala:63
+msgid "Start"
+msgstr "Start"
+
+#: src/Windows/MainWindow.vala:97
+msgid "Welcome"
+msgstr "Dobrodošli"
+
+#: src/Windows/MainWindow.vala:103
+msgid "Long Break"
+msgstr "Duža pauza"
+
+#: src/Windows/MainWindow.vala:131
+msgid " of work"
+msgstr " rada"
+
+#: src/Windows/PreferencesDialog.vala:60
+#: src/Windows/PreferencesDialog.vala:136
+msgid "Preferences"
+msgstr "Postavke"
+
+#: src/Windows/PreferencesDialog.vala:92
+msgid "pomodoro"
+msgstr "pomodoro"
+
+#: src/Windows/PreferencesDialog.vala:92
+msgid "pomodoros"
+msgstr "pomodora"
+
+#: src/Windows/PreferencesDialog.vala:123
+msgid "Default Settings"
+msgstr "Standardne postavke"
+
+#: src/Windows/PreferencesDialog.vala:124
+msgid "Reset Work"
+msgstr "Resetuj rad"
+
+#: src/Windows/PreferencesDialog.vala:132
+msgid "Timing"
+msgstr "Tajming"
+
+#: src/Windows/PreferencesDialog.vala:141
+msgid "Close"
+msgstr "Zatvori"
+
+#: src/Windows/PreferencesDialog.vala:171
+msgid "Pomodoro duration:"
+msgstr "Trajanje pomodoroa:"
+
+#: src/Windows/PreferencesDialog.vala:175
+msgid "Short break duration:"
+msgstr "Trajanje kratke pauze:"
+
+#: src/Windows/PreferencesDialog.vala:179
+msgid "Long break duration:"
+msgstr "Trajanje duge pauze:"
+
+#: src/Windows/PreferencesDialog.vala:183
+msgid "Long break delay:"
+msgstr "Odlaganje duže pauze:"
+
+#: src/Windows/PreferencesDialog.vala:191
+msgid "Reset:"
+msgstr "Reset:"
+
+#: src/Windows/PreferencesDialog.vala:203
+msgid "Behavior:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:206
+msgid "Reset work everyday:"
+msgstr "Resetuj rad svakodnevno:"
+
+#: src/Windows/PreferencesDialog.vala:209
+msgid "Start new pomodoro manually:"
+msgstr "Pokreni novi pomodoro ručno:"
+
+#: src/Windows/PreferencesDialog.vala:212
+msgid "Sound and notifications:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:215
+msgid "Pomodoro sound:"
+msgstr "Zvuk pomodora:"
+
+#: src/Windows/PreferencesDialog.vala:218
+msgid "Warning notifications:"
+msgstr "Notifikacije za upozorenje:"
+
+#: src/Windows/PreferencesDialog.vala:221
+msgid "Animations:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:224
+msgid "Transition animations:"
+msgstr "Animacije za prelaz:"
+
+#: src/Windows/PreferencesDialog.vala:228
+msgid "Extras:"
+msgstr ""
+
+#: src/Tomato.vala:35
+msgid "Go have a coffee"
+msgstr "Skuvaj sebi kafu"
+
+#: src/Tomato.vala:36
+msgid "Check your emails"
+msgstr "Provjeri svoje emailove"
+
+#: src/Tomato.vala:37
+msgid "Drink some water"
+msgstr "Popij malo vode"
+
+#: src/Tomato.vala:38
+msgid "Get up and dance!"
+msgstr "Ustani i zapleši!"
+
+#: src/Tomato.vala:39
+msgid "Have a break, have a tomato"
+msgstr "Uzmi pauzu, pojedi rajčicu"
+
+#: src/Tomato.vala:40
+msgid "Get up! Stand up! Fight for your fingers!"
+msgstr "Diži se! Ustani! Bori se za svoje prste!"
+
+#: src/Tomato.vala:41
+msgid "Take a break, save a life"
+msgstr "Uzmi pauzu, idi sačuvaj nečiji život"
+
+#: src/Tomato.vala:42
+msgid "Woot! Break time, baby!"
+msgstr "Vrijeme je za pauzu mala!"
+
+#: src/Tomato.vala:43
+msgid "It's coffee time!"
+msgstr "Vrijeme je za kafu!"
+
+#: src/Tomato.vala:44
+msgid "What about a beer?"
+msgstr "Da popijemo po jedno?"
+
+#: src/Tomato.vala:45
+msgid "You can check Facebook notifications"
+msgstr "Možeš da provjeriš svoje Facebook notifikacije sada"
+
+#: src/Tomato.vala:46
+msgid "You can use Twitter now!"
+msgstr "Možeš da koristiš Twitter sada!"
+
+#: src/Tomato.vala:47
+msgid "Take a walk outside"
+msgstr "Idi napolje i prošetaj malo"
+
+#: src/Tomato.vala:48
+msgid "Step away from the machine!"
+msgstr "Udalji se od računara!"
+
+#: src/Tomato.vala:150
+msgid "Tomato has been paused for a long time!"
+msgstr "Tomato je pauziran već duže vrijeme!"
+
+#: src/Tomato.vala:150
+msgid "Shouldn't you be working?"
+msgstr "Zar ne bi trebao/la da radiš?"
+
+#~ msgid "Reset Pomodoros"
+#~ msgstr "Resetuj pomodoroe"
+
+#~ msgid "Reset pomodoros everyday:"
+#~ msgstr "Svakodnevno resetuj pomodoroe:"

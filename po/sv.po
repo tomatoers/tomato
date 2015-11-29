@@ -1,0 +1,245 @@
+# Swedish translation for tomatoapp
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the tomatoapp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tomatoapp\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-08-31 14:51-0300\n"
+"PO-Revision-Date: 2015-08-24 16:40+0000\n"
+"Last-Translator: Mathias <Unknown>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-09-01 05:41+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
+
+#: src/Util/Timer.vala:29
+msgid "hour"
+msgstr "timme"
+
+#: src/Util/Timer.vala:29
+msgid "hours"
+msgstr "timmar"
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
+#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
+#: src/Windows/PreferencesDialog.vala:112
+#: src/Windows/PreferencesDialog.vala:115
+msgid "minute"
+msgstr "minut"
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
+#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
+#: src/Windows/PreferencesDialog.vala:112
+#: src/Windows/PreferencesDialog.vala:115
+msgid "minutes"
+msgstr "minuter"
+
+#: src/Util/Timer.vala:51
+msgid " and "
+msgstr " och "
+
+#: src/Managers/LauncherManager.vala:93 src/Windows/MainWindow.vala:64
+msgid "Resume"
+msgstr "Återuppta"
+
+#: src/Managers/LauncherManager.vala:96 src/Windows/MainWindow.vala:65
+msgid "Pause"
+msgstr "Pausa"
+
+#: src/Managers/LauncherManager.vala:99 src/Windows/MainWindow.vala:66
+msgid "Stop"
+msgstr "Stoppa"
+
+#: src/Managers/LauncherManager.vala:102 src/Windows/MainWindow.vala:67
+msgid "Skip"
+msgstr "Hoppa över"
+
+#: src/Managers/NotificationManager.vala:35
+msgid "Pomodoro Time"
+msgstr "Pomodoro Tid"
+
+#: src/Managers/NotificationManager.vala:36
+msgid "Get back to work!"
+msgstr "Fortsätt jobba!"
+
+#: src/Managers/NotificationManager.vala:38 src/Windows/MainWindow.vala:100
+msgid "Short Break"
+msgstr "Kort paus"
+
+#: src/Managers/NotificationManager.vala:41
+msgid "Long Break!"
+msgstr "Lång paus!"
+
+#: src/Windows/MainWindow.vala:60
+msgid "Preferences…"
+msgstr "Inställningar..."
+
+#: src/Windows/MainWindow.vala:63
+msgid "Start"
+msgstr "Starta"
+
+#: src/Windows/MainWindow.vala:97
+msgid "Welcome"
+msgstr "Välkommen"
+
+#: src/Windows/MainWindow.vala:103
+msgid "Long Break"
+msgstr "Lång paus"
+
+#: src/Windows/MainWindow.vala:131
+msgid " of work"
+msgstr " arbete"
+
+#: src/Windows/PreferencesDialog.vala:60
+#: src/Windows/PreferencesDialog.vala:136
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: src/Windows/PreferencesDialog.vala:92
+msgid "pomodoro"
+msgstr "pomodoro"
+
+#: src/Windows/PreferencesDialog.vala:92
+msgid "pomodoros"
+msgstr "pomodoros"
+
+#: src/Windows/PreferencesDialog.vala:123
+msgid "Default Settings"
+msgstr "Standardinställningar"
+
+#: src/Windows/PreferencesDialog.vala:124
+msgid "Reset Work"
+msgstr "Återställ arbete"
+
+#: src/Windows/PreferencesDialog.vala:132
+msgid "Timing"
+msgstr "Timing"
+
+#: src/Windows/PreferencesDialog.vala:141
+msgid "Close"
+msgstr "Stäng"
+
+#: src/Windows/PreferencesDialog.vala:171
+msgid "Pomodoro duration:"
+msgstr "Pomodoro-längd:"
+
+#: src/Windows/PreferencesDialog.vala:175
+msgid "Short break duration:"
+msgstr "Kort paus varaktighet:"
+
+#: src/Windows/PreferencesDialog.vala:179
+msgid "Long break duration:"
+msgstr "Lång paus varaktighet:"
+
+#: src/Windows/PreferencesDialog.vala:183
+msgid "Long break delay:"
+msgstr "Lång paus fördröjning:"
+
+#: src/Windows/PreferencesDialog.vala:191
+msgid "Reset:"
+msgstr "Återställ:"
+
+#: src/Windows/PreferencesDialog.vala:203
+msgid "Behavior:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:206
+msgid "Reset work everyday:"
+msgstr "Återställ arbete varje dag:"
+
+#: src/Windows/PreferencesDialog.vala:209
+msgid "Start new pomodoro manually:"
+msgstr "Starta ny pomodoro manuellt:"
+
+#: src/Windows/PreferencesDialog.vala:212
+msgid "Sound and notifications:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:215
+msgid "Pomodoro sound:"
+msgstr "Pomodoro-ljud:"
+
+#: src/Windows/PreferencesDialog.vala:218
+msgid "Warning notifications:"
+msgstr "Notifikationer:"
+
+#: src/Windows/PreferencesDialog.vala:221
+msgid "Animations:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:224
+msgid "Transition animations:"
+msgstr "Övergångsanimeringar:"
+
+#: src/Windows/PreferencesDialog.vala:228
+msgid "Extras:"
+msgstr ""
+
+#: src/Tomato.vala:35
+msgid "Go have a coffee"
+msgstr "Gå ta en kopp kaffe"
+
+#: src/Tomato.vala:36
+msgid "Check your emails"
+msgstr "Kolla din e-post"
+
+#: src/Tomato.vala:37
+msgid "Drink some water"
+msgstr "Drick lite vatten"
+
+#: src/Tomato.vala:38
+msgid "Get up and dance!"
+msgstr "Stig upp och dansa!"
+
+#: src/Tomato.vala:39
+msgid "Have a break, have a tomato"
+msgstr "Ta en paus, ta en tomat"
+
+#: src/Tomato.vala:40
+msgid "Get up! Stand up! Fight for your fingers!"
+msgstr "Stig upp! Stå upp! Kämpa för dina fingrar!"
+
+#: src/Tomato.vala:41
+msgid "Take a break, save a life"
+msgstr "Ta en paus, rädda ett liv"
+
+#: src/Tomato.vala:42
+msgid "Woot! Break time, baby!"
+msgstr "Woot! Rast, baby!"
+
+#: src/Tomato.vala:43
+msgid "It's coffee time!"
+msgstr "Det är dags för kaffe!"
+
+#: src/Tomato.vala:44
+msgid "What about a beer?"
+msgstr "Vad sägs om en öl?"
+
+#: src/Tomato.vala:45
+msgid "You can check Facebook notifications"
+msgstr "Du kan kolla dina Facebook-notifikationer"
+
+#: src/Tomato.vala:46
+msgid "You can use Twitter now!"
+msgstr "Du kan använda Twitter nu!"
+
+#: src/Tomato.vala:47
+msgid "Take a walk outside"
+msgstr "Ta en promenad utomhus"
+
+#: src/Tomato.vala:48
+msgid "Step away from the machine!"
+msgstr "Stig bort från maskinen!"
+
+#: src/Tomato.vala:150
+msgid "Tomato has been paused for a long time!"
+msgstr "Tomat har pausats under en lång tid!"
+
+#: src/Tomato.vala:150
+msgid "Shouldn't you be working?"
+msgstr "Borde du inte arbeta?"
