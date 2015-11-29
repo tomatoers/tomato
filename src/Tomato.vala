@@ -46,7 +46,6 @@ namespace Tomato {
                                         N_("You can use Twitter now!"),
                                         N_("Take a walk outside"),
                                         N_("Step away from the machine!")};
-    protected Managers.LauncherManager launcher;
     protected Managers.NotificationManager notification;
     protected Managers.WorkManager work;
     protected int warning_countdown = 90;
@@ -103,7 +102,6 @@ namespace Tomato {
             // Instantiating tomato managers
             work = new Managers.WorkManager ();
             notification = new Managers.NotificationManager ();
-            launcher = new Managers.LauncherManager ();
 
             //initialize internationalization support
             Intl.setlocale (LocaleCategory.ALL, "");
@@ -222,18 +220,10 @@ namespace Tomato {
             if (work_timeout_id != 0)
                 Source.remove (work_timeout_id);
             work_timeout_id = Timeout.add (TIME, update_time);
-
-            if (window.is_hidden) {
-                launcher.show_progress ();
-            }
         }
 
         private void pause () {
             set_pause (true);
-
-            if (window.is_hidden) {
-                launcher.hide_progress ();
-            }
 
             if (work_timeout_id != 0) {
                 Source.remove (work_timeout_id);
@@ -251,17 +241,14 @@ namespace Tomato {
             if (!paused)
                 stopped = paused;
             window.set_pause (topause);
-            launcher.set_pause (topause);
         }
 
         private void update_progress () {
             window.update_progress ();
-            launcher.update_progress ();
         }
 
         private void next_status () {
             window.next_status ();
-            launcher.next_status ();
         }
 
         private void connect_signals () {
@@ -271,23 +258,6 @@ namespace Tomato {
             window.stop_clicked.connect (on_stop_clicked);
             window.skip_clicked.connect (on_skip_clicked);
             window.preferences_clicked.connect (on_preferences_clicked);
-            window.window_state_event.connect ((event) => {
-                if (event.new_window_state == Gdk.WindowState.FOCUSED) {
-                    launcher.hide_progress ();
-                    window.is_hidden = false;
-                } else if (!paused) {
-                    launcher.show_progress ();
-                    window.is_hidden = true;
-                } else {
-                    window.is_hidden = true;
-                } return true;
-            });
-
-            launcher.resume_clicked.connect (on_resume_clicked);
-            launcher.pause_clicked.connect (on_pause_clicked);
-            launcher.stop_clicked.connect (on_stop_clicked);
-            launcher.skip_clicked.connect (on_skip_clicked);
-
             paused_on_break.connect (on_stop_clicked);
         }
 
@@ -325,7 +295,6 @@ namespace Tomato {
             pref_window.reset_work_clicked.connect (() => {
                 work.reset ();
                 window.next_status (Gtk.StackTransitionType.NONE);
-                launcher.next_status ();
                 pref_window.update_work_sensitivity ();
             });
         }

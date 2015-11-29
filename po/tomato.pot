@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-15 11:45-0300\n"
+"POT-Creation-Date: 2015-11-29 17:15-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,22 +43,6 @@ msgstr ""
 msgid " and "
 msgstr ""
 
-#: src/Managers/LauncherManager.vala:93 src/Windows/MainWindow.vala:64
-msgid "Resume"
-msgstr ""
-
-#: src/Managers/LauncherManager.vala:96 src/Windows/MainWindow.vala:65
-msgid "Pause"
-msgstr ""
-
-#: src/Managers/LauncherManager.vala:99 src/Windows/MainWindow.vala:66
-msgid "Stop"
-msgstr ""
-
-#: src/Managers/LauncherManager.vala:102 src/Windows/MainWindow.vala:67
-msgid "Skip"
-msgstr ""
-
 #: src/Managers/NotificationManager.vala:35
 msgid "Pomodoro Time"
 msgstr ""
@@ -81,6 +65,22 @@ msgstr ""
 
 #: src/Windows/MainWindow.vala:63
 msgid "Start"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:64
+msgid "Resume"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:65
+msgid "Pause"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:66
+msgid "Stop"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:67
+msgid "Skip"
 msgstr ""
 
 #: src/Windows/MainWindow.vala:97
@@ -235,10 +235,10 @@ msgstr ""
 msgid "Step away from the machine!"
 msgstr ""
 
-#: src/Tomato.vala:150
+#: src/Tomato.vala:148
 msgid "Tomato has been paused for a long time!"
 msgstr ""
 
-#: src/Tomato.vala:150
+#: src/Tomato.vala:148
 msgid "Shouldn't you be working?"
 msgstr ""

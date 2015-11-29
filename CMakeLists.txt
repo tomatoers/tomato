@@ -42,7 +42,6 @@ set (SOURCE_LIST
     src/Services.vala
     src/Util/Countdown.vala
     src/Util/Timer.vala
-    src/Managers/LauncherManager.vala
     src/Managers/SoundManager.vala
     src/Managers/NotificationManager.vala
     src/Managers/WorkManager.vala
@@ -82,7 +81,6 @@ pkg_check_modules(DEPS REQUIRED
     granite
     libnotify
     libcanberra
-    unity
 )
 
 set(NORMAL_CFLAGS ${DEPS_CFLAGS} ${LIBSOURCE_CFLAGS} ${GCONF_CFLAGS})
@@ -113,7 +111,6 @@ PACKAGES
     granite
     libnotify
     libcanberra
-    unity
 )
 
 # tell cmake what to call the executable we just made
