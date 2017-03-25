@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-29 17:15-0300\n"
+"POT-Creation-Date: 2017-03-25 18:15-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,19 +43,19 @@ msgstr ""
 msgid " and "
 msgstr ""
 
-#: src/Managers/NotificationManager.vala:35
+#: src/Managers/NotificationManager.vala:33
 msgid "Pomodoro Time"
 msgstr ""
 
-#: src/Managers/NotificationManager.vala:36
+#: src/Managers/NotificationManager.vala:34
 msgid "Get back to work!"
 msgstr ""
 
-#: src/Managers/NotificationManager.vala:38 src/Windows/MainWindow.vala:100
+#: src/Managers/NotificationManager.vala:36 src/Windows/MainWindow.vala:100
 msgid "Short Break"
 msgstr ""
 
-#: src/Managers/NotificationManager.vala:41
+#: src/Managers/NotificationManager.vala:39
 msgid "Long Break!"
 msgstr ""
 

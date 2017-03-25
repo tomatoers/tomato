@@ -20,43 +20,37 @@ namespace Tomato.Managers {
 
     public class NotificationManager {
 
-        private Notify.Notification notification;
         private SoundManager sound;
 
         //constructor
         public NotificationManager () {
-            Notify.init (Constants.GETTEXT_PACKAGE);
             sound = new SoundManager ();
         }
 
         public void show_status () {
-            string summary, body;
+            string title, body;
             if (saved.status == Status.POMODORO) {
-                summary = _("Pomodoro Time");
+                title = _("Pomodoro Time");
                 body = _("Get back to work!");
             } else if (saved.status == Status.SHORT_BREAK) {
-                summary = _("Short Break");
+                title = _("Short Break");
                 body = _(break_messages[break_messages_index]);
             } else {
-                summary = _("Long Break!");
+                title = _("Long Break!");
                 body = _(break_messages[break_messages_index]);
             }
             if (Tomato.preferences.pomodoro_sound_enabled) {
                 sound.play ();
-            } show (summary, body);
+            }
+            show (title, body);
         }
 
-        public void show (string summary, string? body = null) {
-            try {
-                if (notification == null) {
-                    notification = new Notify.Notification (summary, body, Constants.GETTEXT_PACKAGE);
-                } else {
-                    notification.update (summary, body, Constants.GETTEXT_PACKAGE);
-                }
-                notification.show ();
-            } catch (Error e) {
-                error ("Error: %s", e.message);
-            }
+        public void show (string title, string body) {
+            var notification = new Notification (title);
+            notification.set_body (body);
+            var image = new Gtk.Image.from_icon_name ("tomato", Gtk.IconSize.DIALOG);
+            notification.set_icon (image.gicon);
+            GLib.Application.get_default ().send_notification ("org.pantheon.tomato", notification);
         }
     }
 }

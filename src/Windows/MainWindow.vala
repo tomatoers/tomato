@@ -18,7 +18,7 @@
 
 namespace Tomato.Window {
 
-    public class MainWindow : Gtk.Window {
+    public class MainWindow : Gtk.ApplicationWindow {
 
         public bool is_hidden = false;
 

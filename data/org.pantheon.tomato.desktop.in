@@ -1,17 +1,17 @@
 [Desktop Entry]
 Type=Application
-Name=Tomato
-Version=1.1.0
-_Comment=Organize your work with pomodoro technique
-_GenericName=Pomodoro App
-StartupWMClass=tomato
-Exec=tomato
-Icon=tomato
+Name=@APP_NAME@
+Version=@VERSION@
+_Comment=@COMMENT@
+_GenericName=@GENERIC_NAME@
+StartupWMClass=@EXEC_NAME@
+Exec=@EXEC_NAME@
+Icon=@ICON_NAME@
 Terminal=false
 Categories=GNOME;GTK;Utility;Productivity
 Keywords=Pomodoro;Time;Productivity;Tomato
 StartupNotify=true
-X-GNOME-Gettext-Domain=tomato
+X-GNOME-Gettext-Domain=@GETTEXT_PACKAGE@
 X-GNOME-UsesNotifications=true
 Actions=AboutDialog;
 

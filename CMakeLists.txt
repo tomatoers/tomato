@@ -55,7 +55,7 @@ set (SOURCE_LIST
 
 # Some configuration
 configure_file (${CMAKE_CURRENT_SOURCE_DIR}/src/Config.vala.cmake ${CMAKE_CURRENT_SOURCE_DIR}/src/Config.vala)
-configure_file (${CMAKE_CURRENT_SOURCE_DIR}/data/tomato.desktop.in ${CMAKE_CURRENT_SOURCE_DIR}/data/tomato.desktop)
+configure_file (${CMAKE_CURRENT_SOURCE_DIR}/data/org.pantheon.tomato.desktop.in ${CMAKE_CURRENT_SOURCE_DIR}/data/org.pantheon.tomato.desktop)
 
 # Some definitions
 add_definitions(-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
@@ -79,7 +79,6 @@ find_package(PkgConfig)
 pkg_check_modules(DEPS REQUIRED
     gtk+-3.0
     granite
-    libnotify
     libcanberra
 )
 
@@ -109,7 +108,6 @@ vala_precompile(VALA_C ${EXEC_NAME}
 PACKAGES
     gtk+-3.0
     granite
-    libnotify
     libcanberra
 )
 
@@ -125,7 +123,7 @@ add_subdirectory (schemas)
 add_subdirectory (po)
 
 # install our .desktop file so the Applications menu will see it
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/tomato.desktop DESTINATION ${DATADIR}/applications)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/org.pantheon.tomato.desktop DESTINATION ${DATADIR}/applications)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/style/window.css DESTINATION ${PKG_DATADIR}/style)
 install (DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/ DESTINATION ${DATADIR}/icons/hicolor)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/tomato.svg DESTINATION ${DATADIR}/pixmaps)
