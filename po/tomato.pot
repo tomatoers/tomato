@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-25 18:29-0300\n"
+"POT-Creation-Date: 2017-03-26 16:31-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,17 +25,17 @@ msgstr ""
 msgid "hours"
 msgstr ""
 
-#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
-#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
-#: src/Windows/PreferencesDialog.vala:112
-#: src/Windows/PreferencesDialog.vala:115
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:82
+#: src/Windows/PreferencesDialog.vala:85 src/Windows/PreferencesDialog.vala:88
+#: src/Windows/PreferencesDialog.vala:108
+#: src/Windows/PreferencesDialog.vala:111
 msgid "minute"
 msgstr ""
 
-#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
-#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
-#: src/Windows/PreferencesDialog.vala:112
-#: src/Windows/PreferencesDialog.vala:115
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:82
+#: src/Windows/PreferencesDialog.vala:85 src/Windows/PreferencesDialog.vala:88
+#: src/Windows/PreferencesDialog.vala:108
+#: src/Windows/PreferencesDialog.vala:111
 msgid "minutes"
 msgstr ""
 
@@ -83,10 +83,6 @@ msgstr ""
 msgid "Skip"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:97
-msgid "Welcome"
-msgstr ""
-
 #: src/Windows/MainWindow.vala:103
 msgid "Long Break"
 msgstr ""
@@ -95,87 +91,79 @@ msgstr ""
 msgid " of work"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:60 src/Windows/PreferencesDialog.vala:136
+#: src/Windows/PreferencesDialog.vala:59 src/Windows/PreferencesDialog.vala:132
 msgid "Preferences"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:92
+#: src/Windows/PreferencesDialog.vala:91
 msgid "pomodoro"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:92
+#: src/Windows/PreferencesDialog.vala:91
 msgid "pomodoros"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:123
+#: src/Windows/PreferencesDialog.vala:119
 msgid "Default Settings"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:124
+#: src/Windows/PreferencesDialog.vala:120
 msgid "Reset Work"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:132
+#: src/Windows/PreferencesDialog.vala:128
 msgid "Timing"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:141
+#: src/Windows/PreferencesDialog.vala:137
 msgid "Close"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:171
+#: src/Windows/PreferencesDialog.vala:167
 msgid "Pomodoro duration:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:175
+#: src/Windows/PreferencesDialog.vala:171
 msgid "Short break duration:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:179
+#: src/Windows/PreferencesDialog.vala:175
 msgid "Long break duration:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:183
+#: src/Windows/PreferencesDialog.vala:179
 msgid "Long break delay:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:191
+#: src/Windows/PreferencesDialog.vala:187
 msgid "Reset:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:203
+#: src/Windows/PreferencesDialog.vala:199
 msgid "Behavior:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:206
+#: src/Windows/PreferencesDialog.vala:202
 msgid "Reset work everyday:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:209
+#: src/Windows/PreferencesDialog.vala:205
 msgid "Start new pomodoro manually:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:212
+#: src/Windows/PreferencesDialog.vala:208
 msgid "Sound and notifications:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:215
+#: src/Windows/PreferencesDialog.vala:211
 msgid "Pomodoro sound:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:218
+#: src/Windows/PreferencesDialog.vala:214
 msgid "Warning notifications:"
 msgstr ""
 
-#: src/Windows/PreferencesDialog.vala:221
-msgid "Animations:"
-msgstr ""
-
-#: src/Windows/PreferencesDialog.vala:224
-msgid "Transition animations:"
-msgstr ""
-
-#: src/Windows/PreferencesDialog.vala:228
+#: src/Windows/PreferencesDialog.vala:218
 msgid "Extras:"
 msgstr ""
 
@@ -184,61 +172,49 @@ msgid "Go have a coffee"
 msgstr ""
 
 #: src/Tomato.vala:36
-msgid "Check your emails"
-msgstr ""
-
-#: src/Tomato.vala:37
 msgid "Drink some water"
 msgstr ""
 
-#: src/Tomato.vala:38
+#: src/Tomato.vala:37
 msgid "Get up and dance!"
 msgstr ""
 
-#: src/Tomato.vala:39
+#: src/Tomato.vala:38
 msgid "Have a break, have a tomato"
 msgstr ""
 
-#: src/Tomato.vala:40
+#: src/Tomato.vala:39
 msgid "Get up! Stand up! Fight for your fingers!"
 msgstr ""
 
-#: src/Tomato.vala:41
+#: src/Tomato.vala:40
 msgid "Take a break, save a life"
 msgstr ""
 
-#: src/Tomato.vala:42
+#: src/Tomato.vala:41
 msgid "Woot! Break time, baby!"
 msgstr ""
 
-#: src/Tomato.vala:43
+#: src/Tomato.vala:42
 msgid "It's coffee time!"
 msgstr ""
 
-#: src/Tomato.vala:44
+#: src/Tomato.vala:43
 msgid "What about a beer?"
 msgstr ""
 
-#: src/Tomato.vala:45
-msgid "You can check Facebook notifications"
-msgstr ""
-
-#: src/Tomato.vala:46
-msgid "You can use Twitter now!"
-msgstr ""
-
-#: src/Tomato.vala:47
+#: src/Tomato.vala:44
 msgid "Take a walk outside"
 msgstr ""
 
-#: src/Tomato.vala:48
+#: src/Tomato.vala:45
 msgid "Step away from the machine!"
 msgstr ""
 
-#: src/Tomato.vala:148
+#: src/Tomato.vala:145
 msgid "Tomato has been paused for a long time!"
 msgstr ""
 
-#: src/Tomato.vala:148
+#: src/Tomato.vala:145
 msgid "Shouldn't you be working?"
 msgstr ""

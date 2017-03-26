@@ -55,7 +55,6 @@ namespace Tomato.Services {
         public bool pause_after_break {get; set;}
         public bool warning_notification {get; set;}
         public bool pomodoro_sound_enabled {get; set;}
-        public bool animations_enabled {get; set;}
         public bool notifications_blocked {get; set;}
         public bool debug_mode {get; set;}
 

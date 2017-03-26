@@ -1,23 +1,50 @@
 .pomodoro-window {
-    background-color: #F34B4B;
-    border-color: darker(#F34B4B);
+    background-color: #f34b4b;
+    border-color: darker(#f34b4b);
 }
 .pomodoro-button {
     padding: 5px;
     color: #ffffff;
-    background-color: #DF4B4B;
-    border: 1px solid darker(#DF4B4B);
+    background-color: #df4b4b;
+    border: 1px solid darker(#df4b4b);
 }
-.break-window {
-    background-color: #00B351;
-    border-color: darker(#00B351);
+
+/*.break-window {
+    background-color: #00b351;
+    border-color: darker(#00b351);
 }
 .break-button {
     padding: 5px;
     color: #ffffff;
-    background-color: #009F51;
-    border: 1px solid darker(#008F43);
+    background-color: #009f51;
+    border: 1px solid darker(#008f43);
+}*/
+
+.start-window {
+    background-color: #8ea5af;
+    border-color: darker(#8ea5af);
 }
+
+.start-button {
+    padding: 5px;
+    color: #ffffff;
+    background-color: #7f949d;
+    border: 1px solid darker(#7f949d);
+}
+
+
+.break-window {
+    background-color: #05B560;
+    border-color: darker(#05B560);
+}
+
+.break-button {
+    padding: 5px;
+    color: #ffffff;
+    background-color: #04a256;
+    border: 1px solid darker(#04a256);
+}
+
 .countdown {
     color: #ffffff;
     font-size: 48px;

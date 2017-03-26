@@ -50,6 +50,11 @@ namespace Tomato.Managers {
             set_status (Status.POMODORO);
         }
 
+        public void stop () {
+            set_status (Status.START);
+            message ("New status -> Start");
+        }
+
         public void tick () {
             saved.countdown = countdown.tick ();
 
@@ -80,8 +85,7 @@ namespace Tomato.Managers {
         }
 
         public void reset () {
-            saved.status = Status.START;
-            message ("New status -> Start");
+            stop ();
             ticks = 1;
 
             reset_countdown ();

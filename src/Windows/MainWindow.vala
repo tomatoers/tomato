@@ -51,7 +51,7 @@ namespace Tomato.Window {
             this.title = Constants.APP_NAME;
             this.set_position (Gtk.WindowPosition.CENTER);
             this.set_resizable (false);
-            this.set_size_request (400, 350);
+            this.set_size_request (430, 375);
 
             /* Initializing major components */
             headerbar = new Gtk.HeaderBar ();
@@ -90,11 +90,11 @@ namespace Tomato.Window {
             }
         }
 
-        public void next_status (Gtk.StackTransitionType transition = Gtk.StackTransitionType.OVER_LEFT) {
+        public void next_status (Gtk.StackTransitionType transition = Gtk.StackTransitionType.NONE) {
 
             if (saved.status == Status.START) {
                 slide.set_visible_screen ("start", transition);
-                headerbar.set_title (_("Welcome"));
+                headerbar.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
             } else if (saved.status == Status.SHORT_BREAK) {
                 slide.set_visible_screen ("break", transition);
                 headerbar.set_title (_("Short Break"));
@@ -127,7 +127,7 @@ namespace Tomato.Window {
         }
 
         public void update_total_time () {
-            if ((saved.status == Status.SHORT_BREAK || saved.status == Status.LONG_BREAK || paused) && saved.total_time != 0) {
+            if ((saved.status == Status.START || saved.status == Status.SHORT_BREAK || saved.status == Status.LONG_BREAK || paused) && saved.total_time != 0) {
                 total_time_label.set_label (work.formatted_total_time () + _(" of work"));
             } else {
                 total_time_label.set_label ("");
@@ -180,16 +180,15 @@ namespace Tomato.Window {
             countdown_label.get_style_context ().add_class ("countdown");
             total_time_label.get_style_context ().add_class ("total-time");
 
-            start.get_style_context ().add_class ("break-button");
+            start.get_style_context ().add_class ("start-button");
             skip.get_style_context ().add_class ("break-button");
             resume.get_style_context ().add_class ("pomodoro-button");
             pause.get_style_context ().add_class ("pomodoro-button");
             stop.get_style_context ().add_class ("pomodoro-button");
 
+            slide.get_child_by_name ("start").get_style_context ().add_class ("start-window");
             slide.get_child_by_name ("pomodoro").get_style_context ().add_class ("pomodoro-window");
-            foreach (string name in new string[] {"start", "break"}) {
-                slide.get_child_by_name (name).get_style_context ().add_class ("break-window");
-            }
+            slide.get_child_by_name ("break").get_style_context ().add_class ("break-window");
         }
 
         private void connect_signals () {

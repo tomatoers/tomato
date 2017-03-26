@@ -79,11 +79,6 @@
             <summary>Pomodoro sound</summary>
             <description>A sound is played when a pomodoro is completed.</description>
         </key>
-        <key name="animations-enabled" type="b">
-            <default>true</default>
-            <summary>Transition animations</summary>
-            <description>Animations are shown when this option is activated.</description>
-        </key>
         <key name="notifications-blocked" type="b">
             <default>true</default>
             <summary>Notifications</summary>

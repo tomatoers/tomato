@@ -33,7 +33,6 @@ namespace Tomato {
 
     protected int break_messages_index = 0;
     protected const string[] break_messages = {N_("Go have a coffee"),
-                                        N_("Check your emails"),
                                         N_("Drink some water"),
                                         N_("Get up and dance!"),
                                         N_("Have a break, have a tomato"),
@@ -42,8 +41,6 @@ namespace Tomato {
                                         N_("Woot! Break time, baby!"),
                                         N_("It's coffee time!"),
                                         N_("What about a beer?"),
-                                        N_("You can check Facebook notifications"),
-                                        N_("You can use Twitter now!"),
                                         N_("Take a walk outside"),
                                         N_("Step away from the machine!")};
     protected Managers.NotificationManager notification;
@@ -61,7 +58,7 @@ namespace Tomato {
             exec_name = Constants.EXEC_NAME;
             build_version = Constants.VERSION;
 
-            app_years = "2015";
+            app_years = "2017";
             app_icon = Constants.ICON_NAME;
             app_launcher = "org.pantheon.tomato.desktop";
             application_id = "org.pantheon.tomato";
@@ -183,9 +180,10 @@ namespace Tomato {
 
         private void on_stop_clicked () {
             stop ();
-            work.start ();
+            work.stop ();
             work.reset_countdown ();
             update_progress ();
+            next_status ();
 
             if (preferences.warning_notification && wnotify_timeout_id != 0 && stopped) {
                 Source.remove (wnotify_timeout_id);

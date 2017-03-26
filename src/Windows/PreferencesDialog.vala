@@ -35,7 +35,6 @@ namespace Tomato.Window {
         private Gtk.Switch pause_after_break;
         private Gtk.Switch warning_notification_enabled;
         private Gtk.Switch pomodoro_sound_enabled;
-        private Gtk.Switch animations_enabled;
         private Gtk.Switch debug_switch;
 
         //options - button
@@ -104,9 +103,6 @@ namespace Tomato.Window {
 
             pomodoro_sound_enabled = new Gtk.Switch ();
             preferences.schema.bind ("pomodoro-sound-enabled", pomodoro_sound_enabled, "active", SettingsBindFlags.DEFAULT);
-
-            animations_enabled = new Gtk.Switch ();
-            preferences.schema.bind ("animations-enabled", animations_enabled, "active", SettingsBindFlags.DEFAULT);
 
             if (preferences.debug_mode) {
                 pomodoro_scale = new Widget.ValueRange (1, 60, 1, _("minute"), _("minutes"));
@@ -217,12 +213,6 @@ namespace Tomato.Window {
 
             label = new Gtk.Label (_("Warning notifications:"));
             add_option (grid, label, warning_notification_enabled, ref row);
-
-            label = new Gtk.Label (_("Animations:"));
-            add_section (grid, label, ref row);
-
-            label = new Gtk.Label (_("Transition animations:"));
-            add_option (grid, label, animations_enabled, ref row);
 
             if (preferences.debug_mode) {
                 label = new Gtk.Label (_("Extras:"));
