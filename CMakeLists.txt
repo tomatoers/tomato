@@ -15,7 +15,7 @@ set (APP_NAME "Tomato")
 set (GENERIC_NAME "Pomodoro App")
 set (RELEASE_NAME "Freya")
 set (COMMENT "Organize your work with pomodoro technique")
-set (VERSION "1.1.0")
+set (VERSION "1.2.0")
 set (VERSION_INFO "Stable release")
 
 # where we install data directory (if we have any)
