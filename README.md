@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/luizaugustomm/tomato.svg?branch=master)](https://travis-ci.org/luizaugustomm/tomato)
+
 # What is Tomato?
 
 _Tomato_ is a pomodoro app designed for elementaryOS. It is simple, usable and efficient.
