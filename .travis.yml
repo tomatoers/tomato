@@ -2,9 +2,10 @@ language: c
 compiler: gcc
 before_install:
   - sudo add-apt-repository ppa:vala-team/ppa -y
+  - sudo add-apt-repository ppa:elementary-os/daily -y
   - sudo apt-get update -qq
   - sudo apt-get install -qq gnome-common libglib2.0-dev libgtk-3-dev
-         libsqlite3-dev libvala-0.22-dev valac-0.22 gobject-introspection
+         libsqlite3-dev libvala-0.34-dev valac-0.34 gobject-introspection libcanberra-dev
 script:
   - cmake .
   - make
