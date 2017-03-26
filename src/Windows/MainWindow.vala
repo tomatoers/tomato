@@ -33,6 +33,7 @@ namespace Tomato.Window {
         private TomatoApp app;
 
         private Gtk.HeaderBar headerbar;
+        private Granite.Widgets.AppMenu appmenu;
         private Gtk.MenuItem preferences;
         private Widget.Slide slide;
 
@@ -51,7 +52,7 @@ namespace Tomato.Window {
             this.title = Constants.APP_NAME;
             this.set_position (Gtk.WindowPosition.CENTER);
             this.set_resizable (false);
-            this.set_size_request (430, 375);
+            this.set_size_request (450, 410);
 
             /* Initializing major components */
             headerbar = new Gtk.HeaderBar ();
@@ -95,15 +96,19 @@ namespace Tomato.Window {
             if (saved.status == Status.START) {
                 slide.set_visible_screen ("start", transition);
                 headerbar.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
+                appmenu.set_sensitive (true);
             } else if (saved.status == Status.SHORT_BREAK) {
                 slide.set_visible_screen ("break", transition);
                 headerbar.set_title (_("Short Break"));
+                appmenu.set_sensitive (false);
             } else if (saved.status == Status.LONG_BREAK) {
                 slide.set_visible_screen ("break", transition);
                 headerbar.set_title (_("Long Break"));
+                appmenu.set_sensitive (false);
             } else {
                 slide.set_visible_screen ("pomodoro", transition);
                 headerbar.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
+                appmenu.set_sensitive (false);
             }
 
             Widget.Screen screen = slide.get_visible_screen ();
@@ -126,6 +131,10 @@ namespace Tomato.Window {
             countdown_label.set_label (work.formatted_countdown ());
         }
 
+        public void update_stop (string text) {
+            stop.set_label (text);
+        }
+
         public void update_total_time () {
             if ((saved.status == Status.START || saved.status == Status.SHORT_BREAK || saved.status == Status.LONG_BREAK || paused) && saved.total_time != 0) {
                 total_time_label.set_label (work.formatted_total_time () + _(" of work"));
@@ -138,7 +147,8 @@ namespace Tomato.Window {
             Gtk.Menu menu = new Gtk.Menu ();
             menu.append (preferences);
 
-            headerbar.pack_end (app.create_appmenu (menu));
+            appmenu = app.create_appmenu (menu);
+            headerbar.pack_end (appmenu);
             headerbar.set_show_close_button (true);
             this.set_titlebar (headerbar);
         }

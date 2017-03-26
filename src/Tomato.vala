@@ -45,7 +45,7 @@ namespace Tomato {
                                         N_("Step away from the machine!")};
     protected Managers.NotificationManager notification;
     protected Managers.WorkManager work;
-    protected int warning_countdown = 90;
+    protected int stop_countdown = 14;
     protected bool paused = true;
     protected bool stopped = true;
 
@@ -83,7 +83,7 @@ namespace Tomato {
 
         private const uint TIME = 1000;
         private uint work_timeout_id = 0;
-        private uint wnotify_timeout_id = 0;
+        private uint stop_timeout_id = 0;
 
         //constructor
         public TomatoApp () {
@@ -138,14 +138,23 @@ namespace Tomato {
             } return !paused;
         }
 
-        private bool warning_notification () {
+        private bool start_auto_stop () {
             if (paused && !stopped) {
-                warning_countdown -= 1;
-                if (warning_countdown == 0) {
-                    notification.show (_("Tomato has been paused for a long time!"), _("Shouldn't you be working?"));
-                    warning_countdown = 90;
+                window.update_stop (_("Stopping in ") + "%d".printf (stop_countdown));
+                stop_countdown -= 1;
+                if (stop_countdown == -1) {
+                    on_stop_clicked ();
+                    stop_countdown = 14;
                 }
             } return paused;
+        }
+
+        private void finish_auto_stop () {
+            Source.remove (stop_timeout_id);
+            stop_timeout_id = 0;
+            stop_countdown = 14;
+            window.update_stop (_("Stop"));
+            message ("Finished auto stop");
         }
 
 
@@ -157,11 +166,8 @@ namespace Tomato {
         }
 
         private void on_resume_clicked () {
-            if (preferences.warning_notification && wnotify_timeout_id != 0 && !stopped) {
-                Source.remove (wnotify_timeout_id);
-                wnotify_timeout_id = 0;
-                warning_countdown = 90;
-                message ("Notification warning countdown removed");
+            if (preferences.auto_stop && stop_timeout_id != 0 && !stopped) {
+                finish_auto_stop ();
             }
             play ();
         }
@@ -170,11 +176,11 @@ namespace Tomato {
             pause ();
             update_progress ();
             /* Show a notification when the app is paused for a long period */
-            if (preferences.warning_notification && saved.status == Status.POMODORO) {
-                message ("Notification warning countdown started");
-                wnotify_timeout_id = Timeout.add (TIME, warning_notification);
+            if (preferences.auto_stop && saved.status == Status.POMODORO) {
+                message ("Auto stop countdown started");
+                stop_timeout_id = Timeout.add (TIME, start_auto_stop);
             } else {
-                wnotify_timeout_id = 0;
+                stop_timeout_id = 0;
             }
         }
 
@@ -182,22 +188,15 @@ namespace Tomato {
             stop ();
             work.stop ();
             work.reset_countdown ();
-            update_progress ();
             next_status ();
 
-            if (preferences.warning_notification && wnotify_timeout_id != 0 && stopped) {
-                Source.remove (wnotify_timeout_id);
-                wnotify_timeout_id = 0;
-                warning_countdown = 90;
-                message ("Notification warning countdown removed");
+            if (preferences.auto_stop && stop_timeout_id != 0 && stopped) {
+                finish_auto_stop ();
             }
         }
 
         private void on_skip_clicked () {
-            stop ();
-            work.start ();
-            work.reset_countdown ();
-            next_status ();
+            on_stop_clicked ();
         }
 
         private void on_preferences_clicked () {
@@ -262,24 +261,20 @@ namespace Tomato {
         private void connect_pref_signals () {
             /* Watch for change in settings*/
             pref_window.pomodoro_changed.connect (() => {
-                if (saved.status == Status.POMODORO) {
-                    on_settings_changed ();
-                    message ("Pomodoro scale changed");
-                } pref_window.update_timing_sensitivity ();
+                work.reset_countdown ();
+                window.update_progress ();
+                pref_window.update_timing_sensitivity ();
+                message ("Pomodoro scale changed");
             });
 
             pref_window.short_break_changed.connect (() => {
-                if (saved.status == Status.SHORT_BREAK) {
-                    on_settings_changed ();
-                    message ("Short break scale changed");
-                } pref_window.update_timing_sensitivity ();
+                pref_window.update_timing_sensitivity ();
+                message ("Short break scale changed");
             });
 
             pref_window.long_break_changed.connect (() => {
-                if (saved.status == Status.LONG_BREAK) {
-                    on_settings_changed ();
-                    message ("Long break scale changed");
-                } pref_window.update_timing_sensitivity ();
+                pref_window.update_timing_sensitivity ();
+                message ("Long break scale changed");
             });
 
             pref_window.long_break_delay_changed.connect (() => {
@@ -287,7 +282,11 @@ namespace Tomato {
             });
 
             //watch for change in preferences
-            Tomato.preferences.changed.connect (on_preferences_changed);
+            Tomato.preferences.changed.connect (() => {
+                work_timeout_id = 0; // To avoid removing a timeout that doesn't exist
+                pref_window.update_timing_sensitivity ();
+                pref_window.update_work_sensitivity ();
+            });
 
             //watch for reset action
             pref_window.reset_work_clicked.connect (() => {
@@ -295,18 +294,6 @@ namespace Tomato {
                 window.next_status (Gtk.StackTransitionType.NONE);
                 pref_window.update_work_sensitivity ();
             });
-        }
-
-        private void on_settings_changed () {
-            work.reset_countdown ();
-            window.update_progress ();
-            message ("Settings Updated");
-        }
-
-        private void on_preferences_changed () {
-            work_timeout_id = 0; // To avoid removing a timeout that doesn't exist
-            pref_window.update_timing_sensitivity ();
-            pref_window.update_work_sensitivity ();
         }
     }
 

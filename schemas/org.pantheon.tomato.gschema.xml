@@ -69,10 +69,10 @@
             <summary>Pause after break</summary>
             <description>The user has to start the new pomodoro manually after break time.</description>
         </key>
-        <key name="warning-notification" type="b">
+        <key name="auto-stop" type="b">
             <default>true</default>
-            <summary>Warning notification</summary>
-            <description>If a notification should be shown when the pause button is pressed for a long time when it's pomodoro time.</description>
+            <summary>Auto stop</summary>
+            <description>The app is stopped automaticaly after 10 seconds paused.</description>
         </key>
         <key name="pomodoro-sound-enabled" type="b">
             <default>true</default>

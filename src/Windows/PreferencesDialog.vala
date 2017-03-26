@@ -33,7 +33,7 @@ namespace Tomato.Window {
         //options - switches
         private Gtk.Switch reset_work_everyday;
         private Gtk.Switch pause_after_break;
-        private Gtk.Switch warning_notification_enabled;
+        private Gtk.Switch auto_stop_enabled;
         private Gtk.Switch pomodoro_sound_enabled;
         private Gtk.Switch debug_switch;
 
@@ -98,8 +98,8 @@ namespace Tomato.Window {
             pause_after_break = new Gtk.Switch ();
             preferences.schema.bind ("pause-after-break", pause_after_break, "active", SettingsBindFlags.DEFAULT);
 
-            warning_notification_enabled = new Gtk.Switch ();
-            preferences.schema.bind ("warning-notification", warning_notification_enabled, "active", SettingsBindFlags.DEFAULT);
+            auto_stop_enabled = new Gtk.Switch ();
+            preferences.schema.bind ("auto-stop", auto_stop_enabled, "active", SettingsBindFlags.DEFAULT);
 
             pomodoro_sound_enabled = new Gtk.Switch ();
             preferences.schema.bind ("pomodoro-sound-enabled", pomodoro_sound_enabled, "active", SettingsBindFlags.DEFAULT);
@@ -205,14 +205,14 @@ namespace Tomato.Window {
             label = new Gtk.Label (_("Start new pomodoro manually:"));
             add_option (grid, label, pause_after_break, ref row);
 
-            label = new Gtk.Label (_("Sound and notifications:"));
+            label = new Gtk.Label (_("Auto stop:"));
+            add_option (grid, label, auto_stop_enabled, ref row);
+
+            label = new Gtk.Label (_("Sound:"));
             add_section (grid, label, ref row);
 
             label = new Gtk.Label (_("Pomodoro sound:"));
             add_option (grid, label, pomodoro_sound_enabled, ref row);
-
-            label = new Gtk.Label (_("Warning notifications:"));
-            add_option (grid, label, warning_notification_enabled, ref row);
 
             if (preferences.debug_mode) {
                 label = new Gtk.Label (_("Extras:"));

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-26 16:31-0300\n"
+"POT-Creation-Date: 2017-03-26 18:45-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr ""
 msgid "Get back to work!"
 msgstr ""
 
-#: src/Managers/NotificationManager.vala:36 src/Windows/MainWindow.vala:100
+#: src/Managers/NotificationManager.vala:36 src/Windows/MainWindow.vala:102
 msgid "Short Break"
 msgstr ""
 
@@ -59,35 +59,35 @@ msgstr ""
 msgid "Long Break!"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:60
+#: src/Windows/MainWindow.vala:61
 msgid "Preferences…"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:63
+#: src/Windows/MainWindow.vala:64
 msgid "Start"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:64
+#: src/Windows/MainWindow.vala:65
 msgid "Resume"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:65
+#: src/Windows/MainWindow.vala:66
 msgid "Pause"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:66
+#: src/Windows/MainWindow.vala:67 src/Tomato.vala:156
 msgid "Stop"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:67
+#: src/Windows/MainWindow.vala:68
 msgid "Skip"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:103
+#: src/Windows/MainWindow.vala:106
 msgid "Long Break"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:131
+#: src/Windows/MainWindow.vala:140
 msgid " of work"
 msgstr ""
 
@@ -152,15 +152,15 @@ msgid "Start new pomodoro manually:"
 msgstr ""
 
 #: src/Windows/PreferencesDialog.vala:208
-msgid "Sound and notifications:"
+msgid "Auto stop:"
 msgstr ""
 
 #: src/Windows/PreferencesDialog.vala:211
-msgid "Pomodoro sound:"
+msgid "Sound:"
 msgstr ""
 
 #: src/Windows/PreferencesDialog.vala:214
-msgid "Warning notifications:"
+msgid "Pomodoro sound:"
 msgstr ""
 
 #: src/Windows/PreferencesDialog.vala:218
@@ -211,10 +211,6 @@ msgstr ""
 msgid "Step away from the machine!"
 msgstr ""
 
-#: src/Tomato.vala:145
-msgid "Tomato has been paused for a long time!"
-msgstr ""
-
-#: src/Tomato.vala:145
-msgid "Shouldn't you be working?"
+#: src/Tomato.vala:143
+msgid "Stopping in "
 msgstr ""

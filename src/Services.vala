@@ -53,7 +53,7 @@ namespace Tomato.Services {
     public class Preferences : Granite.Services.Settings {
         public bool reset_work_everyday {get; set;}
         public bool pause_after_break {get; set;}
-        public bool warning_notification {get; set;}
+        public bool auto_stop {get; set;}
         public bool pomodoro_sound_enabled {get; set;}
         public bool notifications_blocked {get; set;}
         public bool debug_mode {get; set;}
