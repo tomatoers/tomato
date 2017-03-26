@@ -1,3 +1,5 @@
+os: linux
+dist: xenial
 language: c
 compiler: gcc
 before_install:
@@ -5,7 +7,7 @@ before_install:
   - sudo add-apt-repository ppa:elementary-os/daily -y
   - sudo apt-get update -qq
   - sudo apt-get install -qq gnome-common libglib2.0-dev libgtk-3-dev
-         libsqlite3-dev libvala-dev valac gobject-introspection libcanberra-dev libgranite-dev
+         libsqlite3-dev valac gobject-introspection libcanberra-dev libgranite-dev
 script:
   - cmake -DVALA_EXECUTABLE:NAMES=valac .
   - make
