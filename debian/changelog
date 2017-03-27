@@ -1,3 +1,11 @@
+tomato (1.1.0) xenial; urgency=low
+
+  * Auto stop feature
+  * New start page
+  * Removed libnotify dependency
+
+ -- Luiz Augusto <lamm@elementary>  Mon, 27 Mar 2017 13:58:48 -0300
+
 tomato (1.0.0) trusty; urgency=medium
 
   * Fist stable version
