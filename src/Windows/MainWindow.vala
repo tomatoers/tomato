@@ -100,11 +100,11 @@ namespace Tomato.Window {
             } else if (saved.status == Status.SHORT_BREAK) {
                 slide.set_visible_screen ("break", transition);
                 headerbar.set_title (_("Short Break"));
-                appmenu.set_sensitive (false);
+                appmenu.set_sensitive (true);
             } else if (saved.status == Status.LONG_BREAK) {
                 slide.set_visible_screen ("break", transition);
                 headerbar.set_title (_("Long Break"));
-                appmenu.set_sensitive (false);
+                appmenu.set_sensitive (true);
             } else {
                 slide.set_visible_screen ("pomodoro", transition);
                 headerbar.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));

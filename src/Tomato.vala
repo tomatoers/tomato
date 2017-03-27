@@ -200,10 +200,6 @@ namespace Tomato {
         }
 
         private void on_preferences_clicked () {
-            if (!paused) {
-                on_pause_clicked ();
-            }
-
             //show preferences window
             pref_window = new Window.PreferencesDialog (window);
             pref_window.show_all ();
@@ -261,8 +257,10 @@ namespace Tomato {
         private void connect_pref_signals () {
             /* Watch for change in settings*/
             pref_window.pomodoro_changed.connect (() => {
-                work.reset_countdown ();
-                window.update_progress ();
+                if (saved.status == Status.START) {
+                    work.reset_countdown ();
+                    window.update_progress ();
+                }
                 pref_window.update_timing_sensitivity ();
                 message ("Pomodoro scale changed");
             });
@@ -283,7 +281,6 @@ namespace Tomato {
 
             //watch for change in preferences
             Tomato.preferences.changed.connect (() => {
-                work_timeout_id = 0; // To avoid removing a timeout that doesn't exist
                 pref_window.update_timing_sensitivity ();
                 pref_window.update_work_sensitivity ();
             });
@@ -291,7 +288,7 @@ namespace Tomato {
             //watch for reset action
             pref_window.reset_work_clicked.connect (() => {
                 work.reset ();
-                window.next_status (Gtk.StackTransitionType.NONE);
+                on_stop_clicked ();
                 pref_window.update_work_sensitivity ();
             });
         }
