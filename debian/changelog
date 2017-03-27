@@ -1,3 +1,10 @@
+tomato (1.1.0ubuntu1) UNRELEASED; urgency=medium
+
+  * Notification when the app is auto stopped
+  * Users can access preferences when the app is in break time
+
+ -- Luiz Augusto <lamm@elementary>  Mon, 27 Mar 2017 20:40:34 -0300
+
 tomato (1.1.0) xenial; urgency=low
 
   * Auto stop feature
