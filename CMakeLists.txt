@@ -13,7 +13,7 @@ set (EXEC_NAME ${CMAKE_PROJECT_NAME})
 set (ICON_NAME ${CMAKE_PROJECT_NAME})
 set (APP_NAME "Tomato")
 set (GENERIC_NAME "Pomodoro App")
-set (RELEASE_NAME "Freya")
+set (RELEASE_NAME "Amai")
 set (COMMENT "Organize your work with pomodoro technique")
 set (VERSION "1.2.0")
 set (VERSION_INFO "Stable release")
@@ -44,6 +44,7 @@ set (SOURCE_LIST
     src/Util/Timer.vala
     src/Managers/SoundManager.vala
     src/Managers/NotificationManager.vala
+    src/Managers/LauncherManager.vala
     src/Managers/WorkManager.vala
     src/Windows/MainWindow.vala
     src/Windows/PreferencesDialog.vala
@@ -80,6 +81,7 @@ pkg_check_modules(DEPS REQUIRED
     gtk+-3.0
     granite
     libcanberra
+    unity
 )
 
 set(NORMAL_CFLAGS ${DEPS_CFLAGS} ${LIBSOURCE_CFLAGS} ${GCONF_CFLAGS})
@@ -109,6 +111,7 @@ PACKAGES
     gtk+-3.0
     granite
     libcanberra
+    unity
 )
 
 # tell cmake what to call the executable we just made

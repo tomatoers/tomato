@@ -38,6 +38,10 @@ namespace Tomato.Managers {
             saved.update_date ();
         }
 
+        public int raw_countdown () {
+            return countdown.get_current_time ();
+        }
+
         public string formatted_countdown () {
             return countdown.get_current_ftime ();
         }

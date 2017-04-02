@@ -20,7 +20,7 @@ namespace Constants {
 	public const string DATADIR = "/usr/share";
 	public const string PKG_DATADIR = "/usr/share/tomato";
 	public const string GETTEXT_PACKAGE = "tomato";
-	public const string RELEASE_NAME = "Freya";
+	public const string RELEASE_NAME = "Amai";
 	public const string VERSION = "1.2.0";
 	public const string VERSION_INFO = "Stable release";
 	public const string INSTALL_PREFIX = "/usr";

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-27 20:39-0300\n"
+"POT-Creation-Date: 2017-04-02 13:46-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,7 @@ msgstr ""
 msgid "Pause"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:67 src/Tomato.vala:157
+#: src/Windows/MainWindow.vala:67 src/Tomato.vala:160
 msgid "Stop"
 msgstr ""
 
@@ -211,15 +211,15 @@ msgstr ""
 msgid "Step away from the machine!"
 msgstr ""
 
-#: src/Tomato.vala:143
+#: src/Tomato.vala:146
 msgid "Stopping in "
 msgstr ""
 
-#: src/Tomato.vala:148
+#: src/Tomato.vala:151
 msgid "Pomodoro was interrupted"
 msgstr ""
 
-#: src/Tomato.vala:148
+#: src/Tomato.vala:151
 msgid ""
 "Tomato was paused for a long time. You might have lost focus. Try a new "
 "pomodoro!"
