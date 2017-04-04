@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Luiz Augusto Morais <luizaugustomm@gmail.com> -->
+<component type="desktop">
+  <id>@PACKAGE_ID@.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <name>@APP_NAME@</name>
+  <summary>A simple, clean and intuitive pomodoro app designed for elementaryOS</summary>
+
+  <description>
+    <p>
+        Tomato is based on Pomodoro technique. It helps you to keep focused on your work.
+    </p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Start page</caption>
+      <image width="1000" height="562">https://doc-0s-20-docs.googleusercontent.com/docs/securesc/tilkpoit4cl0r389cfh1csgf9k7l4k72/u160gfaeijgg2s8m42es3d5ao7vpna42/1491264000000/03447227876278754291/03447227876278754291/0Bz8YPMiI5D1eLWh4OVZ5anQyM00?e=view</image>
+    </screenshot>
+    <screenshot>
+      <caption>Pomodoro time</caption>
+      <image width="1000" height="563">https://doc-0o-20-docs.googleusercontent.com/docs/securesc/tilkpoit4cl0r389cfh1csgf9k7l4k72/o7gqdbnooimh1i9ldelblfu0h5r7jom6/1491264000000/03447227876278754291/03447227876278754291/0Bz8YPMiI5D1eeUlkYklFcXJ5djA?e=view&nonce=jtmvj0pg6mnnq&user=03447227876278754291&hash=0iu1ou9pam7u7pmaaj0gsmhk85m0jes9</image>
+    </screenshot>
+    <screenshot>
+      <caption>Short break time</caption>
+      <image width="1000" height="567">https://doc-0g-20-docs.googleusercontent.com/docs/securesc/tilkpoit4cl0r389cfh1csgf9k7l4k72/cb8tb9hc84t5vuo8ipqiun1vk0qeu1bu/1491264000000/03447227876278754291/03447227876278754291/0Bz8YPMiI5D1eQ0haVGdFbnV1N0E?e=view</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://github.com/luizaugustomm/tomato</url>
+
+  <custom>
+    <value key="x-appcenter-color-primary">#da4343</value>
+    <value key="x-appcenter-color-primary-text">#fff</value>
+  </custom>
+
+  <provides>
+    <binary>@EXEC_NAME@</binary>
+  </provides>
+
+  <releases>
+    <release version="1.2.0" timestamp="20170327">
+      <description>
+        <p>Tomato "Amai" 1.2.0</p>
+      </description>
+    </release>
+  </releases>
+</component>

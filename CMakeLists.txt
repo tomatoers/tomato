@@ -14,6 +14,7 @@ set (ICON_NAME ${CMAKE_PROJECT_NAME})
 set (APP_NAME "Tomato")
 set (GENERIC_NAME "Pomodoro App")
 set (RELEASE_NAME "Amai")
+set (PACKAGE_ID "com.github.luizaugustomm.tomato")
 set (COMMENT "Organize your work with pomodoro technique")
 set (VERSION "1.2.0")
 set (VERSION_INFO "Stable release")
@@ -56,7 +57,8 @@ set (SOURCE_LIST
 
 # Some configuration
 configure_file (${CMAKE_CURRENT_SOURCE_DIR}/src/Config.vala.cmake ${CMAKE_CURRENT_SOURCE_DIR}/src/Config.vala)
-configure_file (${CMAKE_CURRENT_SOURCE_DIR}/data/org.pantheon.tomato.desktop.in ${CMAKE_CURRENT_SOURCE_DIR}/data/org.pantheon.tomato.desktop)
+configure_file (${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.appdata.xml.in ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.appdata.xml)
+configure_file (${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.desktop.in ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.desktop)
 
 # Some definitions
 add_definitions(-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
@@ -126,7 +128,7 @@ add_subdirectory (schemas)
 add_subdirectory (po)
 
 # install our .desktop file so the Applications menu will see it
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/org.pantheon.tomato.desktop DESTINATION ${DATADIR}/applications)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.desktop DESTINATION ${DATADIR}/applications)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/style/window.css DESTINATION ${PKG_DATADIR}/style)
 install (DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/ DESTINATION ${DATADIR}/icons/hicolor)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/tomato.svg DESTINATION ${DATADIR}/pixmaps)
