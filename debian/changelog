@@ -1,3 +1,9 @@
+tomato (1.2.3) xenial; urgency=medium
+
+  * Fixed some AppCenter issues
+
+ -- Luiz Augusto <lamm@elementary>  Thu, 06 Apr 2017 09:21:37 -0300
+
 tomato (1.2.2) xenial; urgency=medium
 
   * Notification when the app is auto stopped
