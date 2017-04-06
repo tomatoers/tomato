@@ -1,6 +1,6 @@
-Source: tomato
-Section: x11
-Priority: extra
+Source: com.github.luizaugustomm.tomato
+Section: utils
+Priority: optional
 Maintainer: Luiz Augusto Morais <luizaugustomm@gmail.com>
 Build-Depends: cmake (>= 2.8),
                debhelper (>= 8.0.0),
@@ -10,7 +10,6 @@ Build-Depends: cmake (>= 2.8),
                libunity-dev,
                libcanberra-gtk3-dev
 Standards-Version: 3.9.5
-
 Package: com.github.luizaugustomm.tomato
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
