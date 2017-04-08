@@ -1,14 +1,14 @@
-[![Build Status](https://travis-ci.org/luizaugustomm/tomato.svg?branch=master)](https://travis-ci.org/luizaugustomm/tomato)
-
 # What is Tomato?
 
 _Tomato_ is a pomodoro app designed for elementaryOS. It is simple, usable and efficient.
 
 # How to install Tomato on elementaryOS?
 
-Tomato will be available on elementaryOS AppCenter soon.
+Look for it on AppCenter!
 
-In the meantime, you can add the official repository and install Tomato via terminal.
+# How to install Tomato on Ubuntu?
+
+I must have in mind that Tomato is exclusively designed for elementaryOS. But if you want to install Tomato on Ubuntu, you can add the official PPA.
 ```
 $ sudo apt-add-repository ppa:tomato-team/tomato-stable
 $ sudo apt-get update
