@@ -33,7 +33,7 @@ namespace Tomato.Window {
         private TomatoApp app;
 
         private Gtk.HeaderBar headerbar;
-        private Granite.Widgets.AppMenu appmenu;
+        private Gtk.MenuButton appmenu;
         private Gtk.MenuItem preferences;
         private Widget.Slide slide;
 
@@ -58,7 +58,6 @@ namespace Tomato.Window {
             headerbar = new Gtk.HeaderBar ();
             slide = new Widget.Slide ();
 
-            preferences = new Gtk.MenuItem.with_label (_("Preferences…"));
             countdown_label = new Gtk.Label ("");
             total_time_label = new Gtk.Label ("");
             start = new Gtk.Button.with_label (_("Start"));
@@ -144,10 +143,17 @@ namespace Tomato.Window {
         }
 
         private void setup_headerbar () {
+            appmenu = new Gtk.MenuButton ();
+            preferences = new Gtk.MenuItem.with_label (_("Preferences…"));
             Gtk.Menu menu = new Gtk.Menu ();
-            menu.append (preferences);
 
-            appmenu = app.create_appmenu (menu);
+            menu.append (preferences);
+            menu.show_all ();
+
+            var menu_icon = new Gtk.Image.from_icon_name ("open-menu", Gtk.IconSize.LARGE_TOOLBAR);
+            appmenu.set_image (menu_icon);
+            appmenu.popup = menu;
+
             headerbar.pack_end (appmenu);
             headerbar.set_show_close_button (true);
             this.set_titlebar (headerbar);
