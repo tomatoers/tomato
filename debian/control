@@ -13,6 +13,5 @@ Standards-Version: 3.9.5
 Package: com.github.luizaugustomm.tomato
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: A simple, usable and efficient pomodoro app designed for elementaryOS
- Tomato is a pomodoro app developed for elementary OS, which is intended to be simple, clean and intuitive.
- It follows the principles of pomodoro technique and try to make you more focused on your tasks.
+Description: Keep focused on your work
+ Tomato is a clean, easy-to-use time manager based on Pomodoro technique. It breaks down work into intervals to keep you focused and allows you to rest during strategic periods to reward your progress. It is a must-have app if you need to avoid procrastination.
