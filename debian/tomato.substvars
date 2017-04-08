@@ -1,2 +1,2 @@
 misc:Depends=dconf-gsettings-backend | gsettings-backend
-shlibs:Depends=libc6 (>= 2.14), libdbusmenu-glib4 (>= 0.4.2), libglib2.0-0 (>= 2.28.0), libgranite2 (>= 0.2.0), libgtk-3-0 (>= 3.9.12), libnotify4 (>= 0.7.0), libunity9 (>= 3.4.6)
+shlibs:Depends=libc6 (>= 2.14), libdbusmenu-glib4 (>= 0.4.2), libglib2.0-0 (>= 2.28.0), libgranite2 (>= 0.2.0), libgtk-3-0 (>= 3.9.12), libunity9 (>= 3.4.6)
