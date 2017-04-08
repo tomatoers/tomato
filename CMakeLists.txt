@@ -57,7 +57,6 @@ set (SOURCE_LIST
 
 # Some configuration
 configure_file (${CMAKE_CURRENT_SOURCE_DIR}/src/Config.vala.cmake ${CMAKE_CURRENT_SOURCE_DIR}/src/Config.vala)
-configure_file (${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.appdata.xml.in ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.appdata.xml)
 configure_file (${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.desktop.in ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.desktop)
 
 # Some definitions
