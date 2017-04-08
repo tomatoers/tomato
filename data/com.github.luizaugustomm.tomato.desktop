@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Tomato
-Comment=Organize your work with pomodoro technique
+Comment=Keep focused on your work
 GenericName=Pomodoro App
 StartupWMClass=tomato
 Exec=tomato
