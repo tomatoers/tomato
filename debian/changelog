@@ -1,3 +1,9 @@
+tomato (1.2.6) xenial; urgency=medium
+
+  * Fixed minor bugs 
+
+ -- Luiz Augusto <lamm@elementary>  Mon, 10 Apr 2017 19:53:08 -0300
+
 tomato (1.2.5) xenial; urgency=medium
 
   * Fixed minor bugs

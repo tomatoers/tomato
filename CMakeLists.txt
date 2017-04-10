@@ -16,7 +16,7 @@ set (GENERIC_NAME "Pomodoro App")
 set (RELEASE_NAME "Amai")
 set (PACKAGE_ID "com.github.luizaugustomm.tomato")
 set (COMMENT "Keep focused on your work")
-set (VERSION "1.2.5")
+set (VERSION "1.2.6")
 set (VERSION_INFO "Stable release")
 
 # where we install data directory (if we have any)
