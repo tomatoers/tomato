@@ -127,6 +127,7 @@ add_subdirectory (schemas)
 add_subdirectory (po)
 
 # install our .desktop file so the Applications menu will see it
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.appdata.xml DESTINATION ${DATADIR}/metainfo/)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.desktop DESTINATION ${DATADIR}/applications)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/style/window.css DESTINATION ${PKG_DATADIR}/style)
 install (DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/data/icons/ DESTINATION ${DATADIR}/icons/hicolor)
