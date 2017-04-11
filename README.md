@@ -8,7 +8,7 @@ Look for it on AppCenter!
 
 # How to install Tomato on Ubuntu?
 
-I must have in mind that Tomato is exclusively designed for elementaryOS. But if you want to install Tomato on Ubuntu, you can add the official PPA.
+You must have in mind that Tomato is exclusively designed for elementaryOS. But if you want to install Tomato on Ubuntu, you can add the official PPA.
 ```
 $ sudo apt-add-repository ppa:tomato-team/tomato-stable
 $ sudo apt-get update
@@ -21,10 +21,11 @@ First of all, you need to install the following dependencies:
 - gtk3
 - granite
 - libcanberra
+- libunity
 
 Use the command bellow to install the dependencies
 ```
-$ sudo apt install elementary-sdk libcanberra-dev
+$ sudo apt install elementary-sdk libcanberra-dev libunity-dev
 ```
 
 Clone this repository
@@ -41,6 +42,7 @@ $ cd build
 
 Finally, build and install the app
 ```
+$ cmake -DCMAKE_INSTALL_PREFIX=/usr ../
 $ make
 $ sudo make install
 ```
