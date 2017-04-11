@@ -44,10 +44,5 @@
   </provides>
 
   <releases>
-    <release version="1.2.6" timestamp="20170410">
-      <description>
-        <p>Tomato "Amai" 1.2.x</p>
-      </description>
-    </release>
   </releases>
 </component>

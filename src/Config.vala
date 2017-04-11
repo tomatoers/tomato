@@ -21,7 +21,7 @@ namespace Constants {
 	public const string PKG_DATADIR = "/usr/share/tomato";
 	public const string GETTEXT_PACKAGE = "tomato";
 	public const string RELEASE_NAME = "Amai";
-	public const string VERSION = "1.2.6";
+	public const string VERSION = "1.2.7";
 	public const string VERSION_INFO = "Stable release";
 	public const string INSTALL_PREFIX = "/usr";
     public const string APP_NAME = "Tomato";

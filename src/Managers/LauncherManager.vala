@@ -23,7 +23,7 @@ namespace Tomato.Managers {
         private Unity.LauncherEntry launcher;
 
         public LauncherManager () {
-            launcher = Unity.LauncherEntry.get_for_desktop_id ("org.pantheon.tomato.desktop");
+            launcher = Unity.LauncherEntry.get_for_desktop_id ("com.github.luizaugustomm.tomato.desktop");
             update_progress ();
         }
 
