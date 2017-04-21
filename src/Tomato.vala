@@ -82,7 +82,7 @@ namespace Tomato {
         private Window.MainWindow window;
         private Window.PreferencesDialog pref_window;
 
-        private const uint TIME = 1000;
+        private const uint TIME = 100;
         private uint work_timeout_id = 0;
         private uint stop_timeout_id = 0;
 
@@ -221,6 +221,7 @@ namespace Tomato {
 
         private void pause () {
             set_pause (true);
+            launcher.hide_progress ();
 
             if (work_timeout_id != 0) {
                 Source.remove (work_timeout_id);
@@ -259,7 +260,7 @@ namespace Tomato {
             paused_on_break.connect (on_stop_clicked);
 
             window.window_state_event.connect ((event) => {
-                if (event.new_window_state != Gdk.WindowState.FOCUSED && launcher.has_progress () && !paused) {
+                if (event.new_window_state != Gdk.WindowState.FOCUSED && !paused) {
                     launcher.show_progress ();
                 } else {
                     launcher.hide_progress ();

@@ -50,7 +50,7 @@ namespace Tomato.Managers {
             notification.set_body (body);
             var image = new Gtk.Image.from_icon_name ("tomato", Gtk.IconSize.DIALOG);
             notification.set_icon (image.gicon);
-            GLib.Application.get_default ().send_notification ("org.pantheon.tomato", notification);
+            GLib.Application.get_default ().send_notification ("com.github.luizaugustomm.tomato", notification);
         }
     }
 }
