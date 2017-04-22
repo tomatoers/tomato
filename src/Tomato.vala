@@ -61,8 +61,8 @@ namespace Tomato {
 
             app_years = "2017";
             app_icon = Constants.ICON_NAME;
-            app_launcher = "org.pantheon.tomato.desktop";
-            application_id = "org.pantheon.tomato";
+            app_launcher = "com.github.luizaugustomm.tomato.desktop";
+            application_id = "com.github.luizaugustomm.tomato";
 
             main_url = "http://launchpad.net/tomatoapp";
             bug_url = "http://bugs.launchpad.net/tomatoapp";
