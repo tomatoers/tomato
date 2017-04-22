@@ -126,6 +126,12 @@ include_directories(${CMAKE_BINARY_DIR}/src)
 add_subdirectory (schemas)
 add_subdirectory (po)
 
+# test data files
+include (CTest)
+add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.desktop)
+add_test (NAME validate-appdata COMMAND appstreamcli validate ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.appdata.xml)
+
+
 # install our .desktop file so the Applications menu will see it
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.appdata.xml DESTINATION ${DATADIR}/metainfo/)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.desktop DESTINATION ${DATADIR}/applications)

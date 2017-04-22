@@ -1,0 +1,34 @@
+Start testing: Apr 22 10:27 BRT
+----------------------------------------------------------
+1/2 Testing: validate-desktop-file
+1/2 Test: validate-desktop-file
+Command: "/usr/bin/desktop-file-validate" "/home/lamm/Projetos/tomato/data/com.github.luizaugustomm.tomato.desktop"
+Directory: /home/lamm/Projetos/tomato/data
+"validate-desktop-file" start time: Apr 22 10:27 BRT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"validate-desktop-file" end time: Apr 22 10:27 BRT
+"validate-desktop-file" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: validate-appdata
+2/2 Test: validate-appdata
+Command: "/usr/bin/appstreamcli" "validate" "/home/lamm/Projetos/tomato/data/com.github.luizaugustomm.tomato.appdata.xml"
+Directory: /home/lamm/Projetos/tomato/data
+"validate-appdata" start time: Apr 22 10:27 BRT
+Output:
+----------------------------------------------------------
+Validation was successful.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"validate-appdata" end time: Apr 22 10:27 BRT
+"validate-appdata" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 22 10:27 BRT
