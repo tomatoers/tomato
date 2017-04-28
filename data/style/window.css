@@ -9,6 +9,11 @@
     border: 1px solid darker(#df4b4b);
 }
 
+.header-bar {
+    color: #ffffff;
+    font-family: Open Sans Light;
+}
+
 /*.break-window {
     background-color: #00b351;
     border-color: darker(#00b351);

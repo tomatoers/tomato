@@ -18,7 +18,7 @@
 
 namespace Tomato.Window {
 
-    public class MainWindow : Gtk.ApplicationWindow {
+    public class MainWindow : Gtk.Dialog {
 
         public bool is_hidden = false;
 
@@ -32,10 +32,12 @@ namespace Tomato.Window {
 
         private TomatoApp app;
 
-        private Gtk.HeaderBar headerbar;
+		private Gtk.HeaderBar headerbar;
+		private Gtk.Button close_button;
         private Gtk.MenuButton appmenu;
         private Gtk.MenuItem preferences;
         private Widget.Slide slide;
+		private Gtk.Box content;
 
         private Gtk.Label countdown_label;
         private Gtk.Label total_time_label;
@@ -45,8 +47,9 @@ namespace Tomato.Window {
         private Gtk.Button stop;
         private Gtk.Button skip;
 
-        //constructor
+        // constructor
         public MainWindow (TomatoApp app) {
+			Object (use_header_bar: 1);
 
             this.app = app;
             this.title = Constants.APP_NAME;
@@ -55,7 +58,6 @@ namespace Tomato.Window {
             this.set_size_request (450, 410);
 
             /* Initializing major components */
-            headerbar = new Gtk.HeaderBar ();
             slide = new Widget.Slide ();
 
             countdown_label = new Gtk.Label ("");
@@ -66,16 +68,18 @@ namespace Tomato.Window {
             stop = new Gtk.Button.with_label (_("Stop"));
             skip = new Gtk.Button.with_label (_("Skip"));
 
+			content = this.get_content_area ();
+			headerbar = this.get_header_bar () as Gtk.HeaderBar;
+
             setup_layout ();
             setup_style ();
+            connect_signals ();
 
             show_all ();
             update_progress ();
 
             set_pause (true);
             next_status (Gtk.StackTransitionType.NONE);
-
-            connect_signals ();
         }
 
         public void set_pause (bool topause = true) {
@@ -94,19 +98,19 @@ namespace Tomato.Window {
 
             if (saved.status == Status.START) {
                 slide.set_visible_screen ("start", transition);
-                headerbar.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
+                this.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
                 appmenu.set_sensitive (true);
             } else if (saved.status == Status.SHORT_BREAK) {
                 slide.set_visible_screen ("break", transition);
-                headerbar.set_title (_("Short Break"));
+                this.set_title (_("Short Break"));
                 appmenu.set_sensitive (true);
             } else if (saved.status == Status.LONG_BREAK) {
                 slide.set_visible_screen ("break", transition);
-                headerbar.set_title (_("Long Break"));
+                this.set_title (_("Long Break"));
                 appmenu.set_sensitive (true);
             } else {
                 slide.set_visible_screen ("pomodoro", transition);
-                headerbar.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
+                this.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
                 appmenu.set_sensitive (false);
             }
 
@@ -144,19 +148,24 @@ namespace Tomato.Window {
 
         private void setup_headerbar () {
             appmenu = new Gtk.MenuButton ();
+			appmenu.relief = Gtk.ReliefStyle.NONE;
             preferences = new Gtk.MenuItem.with_label (_("Preferences…"));
             Gtk.Menu menu = new Gtk.Menu ();
 
             menu.append (preferences);
             menu.show_all ();
 
-            var menu_icon = new Gtk.Image.from_icon_name ("open-menu", Gtk.IconSize.LARGE_TOOLBAR);
+            var menu_icon = new Gtk.Image.from_icon_name ("emblem-system-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
             appmenu.set_image (menu_icon);
             appmenu.popup = menu;
 
-            headerbar.pack_end (appmenu);
-            headerbar.set_show_close_button (true);
-            this.set_titlebar (headerbar);
+			close_button = new Gtk.Button.from_icon_name ("window-close-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+			close_button.relief = Gtk.ReliefStyle.NONE;
+
+			headerbar.set_show_close_button (false);
+
+			headerbar.pack_start (close_button);
+			headerbar.pack_end (appmenu);
         }
 
         private void setup_stack () {
@@ -177,7 +186,8 @@ namespace Tomato.Window {
         private void setup_layout () {
             setup_headerbar ();
             setup_stack ();
-            this.add (slide);
+            // this.add (slide);
+			content.add (slide);
         }
 
         private void setup_style () {
@@ -202,6 +212,12 @@ namespace Tomato.Window {
             pause.get_style_context ().add_class ("pomodoro-button");
             stop.get_style_context ().add_class ("pomodoro-button");
 
+			headerbar.get_style_context ().add_class ("compact");
+			headerbar.get_style_context ().remove_class ("titlebar");
+
+			close_button.get_style_context ().add_class ("header-bar");
+			appmenu.get_style_context ().add_class ("header-bar");
+
             slide.get_child_by_name ("start").get_style_context ().add_class ("start-window");
             slide.get_child_by_name ("pomodoro").get_style_context ().add_class ("pomodoro-window");
             slide.get_child_by_name ("break").get_style_context ().add_class ("break-window");
@@ -215,14 +231,24 @@ namespace Tomato.Window {
             skip.clicked.connect (() => {skip_clicked ();});
             preferences.activate.connect (() => {preferences_clicked ();});
 
-            this.delete_event.connect (() => {
-                if (!paused) {
-                    hide ();
-                    return true;
-                }
-                Gtk.main_quit ();
-                return false;
-            });
+			this.slide.changed.connect ((s) => {
+					this.get_style_context ().remove_class ("start-window");
+					this.get_style_context ().remove_class ("pomodoro-window");
+					this.get_style_context ().remove_class ("break-window");
+					this.get_style_context ().add_class (s.get_name () + "-window");
+				});
+
+			this.close_button.clicked.connect (() => {quit ();});
+            this.delete_event.connect (quit);
         }
+
+		private bool quit () {
+			if (!paused) {
+				hide ();
+				return true;
+			}
+			Gtk.main_quit ();
+			return false;
+		}
     }
 }
