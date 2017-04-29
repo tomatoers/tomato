@@ -45,8 +45,9 @@
       <release version="1.2.8" date="2017-04-29" urgency="medium">
          ⁠<description>
            <ul>
-             <_li>Fixed minor bugs</_li>
+             <_li>Changed screenshots</_li>
              <_li>Improved internationalization</_li>
+             <_li>Fixed minor bugs</_li>
            </ul>
          ⁠</description>
      ​ </release>
