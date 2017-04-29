@@ -16,4 +16,4 @@ Actions=AboutDialog;
 
 [Desktop Action AboutDialog]
 _Name=About Tomato
-Exec=tomato --about
+Exec=@EXEC_NAME@ --about
