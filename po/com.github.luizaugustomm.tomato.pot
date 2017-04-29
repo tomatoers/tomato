@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-29 12:20-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Util/Timer.vala:29
+msgid "hour"
+msgstr ""
+
+#: src/Util/Timer.vala:29
+msgid "hours"
+msgstr ""
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:82
+#: src/Windows/PreferencesDialog.vala:85 src/Windows/PreferencesDialog.vala:88
+#: src/Windows/PreferencesDialog.vala:108
+#: src/Windows/PreferencesDialog.vala:111
+msgid "minute"
+msgstr ""
+
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:82
+#: src/Windows/PreferencesDialog.vala:85 src/Windows/PreferencesDialog.vala:88
+#: src/Windows/PreferencesDialog.vala:108
+#: src/Windows/PreferencesDialog.vala:111
+msgid "minutes"
+msgstr ""
+
+#: src/Util/Timer.vala:51
+msgid " and "
+msgstr ""
+
+#: src/Managers/NotificationManager.vala:33
+msgid "Pomodoro Time"
+msgstr ""
+
+#: src/Managers/NotificationManager.vala:34
+msgid "Get back to work!"
+msgstr ""
+
+#: src/Managers/NotificationManager.vala:36 src/Windows/MainWindow.vala:101
+msgid "Short Break"
+msgstr ""
+
+#: src/Managers/NotificationManager.vala:39
+msgid "Long Break!"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:63
+msgid "Start"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:64
+msgid "Resume"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:65
+msgid "Pause"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:66 src/Tomato.vala:160
+msgid "Stop"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:67
+msgid "Skip"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:105
+msgid "Long Break"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:139
+msgid " of work"
+msgstr ""
+
+#: src/Windows/MainWindow.vala:147
+msgid "Preferences…"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:59 src/Windows/PreferencesDialog.vala:132
+msgid "Preferences"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:91
+msgid "pomodoro"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:91
+msgid "pomodoros"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:119
+msgid "Default Settings"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:120
+msgid "Reset Work"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:128
+msgid "Timing"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:137
+msgid "Close"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:167
+msgid "Pomodoro duration:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:171
+msgid "Short break duration:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:175
+msgid "Long break duration:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:179
+msgid "Long break delay:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:187
+msgid "Reset:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:199
+msgid "Behavior:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:202
+msgid "Reset work everyday:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:205
+msgid "Start new pomodoro manually:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:208
+msgid "Auto stop:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:211
+msgid "Sound:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:214
+msgid "Pomodoro sound:"
+msgstr ""
+
+#: src/Windows/PreferencesDialog.vala:218
+msgid "Extras:"
+msgstr ""
+
+#: src/Tomato.vala:35
+msgid "Go have a coffee"
+msgstr ""
+
+#: src/Tomato.vala:36
+msgid "Drink some water"
+msgstr ""
+
+#: src/Tomato.vala:37
+msgid "Get up and dance!"
+msgstr ""
+
+#: src/Tomato.vala:38
+msgid "Have a break, have a tomato"
+msgstr ""
+
+#: src/Tomato.vala:39
+msgid "Get up! Stand up! Fight for your fingers!"
+msgstr ""
+
+#: src/Tomato.vala:40
+msgid "Take a break, save a life"
+msgstr ""
+
+#: src/Tomato.vala:41
+msgid "Woot! Break time, baby!"
+msgstr ""
+
+#: src/Tomato.vala:42
+msgid "It's coffee time!"
+msgstr ""
+
+#: src/Tomato.vala:43
+msgid "What about a beer?"
+msgstr ""
+
+#: src/Tomato.vala:44
+msgid "Take a walk outside"
+msgstr ""
+
+#: src/Tomato.vala:45
+msgid "Step away from the machine!"
+msgstr ""
+
+#: src/Tomato.vala:146
+msgid "Stopping in "
+msgstr ""
+
+#: src/Tomato.vala:151
+msgid "Pomodoro was interrupted"
+msgstr ""
+
+#: src/Tomato.vala:151
+msgid ""
+"Tomato was paused for a long time. You might have lost focus. Try a new "
+"pomodoro!"
+msgstr ""

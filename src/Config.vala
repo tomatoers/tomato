@@ -18,15 +18,15 @@
 
 namespace Constants {
 	public const string DATADIR = "/usr/share";
-	public const string PKG_DATADIR = "/usr/share/tomato";
-	public const string GETTEXT_PACKAGE = "tomato";
+	public const string PKG_DATADIR = "/usr/share/com.github.luizaugustomm.tomato";
+	public const string GETTEXT_PACKAGE = "com.github.luizaugustomm.tomato";
 	public const string RELEASE_NAME = "Amai";
-	public const string VERSION = "1.2.7";
-	public const string VERSION_INFO = "Stable release";
+	public const string VERSION = "1.2.8";
+	public const string VERSION_INFO = "Release";
 	public const string INSTALL_PREFIX = "/usr";
     public const string APP_NAME = "Tomato";
-	public const string EXEC_NAME = "tomato";
-	public const string ICON_NAME = "tomato";
+	public const string EXEC_NAME = "com.github.luizaugustomm.tomato";
+	public const string ICON_NAME = "com.github.luizaugustomm.tomato";
 }
 
 namespace Default {
