@@ -82,7 +82,7 @@ namespace Tomato {
         private Window.MainWindow window;
         private Window.PreferencesDialog pref_window;
 
-        private const uint TIME = 100;
+        private const uint TIME = 1000;
         private uint work_timeout_id = 0;
         private uint stop_timeout_id = 0;
 
