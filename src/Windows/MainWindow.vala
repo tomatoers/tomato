@@ -19,6 +19,14 @@
 namespace Tomato.Window {
 
     public class MainWindow : Gtk.Dialog {
+		private const string COLOR_PRIMARY = """
+            @define-color colorPrimary %s;
+
+            .background,
+            .titlebar {
+                transition: all 600ms ease-in-out;
+            }
+        """;
 
         public bool is_hidden = false;
 
@@ -148,7 +156,7 @@ namespace Tomato.Window {
 
         private void setup_headerbar () {
             appmenu = new Gtk.MenuButton ();
-			appmenu.relief = Gtk.ReliefStyle.NONE;
+
             preferences = new Gtk.MenuItem.with_label (_("Preferences…"));
             Gtk.Menu menu = new Gtk.Menu ();
 
@@ -159,12 +167,12 @@ namespace Tomato.Window {
             appmenu.set_image (menu_icon);
             appmenu.popup = menu;
 
-			close_button = new Gtk.Button.from_icon_name ("window-close-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
-			close_button.relief = Gtk.ReliefStyle.NONE;
+			appmenu.valign = Gtk.Align.CENTER;
 
-			headerbar.set_show_close_button (false);
+			appmenu.get_style_context ().add_class ("close");
+			appmenu.get_style_context ().add_class ("titlebutton");
+			appmenu.get_style_context ().remove_class ("image-button");
 
-			headerbar.pack_start (close_button);
 			headerbar.pack_end (appmenu);
         }
 
@@ -186,7 +194,6 @@ namespace Tomato.Window {
         private void setup_layout () {
             setup_headerbar ();
             setup_stack ();
-            // this.add (slide);
 			content.add (slide);
         }
 
@@ -206,21 +213,7 @@ namespace Tomato.Window {
             countdown_label.get_style_context ().add_class ("countdown");
             total_time_label.get_style_context ().add_class ("total-time");
 
-            start.get_style_context ().add_class ("start-button");
-            skip.get_style_context ().add_class ("break-button");
-            resume.get_style_context ().add_class ("pomodoro-button");
-            pause.get_style_context ().add_class ("pomodoro-button");
-            stop.get_style_context ().add_class ("pomodoro-button");
-
 			headerbar.get_style_context ().add_class ("compact");
-			headerbar.get_style_context ().remove_class ("titlebar");
-
-			close_button.get_style_context ().add_class ("header-bar");
-			appmenu.get_style_context ().add_class ("header-bar");
-
-            slide.get_child_by_name ("start").get_style_context ().add_class ("start-window");
-            slide.get_child_by_name ("pomodoro").get_style_context ().add_class ("pomodoro-window");
-            slide.get_child_by_name ("break").get_style_context ().add_class ("break-window");
         }
 
         private void connect_signals () {
@@ -232,10 +225,37 @@ namespace Tomato.Window {
             preferences.activate.connect (() => {preferences_clicked ();});
 
 			this.slide.changed.connect ((s) => {
-					this.get_style_context ().remove_class ("start-window");
-					this.get_style_context ().remove_class ("pomodoro-window");
-					this.get_style_context ().remove_class ("break-window");
-					this.get_style_context ().add_class (s.get_name () + "-window");
+					// this.get_style_context ().remove_class ("start-window");
+					// this.get_style_context ().remove_class ("pomodoro-window");
+					// this.get_style_context ().remove_class ("break-window");
+					// this.get_style_context ().add_class (s.get_name () + "-window");
+					string color_primary;
+
+					switch (s.get_name ()) {
+					case "start":
+						color_primary = "#8ea5af";
+						break;
+					case "pomodoro":
+						color_primary = "#df4b4b";
+						break;
+					case "break":
+						color_primary = "#05B560";
+						break;
+					default:
+						color_primary = "#8ea5af";
+						break;
+					}
+
+					var provider = new Gtk.CssProvider ();
+					try {
+						var colored_css = COLOR_PRIMARY.printf (color_primary);
+						message (colored_css);
+						provider.load_from_data (colored_css, colored_css.length);
+						
+						Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+					} catch (GLib.Error e) {
+						critical (e.message);
+					}
 				});
 
 			this.close_button.clicked.connect (() => {quit ();});

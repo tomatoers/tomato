@@ -1,53 +1,29 @@
-.pomodoro-window {
-    background-color: #f34b4b;
-    border-color: darker(#f34b4b);
+@define-color colorPrimary #8ea5af;
+@define-color bg_highlight_color shade (@colorPrimary, 1.4);
+
+GtkDialog .window-frame {
+    border-radius: 4px;
+    box-shadow:
+        0 0 0 1px alpha (shade (@colorPrimary, 0.6), 0.55),
+        0 8px 10px 1px alpha (#000, 0.14),
+        0 3px 14px 2px alpha (#000, 0.12),
+        0 5px 5px -3px alpha (#000, 0.4),
+        0 14px 28px transparent;
 }
-.pomodoro-button {
+
+.titlebar,
+.background {
+    background-color: @colorPrimary;
+    color: #fff;
+    icon-shadow: 0 1px 1px shade (@colorPrimary, 0.82);
+    text-shadow: 0 1px 1px shade (@colorPrimary, 0.82);
+}
+
+.button {
     padding: 5px;
-    color: #ffffff;
-    background-color: #df4b4b;
-    border: 1px solid darker(#df4b4b);
-}
-
-.header-bar {
-    color: #ffffff;
-    font-family: Open Sans Light;
-}
-
-/*.break-window {
-    background-color: #00b351;
-    border-color: darker(#00b351);
-}
-.break-button {
-    padding: 5px;
-    color: #ffffff;
-    background-color: #009f51;
-    border: 1px solid darker(#008f43);
-}*/
-
-.start-window {
-    background-color: #8ea5af;
-    border-color: darker(#8ea5af);
-}
-
-.start-button {
-    padding: 5px;
-    color: #ffffff;
-    background-color: #7f949d;
-    border: 1px solid darker(#7f949d);
-}
-
-
-.break-window {
-    background-color: #05B560;
-    border-color: darker(#05B560);
-}
-
-.break-button {
-    padding: 5px;
-    color: #ffffff;
-    background-color: #04a256;
-    border: 1px solid darker(#04a256);
+    color: #fff;
+    background-color: @colorPrimary;
+    border: 1px solid darker(@colorPrimary);
 }
 
 .countdown {
@@ -55,8 +31,46 @@
     font-size: 48px;
     font-family: Open Sans Light;
 }
+
 .total-time {
     color: #ebebeb;
     font-size: 14px;
     font-family: Open Sans Light;
 }
+
+/* .pomodoro-window { */
+/*     background-color: #f34b4b; */
+/*     border-color: darker(#f34b4b); */
+/* } */
+/* .pomodoro-button { */
+/*     padding: 5px; */
+/*     color: #ffffff; */
+/*     background-color: #df4b4b; */
+/*     border: 1px solid darker(#df4b4b); */
+/* } */
+
+/* .start-window { */
+/*     background-color: #8ea5af; */
+/*     border-color: darker(#8ea5af); */
+/* } */
+
+/* .start-button { */
+/*     padding: 5px; */
+/*     color: #ffffff; */
+/*     background-color: #7f949d; */
+/*     border: 1px solid darker(#7f949d); */
+/* } */
+
+
+/* .break-window { */
+/*     background-color: #05B560; */
+/*     border-color: darker(#05B560); */
+/* } */
+
+/* .break-button { */
+/*     padding: 5px; */
+/*     color: #ffffff; */
+/*     background-color: #04a256; */
+/*     border: 1px solid darker(#04a256); */
+/* } */
+

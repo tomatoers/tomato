@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-28 11:31-0400\n"
+"POT-Creation-Date: 2017-05-02 14:29-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr ""
 msgid "Get back to work!"
 msgstr ""
 
-#: src/Managers/NotificationManager.vala:36 src/Windows/MainWindow.vala:105
+#: src/Managers/NotificationManager.vala:36 src/Windows/MainWindow.vala:113
 msgid "Short Break"
 msgstr ""
 
@@ -59,35 +59,35 @@ msgstr ""
 msgid "Long Break!"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:65
+#: src/Windows/MainWindow.vala:73
 msgid "Start"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:66
+#: src/Windows/MainWindow.vala:74
 msgid "Resume"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:67
+#: src/Windows/MainWindow.vala:75
 msgid "Pause"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:68 src/Tomato.vala:160
+#: src/Windows/MainWindow.vala:76 src/Tomato.vala:160
 msgid "Stop"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:69
+#: src/Windows/MainWindow.vala:77
 msgid "Skip"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:109
+#: src/Windows/MainWindow.vala:117
 msgid "Long Break"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:143
+#: src/Windows/MainWindow.vala:151
 msgid " of work"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:152
+#: src/Windows/MainWindow.vala:160
 msgid "Preferences…"
 msgstr ""
 
