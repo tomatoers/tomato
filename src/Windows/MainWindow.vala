@@ -22,8 +22,8 @@ namespace Tomato.Window {
 		private const string COLOR_PRIMARY = """
             @define-color colorPrimary %s;
 
-            .background,
-            .titlebar {
+            .main-window.background,
+            .main-window.titlebar {
                 transition: all 600ms ease-in-out;
             }
         """;
@@ -204,7 +204,7 @@ namespace Tomato.Window {
             try {
                 provider.load_from_path (css_file);
                 Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (),
-                    provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
+                    provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
             } catch (Error e) {
                 stderr.printf ("Error: %s", e.message);
             }
@@ -213,7 +213,17 @@ namespace Tomato.Window {
             countdown_label.get_style_context ().add_class ("countdown");
             total_time_label.get_style_context ().add_class ("total-time");
 
+            start.get_style_context ().add_class ("pomodoro-button");
+            skip.get_style_context ().add_class ("pomodoro-button");
+            resume.get_style_context ().add_class ("pomodoro-button");
+            pause.get_style_context ().add_class ("pomodoro-button");
+            stop.get_style_context ().add_class ("pomodoro-button");
+			start.get_style_context ().add_class ("pomodoro-button");
+
 			headerbar.get_style_context ().add_class ("compact");
+			headerbar.get_style_context ().add_class ("main-window");
+
+			this.get_style_context ().add_class ("main-window");
         }
 
         private void connect_signals () {
@@ -225,10 +235,6 @@ namespace Tomato.Window {
             preferences.activate.connect (() => {preferences_clicked ();});
 
 			this.slide.changed.connect ((s) => {
-					// this.get_style_context ().remove_class ("start-window");
-					// this.get_style_context ().remove_class ("pomodoro-window");
-					// this.get_style_context ().remove_class ("break-window");
-					// this.get_style_context ().add_class (s.get_name () + "-window");
 					string color_primary;
 
 					switch (s.get_name ()) {
@@ -249,7 +255,6 @@ namespace Tomato.Window {
 					var provider = new Gtk.CssProvider ();
 					try {
 						var colored_css = COLOR_PRIMARY.printf (color_primary);
-						message (colored_css);
 						provider.load_from_data (colored_css, colored_css.length);
 						
 						Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);

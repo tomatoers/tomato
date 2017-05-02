@@ -1,7 +1,7 @@
 @define-color colorPrimary #8ea5af;
 @define-color bg_highlight_color shade (@colorPrimary, 1.4);
 
-GtkDialog .window-frame {
+GtkDialog .main-window .window-frame {
     border-radius: 4px;
     box-shadow:
         0 0 0 1px alpha (shade (@colorPrimary, 0.6), 0.55),
@@ -11,19 +11,20 @@ GtkDialog .window-frame {
         0 14px 28px transparent;
 }
 
-.titlebar,
-.background {
+.main-window.titlebar,
+.main-window.background {
     background-color: @colorPrimary;
     color: #fff;
     icon-shadow: 0 1px 1px shade (@colorPrimary, 0.82);
     text-shadow: 0 1px 1px shade (@colorPrimary, 0.82);
 }
 
-.button {
+.pomodoro-button {
     padding: 5px;
     color: #fff;
     background-color: @colorPrimary;
     border: 1px solid darker(@colorPrimary);
+    transition: all 600ms ease-in-out;
 }
 
 .countdown {
