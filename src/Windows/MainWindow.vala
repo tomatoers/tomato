@@ -24,7 +24,7 @@ namespace Tomato.Window {
 
             .main-window.background,
             .main-window.titlebar {
-                transition: all 600ms ease-in-out;
+                transition: all 200ms ease-in-out;
             }
         """;
 
@@ -88,6 +88,17 @@ namespace Tomato.Window {
 
             set_pause (true);
             next_status (Gtk.StackTransitionType.NONE);
+
+			/**
+			 *  Allow moving the window
+			 */
+			this.button_press_event.connect ( (e) => {
+				if (e.button == Gdk.BUTTON_PRIMARY) {
+					this.begin_move_drag ((int) e.button, (int) e.x_root, (int) e.y_root, e.time);
+					return true;
+				}
+				return false;
+			});
         }
 
         public void set_pause (bool topause = true) {

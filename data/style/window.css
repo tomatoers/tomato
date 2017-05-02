@@ -19,12 +19,19 @@ GtkDialog .main-window .window-frame {
     text-shadow: 0 1px 1px shade (@colorPrimary, 0.82);
 }
 
+GtkDialog.main-window .titlebar .title {
+   color: #fff;
+   font-size: 8px;
+   text-shadow: none;
+   icon-shadow: none;
+}
+
 .pomodoro-button {
     padding: 5px;
     color: #fff;
     background-color: @colorPrimary;
     border: 1px solid darker(@colorPrimary);
-    transition: all 600ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .countdown {
