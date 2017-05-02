@@ -41,7 +41,6 @@ namespace Tomato.Window {
         private TomatoApp app;
 
 		private Gtk.HeaderBar headerbar;
-		private Gtk.Button close_button;
         private Gtk.MenuButton appmenu;
         private Gtk.MenuItem preferences;
         private Widget.Slide slide;
@@ -273,7 +272,6 @@ namespace Tomato.Window {
 					}
 				});
 
-			this.close_button.clicked.connect (() => {quit ();});
             this.delete_event.connect (quit);
         }
 
