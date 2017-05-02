@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-02 15:25-0400\n"
+"POT-Creation-Date: 2017-05-02 16:05-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr ""
 msgid "Get back to work!"
 msgstr ""
 
-#: src/Managers/NotificationManager.vala:36 src/Windows/MainWindow.vala:124
+#: src/Managers/NotificationManager.vala:36 src/Windows/MainWindow.vala:123
 msgid "Short Break"
 msgstr ""
 
@@ -79,15 +79,15 @@ msgstr ""
 msgid "Skip"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:128
+#: src/Windows/MainWindow.vala:127
 msgid "Long Break"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:162
+#: src/Windows/MainWindow.vala:161
 msgid " of work"
 msgstr ""
 
-#: src/Windows/MainWindow.vala:171
+#: src/Windows/MainWindow.vala:170
 msgid "Preferences…"
 msgstr ""
 

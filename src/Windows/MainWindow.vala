@@ -86,19 +86,18 @@ namespace Tomato.Window {
             show_all ();
             update_progress ();
 
-            set_pause (true);
             next_status (Gtk.StackTransitionType.NONE);
 
 			/**
 			 *  Allow moving the window
 			 */
-			this.button_press_event.connect ( (e) => {
-				if (e.button == Gdk.BUTTON_PRIMARY) {
-					this.begin_move_drag ((int) e.button, (int) e.x_root, (int) e.y_root, e.time);
-					return true;
-				}
-				return false;
-			});
+			this.button_press_event.connect ((e) => {
+					if (e.button == Gdk.BUTTON_PRIMARY) {
+						this.begin_move_drag ((int) e.button, (int) e.x_root, (int) e.y_root, e.time);
+						return true;
+					}
+					return false;
+				});
         }
 
         public void set_pause (bool topause = true) {
