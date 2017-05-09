@@ -70,7 +70,7 @@ namespace Tomato.Widget {
         }
 
         private void setup_elements () {
-            elements.set_border_width (6);
+            elements.set_border_width (1);
             elements.pack_start (progress_box);
             elements.pack_start (control_box);
         }
@@ -79,7 +79,7 @@ namespace Tomato.Widget {
             control_box.set_layout (Gtk.ButtonBoxStyle.CENTER);
             control_box.set_spacing (6);
 			control_box.set_valign (Gtk.Align.END);
-            control_box.set_margin_bottom (10);
+            control_box.set_margin_bottom (15);
         }
     }
 }
