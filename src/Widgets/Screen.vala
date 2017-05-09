@@ -79,6 +79,7 @@ namespace Tomato.Widget {
             control_box.set_layout (Gtk.ButtonBoxStyle.CENTER);
             control_box.set_spacing (6);
 			control_box.set_valign (Gtk.Align.END);
+            control_box.set_margin_bottom (10);
         }
     }
 }

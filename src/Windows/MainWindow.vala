@@ -62,7 +62,7 @@ namespace Tomato.Window {
             this.title = Constants.APP_NAME;
             this.set_position (Gtk.WindowPosition.CENTER);
             this.set_resizable (false);
-            this.set_size_request (450, 410);
+            this.set_size_request (450, 400);
 
             /* Initializing major components */
             slide = new Widget.Slide ();
@@ -265,7 +265,7 @@ namespace Tomato.Window {
 					try {
 						var colored_css = COLOR_PRIMARY.printf (color_primary);
 						provider.load_from_data (colored_css, colored_css.length);
-						
+
 						Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 					} catch (GLib.Error e) {
 						critical (e.message);
