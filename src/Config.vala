@@ -20,8 +20,8 @@ namespace Constants {
 	public const string DATADIR = "/usr/share";
 	public const string PKG_DATADIR = "/usr/share/com.github.luizaugustomm.tomato";
 	public const string GETTEXT_PACKAGE = "com.github.luizaugustomm.tomato";
-	public const string RELEASE_NAME = "Amai";
-	public const string VERSION = "1.2.8";
+	public const string RELEASE_NAME = "Stupice";
+	public const string VERSION = "2.0.0";
 	public const string VERSION_INFO = "Release";
 	public const string INSTALL_PREFIX = "/usr";
     public const string APP_NAME = "Tomato";

@@ -12,14 +12,16 @@
   </description>
 
   <screenshots>
-    <screenshot>
-      <caption>Start page</caption>
-      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/start.png</image>
-    </screenshot>
     <screenshot type="default">
       <caption>Pomodoro time</caption>
       <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/pomodoro.png</image>
     </screenshot>
+    
+    <screenshot>
+      <caption>Start page</caption>
+      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/start.png</image>
+    </screenshot>
+
     <screenshot>
       <caption>Short break time</caption>
       <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/break.png</image>
@@ -42,6 +44,15 @@
   </provides>
 
   <releases>
+    <release version="2.0.0" date="2017-06-02" urgency="medium">
+     ⁠<description>
+       <ul>
+         <_li>UI redesign</_li>
+         <_li>Bug fixes</_li>
+       </ul>
+     ⁠</description>
+    ​ </release>
+
       <release version="1.2.8" date="2017-04-29" urgency="medium">
          ⁠<description>
            <ul>
