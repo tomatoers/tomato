@@ -1,7 +1,7 @@
 @define-color colorPrimary #8ea5af;
-@define-color bg_highlight_color shade (@colorPrimary, 1.4);
+/*@define-color bg_highlight_color shade (@colorPrimary, 1.4);*/
 
-GtkDialog .main-window .window-frame {
+.main-window .window-frame {
     border-radius: 4px;
     box-shadow:
         0 0 0 1px alpha (shade (@colorPrimary, 0.6), 0.55),
@@ -19,7 +19,7 @@ GtkDialog .main-window .window-frame {
     text-shadow: 0 1px 1px shade (@colorPrimary, 0.82);
 }
 
-GtkDialog.main-window .titlebar .title {
+.main-window .titlebar .title {
    color: #fff;
    font-size: 8px;
    text-shadow: none;
@@ -81,4 +81,3 @@ GtkDialog.main-window .titlebar .title {
 /*     background-color: #04a256; */
 /*     border: 1px solid darker(#04a256); */
 /* } */
-
