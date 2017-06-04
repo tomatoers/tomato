@@ -125,5 +125,5 @@ add_custom_target (pot_file ALL DEPENDS ${_pot_file})
 
 # test data files
 include (CTest)
-add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_BINARY_DIR}/data/${PACKAGE_ID}.desktop)
-add_test (NAME validate-appdata COMMAND appstreamcli validate ${CMAKE_BINARY_DIR}/data/${PACKAGE_ID}.appdata.xml)
+add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.desktop)
+add_test (NAME validate-appdata COMMAND appstreamcli validate ${CMAKE_CURRENT_SOURCE_DIR}/data/${PACKAGE_ID}.appdata.xml)

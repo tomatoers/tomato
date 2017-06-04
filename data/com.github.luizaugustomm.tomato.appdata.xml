@@ -15,7 +15,7 @@
       <caption>Pomodoro time</caption>
       <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/pomodoro.png</image>
     </screenshot>
-    
+
     <screenshot>
       <caption>Start page</caption>
       <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/start.png</image>
@@ -43,6 +43,14 @@
   </provides>
 
   <releases>
+    <release version="2.0.1" urgency="medium" date="2017-06-04">
+       ⁠<description>
+         <ul>
+           <li>Solved app center issues</li>
+         </ul>
+       ⁠</description>
+     </release>
+
     <release version="2.0.0" urgency="medium" date="2017-06-02">
      ⁠<description>
        <ul>
