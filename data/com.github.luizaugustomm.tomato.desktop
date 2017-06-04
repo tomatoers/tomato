@@ -1,0 +1,19 @@
+[Desktop Entry]
+Type=Application
+Name=Tomato
+Comment=Keep focused on your work
+GenericName=Pomodoro App
+StartupWMClass=com.github.luizaugustomm.tomato
+Exec=com.github.luizaugustomm.tomato
+Icon=com.github.luizaugustomm.tomato
+Terminal=false
+Categories=GNOME;GTK;Utility;
+Keywords=Pomodoro;Time;Productivity;Tomato;
+StartupNotify=true
+X-GNOME-Gettext-Domain=com.github.luizaugustomm.tomato
+X-GNOME-UsesNotifications=true
+Actions=AboutDialog;
+
+[Desktop Action AboutDialog]
+Name=About Tomato
+Exec=com.github.luizaugustomm.tomato --about

@@ -8,7 +8,9 @@ Build-Depends: cmake (>= 2.8),
                libgtk-3-dev,
                libgranite-dev,
                libunity-dev,
-               libcanberra-gtk3-dev
+               libcanberra-gtk3-dev,
+               appstream,
+               desktop-file-utils
 Standards-Version: 3.9.5
 Package: com.github.luizaugustomm.tomato
 Architecture: any

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2017 Luiz Augusto Morais <luizaugustomm@gmail.com> -->
 <component type="desktop">
-  <id>@PACKAGE_ID@.desktop</id>
+  <id>com.github.luizaugustomm.tomato.desktop</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-2</project_license>
-  <name>@APP_NAME@</name>
-  <_summary>@COMMENT@</_summary>
+  <name>Tomato</name>
+  <summary>Keep focused on your work</summary>
 
   <description>
-    <_p>@DESCRIPTION@</_p>
+    <p>Tomato is a clean, easy-to-use time manager based on Pomodoro technique. It breaks down work into intervals to keep you focused and allows you to rest during strategic periods to reward your progress. It is a must-have app if you need to avoid procrastination.</p>
   </description>
 
   <screenshots>
@@ -28,7 +27,7 @@
     </screenshot>
   </screenshots>
 
-  <_developer_name>Tomato Team</_developer_name>
+  <developer_name>Tomato Team</developer_name>
   <url type="homepage">https://github.com/luizaugustomm/tomato</url>
   <url type="bugtracker">https://github.com/luizaugustomm/tomato/issues</url>
   <url type="help">https://github.com/luizaugustomm/tomato/issues</url>
@@ -40,64 +39,64 @@
   </custom>
 
   <provides>
-    <binary>@EXEC_NAME@</binary>
+    <binary>com.github.luizaugustomm.tomato</binary>
   </provides>
 
   <releases>
-    <release version="2.0.0" date="2017-06-02" urgency="medium">
+    <release version="2.0.0" urgency="medium" date="2017-06-02">
      ⁠<description>
        <ul>
-         <_li>UI redesign</_li>
-         <_li>Bug fixes</_li>
+         <li>UI redesign</li>
+         <li>Bug fixes</li>
        </ul>
      ⁠</description>
     ​ </release>
 
-      <release version="1.2.8" date="2017-04-29" urgency="medium">
+      <release version="1.2.8" urgency="medium" date="2017-04-29">
          ⁠<description>
            <ul>
-             <_li>Changed screenshots</_li>
-             <_li>Improved internationalization</_li>
-             <_li>Fixed minor bugs</_li>
+             <li>Changed screenshots</li>
+             <li>Improved internationalization</li>
+             <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
      ​ </release>
 
-      <release version="1.2.7" date="2017-04-11" urgency="medium">
+      <release version="1.2.7" urgency="medium" date="2017-04-11">
          ⁠<description>
            <ul>
-             <_li>Fixed minor bugs</_li>
+             <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
      ​ </release>
 
-      <release version="1.2.6" date="2017-04-10" urgency="medium">
+      <release version="1.2.6" urgency="medium" date="2017-04-10">
          ⁠<description>
            <ul>
-             <_li>Fixed minor bugs</_li>
+             <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
      ​ </release>
 
-      <release version="1.2.5" date="2017-04-08" urgency="medium" />
+      <release version="1.2.5" urgency="medium" date="2017-04-08"/>
 
-      <release version="1.2.4" date="2017-04-08" urgency="medium">
+      <release version="1.2.4" urgency="medium" date="2017-04-08">
          ⁠<description>
            <ul>
-             <_li>Revamped icons</_li>
-             <_li>Fixed minor bugs</_li>
+             <li>Revamped icons</li>
+             <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
      ​ </release>
 
-      <release version="1.2.3" date="2017-04-06" urgency="medium" />
+      <release version="1.2.3" urgency="medium" date="2017-04-06"/>
 
-      <release version="1.2.2" date="2017-04-06" urgency="medium">
+      <release version="1.2.2" urgency="medium" date="2017-04-06">
          ⁠<description>
            <ul>
-             <_li>Notification when the app is auto stopped</_li>
-             <_li>Users can access preferences when the app is in break time</_li>
-             <_li>Integration with AppCenter</_li>
+             <li>Notification when the app is auto stopped</li>
+             <li>Users can access preferences when the app is in break time</li>
+             <li>Integration with AppCenter</li>
            </ul>
          ⁠</description>
      ​ </release>

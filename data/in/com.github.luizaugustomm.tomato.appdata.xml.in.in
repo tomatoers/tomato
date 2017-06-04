@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Luiz Augusto Morais <luizaugustomm@gmail.com> -->
+<component type="desktop">
+  <id>@PACKAGE_ID@.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-2</project_license>
+  <name>@APP_NAME@</name>
+  <_summary>@COMMENT@</_summary>
+
+  <description>
+    <_p>@DESCRIPTION@</_p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Pomodoro time</caption>
+      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/pomodoro.png</image>
+    </screenshot>
+
+    <screenshot>
+      <caption>Start page</caption>
+      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/start.png</image>
+    </screenshot>
+
+    <screenshot>
+      <caption>Short break time</caption>
+      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/break.png</image>
+    </screenshot>
+  </screenshots>
+
+  <_developer_name>Tomato Team</_developer_name>
+  <url type="homepage">https://github.com/luizaugustomm/tomato</url>
+  <url type="bugtracker">https://github.com/luizaugustomm/tomato/issues</url>
+  <url type="help">https://github.com/luizaugustomm/tomato/issues</url>
+  <update_contact>luizaugustomm@gmail.com</update_contact>
+
+  <custom>
+    <value key="x-appcenter-color-primary">#fff</value>
+    <value key="x-appcenter-color-primary-text">#000</value>
+  </custom>
+
+  <provides>
+    <binary>@EXEC_NAME@</binary>
+  </provides>
+
+  <releases>
+    <release version="2.0.1" date="2017-06-04" urgency="medium">
+       ⁠<description>
+         <ul>
+           <_li>Solved app center issues</_li>
+         </ul>
+       ⁠</description>
+     </release>
+
+    <release version="2.0.0" date="2017-06-02" urgency="medium">
+     ⁠<description>
+       <ul>
+         <_li>UI redesign</_li>
+         <_li>Bug fixes</_li>
+       </ul>
+     ⁠</description>
+    ​ </release>
+
+      <release version="1.2.8" date="2017-04-29" urgency="medium">
+         ⁠<description>
+           <ul>
+             <_li>Changed screenshots</_li>
+             <_li>Improved internationalization</_li>
+             <_li>Fixed minor bugs</_li>
+           </ul>
+         ⁠</description>
+     ​ </release>
+
+      <release version="1.2.7" date="2017-04-11" urgency="medium">
+         ⁠<description>
+           <ul>
+             <_li>Fixed minor bugs</_li>
+           </ul>
+         ⁠</description>
+     ​ </release>
+
+      <release version="1.2.6" date="2017-04-10" urgency="medium">
+         ⁠<description>
+           <ul>
+             <_li>Fixed minor bugs</_li>
+           </ul>
+         ⁠</description>
+     ​ </release>
+
+      <release version="1.2.5" date="2017-04-08" urgency="medium" />
+
+      <release version="1.2.4" date="2017-04-08" urgency="medium">
+         ⁠<description>
+           <ul>
+             <_li>Revamped icons</_li>
+             <_li>Fixed minor bugs</_li>
+           </ul>
+         ⁠</description>
+     ​ </release>
+
+      <release version="1.2.3" date="2017-04-06" urgency="medium" />
+
+      <release version="1.2.2" date="2017-04-06" urgency="medium">
+         ⁠<description>
+           <ul>
+             <_li>Notification when the app is auto stopped</_li>
+             <_li>Users can access preferences when the app is in break time</_li>
+             <_li>Integration with AppCenter</_li>
+           </ul>
+         ⁠</description>
+     ​ </release>
+  </releases>
+</component>
