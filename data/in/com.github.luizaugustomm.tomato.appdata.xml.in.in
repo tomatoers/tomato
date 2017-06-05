@@ -44,6 +44,14 @@
   </provides>
 
   <releases>
+  <release version="2.0.2" date="2017-06-05" urgency="medium">
+     ⁠<description>
+       <ul>
+         <_li>Updated URLs</_li>
+       </ul>
+     ⁠</description>
+   </release>
+
     <release version="2.0.1" date="2017-06-04" urgency="medium">
        ⁠<description>
          <ul>

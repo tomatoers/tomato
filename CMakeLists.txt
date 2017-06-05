@@ -10,7 +10,7 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
 set (APP_NAME "Tomato")
 set (RELEASE_NAME "Stupice")
-set (VERSION "2.0.1")
+set (VERSION "2.0.2")
 set (GENERIC_NAME "Pomodoro App")
 set (PACKAGE_ID ${CMAKE_PROJECT_NAME})
 set (ICON_NAME ${CMAKE_PROJECT_NAME})

@@ -64,10 +64,10 @@ namespace Tomato {
             app_launcher = "com.github.luizaugustomm.tomato.desktop";
             application_id = "com.github.luizaugustomm.tomato";
 
-            main_url = "http://launchpad.net/tomatoapp";
-            bug_url = "http://bugs.launchpad.net/tomatoapp";
-            help_url = "http://answers.launchpad.net/tomatoapp";
-            translate_url = "http://translations.launchpad.net/tomatoapp";
+            main_url = "https://github.com/luizaugustomm/tomato";
+            bug_url = "https://github.com/luizaugustomm/tomato/issues";
+            help_url = "https://github.com/luizaugustomm/tomato";
+            translate_url = "https://www.transifex.com/tomato-translators/tomato/translate/";
 
             about_authors = {"Luiz Augusto Morais <luizaugustomm@gmail.com>",
                              "Sam Thomas <sgpthomas@gmail.com>"};
