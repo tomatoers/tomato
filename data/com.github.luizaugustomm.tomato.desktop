@@ -1,8 +1,11 @@
 [Desktop Entry]
 Type=Application
 Name=Tomato
+Name[lt]=Pomidoras
 Comment=Keep focused on your work
+Comment[lt]=Išlikite susitelkę ties savo darbu
 GenericName=Pomodoro App
+GenericName[lt]=Pomodoro programa
 StartupWMClass=com.github.luizaugustomm.tomato
 Exec=com.github.luizaugustomm.tomato
 Icon=com.github.luizaugustomm.tomato
@@ -16,4 +19,5 @@ Actions=AboutDialog;
 
 [Desktop Action AboutDialog]
 Name=About Tomato
+Name[lt]=Apie Pomidorą
 Exec=com.github.luizaugustomm.tomato --about

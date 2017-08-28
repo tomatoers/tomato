@@ -1,245 +1,230 @@
-# Lithuanian translation for tomatoapp
-# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
-# This file is distributed under the same license as the tomatoapp package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Moo, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tomatoapp\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-08-31 14:51-0300\n"
-"PO-Revision-Date: 2015-07-02 04:26+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Lithuanian <lt@li.org>\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-28 15:32+0300\n"
+"PO-Revision-Date: 2017-08-28 16:00+0300\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-01 05:41+0000\n"
-"X-Generator: Launchpad (build 17690)\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: Moo\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: lt\n"
 
 #: src/Util/Timer.vala:29
 msgid "hour"
-msgstr ""
+msgstr "valanda"
 
 #: src/Util/Timer.vala:29
 msgid "hours"
-msgstr ""
+msgstr "valandos(-ų)"
 
-#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
-#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
-#: src/Windows/PreferencesDialog.vala:112
-#: src/Windows/PreferencesDialog.vala:115
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:82
+#: src/Windows/PreferencesDialog.vala:85 src/Windows/PreferencesDialog.vala:88
+#: src/Windows/PreferencesDialog.vala:108
+#: src/Windows/PreferencesDialog.vala:111
 msgid "minute"
-msgstr ""
+msgstr "minutė"
 
-#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:83
-#: src/Windows/PreferencesDialog.vala:86 src/Windows/PreferencesDialog.vala:89
-#: src/Windows/PreferencesDialog.vala:112
-#: src/Windows/PreferencesDialog.vala:115
+#: src/Util/Timer.vala:30 src/Windows/PreferencesDialog.vala:82
+#: src/Windows/PreferencesDialog.vala:85 src/Windows/PreferencesDialog.vala:88
+#: src/Windows/PreferencesDialog.vala:108
+#: src/Windows/PreferencesDialog.vala:111
 msgid "minutes"
-msgstr ""
+msgstr "minutės(-ių)"
 
 #: src/Util/Timer.vala:51
 msgid " and "
-msgstr ""
+msgstr " ir "
 
-#: src/Managers/LauncherManager.vala:93 src/Windows/MainWindow.vala:64
-msgid "Resume"
-msgstr ""
-
-#: src/Managers/LauncherManager.vala:96 src/Windows/MainWindow.vala:65
-msgid "Pause"
-msgstr ""
-
-#: src/Managers/LauncherManager.vala:99 src/Windows/MainWindow.vala:66
-msgid "Stop"
-msgstr ""
-
-#: src/Managers/LauncherManager.vala:102 src/Windows/MainWindow.vala:67
-msgid "Skip"
-msgstr ""
-
-#: src/Managers/NotificationManager.vala:35
+#: src/Managers/NotificationManager.vala:33
 msgid "Pomodoro Time"
-msgstr ""
+msgstr "Pomodoro laikas"
 
-#: src/Managers/NotificationManager.vala:36
+#: src/Managers/NotificationManager.vala:34
 msgid "Get back to work!"
-msgstr ""
+msgstr "Grįžkite prie darbo!"
 
-#: src/Managers/NotificationManager.vala:38 src/Windows/MainWindow.vala:100
+#: src/Managers/NotificationManager.vala:36 src/Windows/MainWindow.vala:122
 msgid "Short Break"
-msgstr ""
+msgstr "Trumpa pertrauka"
 
-#: src/Managers/NotificationManager.vala:41
+#: src/Managers/NotificationManager.vala:39
 msgid "Long Break!"
-msgstr ""
+msgstr "Ilga pertrauka!"
 
-#: src/Windows/MainWindow.vala:60
-msgid "Preferences…"
-msgstr ""
-
-#: src/Windows/MainWindow.vala:63
+#: src/Windows/MainWindow.vala:72
 msgid "Start"
-msgstr ""
+msgstr "Pradėti"
 
-#: src/Windows/MainWindow.vala:97
-msgid "Welcome"
-msgstr ""
+#: src/Windows/MainWindow.vala:73
+msgid "Resume"
+msgstr "Pratęsti"
 
-#: src/Windows/MainWindow.vala:103
+#: src/Windows/MainWindow.vala:74
+msgid "Pause"
+msgstr "Pristabdyti"
+
+#: src/Windows/MainWindow.vala:75 src/Tomato.vala:160
+msgid "Stop"
+msgstr "Stabdyti"
+
+#: src/Windows/MainWindow.vala:76
+msgid "Skip"
+msgstr "Praleisti"
+
+#: src/Windows/MainWindow.vala:126
 msgid "Long Break"
-msgstr ""
+msgstr "Ilga pertrauka"
 
-#: src/Windows/MainWindow.vala:131
+#: src/Windows/MainWindow.vala:160
 msgid " of work"
-msgstr ""
+msgstr " darbo"
 
-#: src/Windows/PreferencesDialog.vala:60
-#: src/Windows/PreferencesDialog.vala:136
+#: src/Windows/MainWindow.vala:169
+msgid "Preferences…"
+msgstr "Nuostatos…"
+
+#: src/Windows/PreferencesDialog.vala:59 src/Windows/PreferencesDialog.vala:132
 msgid "Preferences"
-msgstr ""
+msgstr "Nuostatos"
 
-#: src/Windows/PreferencesDialog.vala:92
+#: src/Windows/PreferencesDialog.vala:91
 msgid "pomodoro"
-msgstr ""
+msgstr "pomodoro"
 
-#: src/Windows/PreferencesDialog.vala:92
+#: src/Windows/PreferencesDialog.vala:91
 msgid "pomodoros"
-msgstr ""
+msgstr "pomodoro"
 
-#: src/Windows/PreferencesDialog.vala:123
+#: src/Windows/PreferencesDialog.vala:119
 msgid "Default Settings"
-msgstr ""
+msgstr "Numatytieji nustatymai"
 
-#: src/Windows/PreferencesDialog.vala:124
+#: src/Windows/PreferencesDialog.vala:120
 msgid "Reset Work"
-msgstr ""
+msgstr "Atstatyti darbą"
 
-#: src/Windows/PreferencesDialog.vala:132
+#: src/Windows/PreferencesDialog.vala:128
 msgid "Timing"
-msgstr ""
+msgstr "Laiko paskirstymas"
 
-#: src/Windows/PreferencesDialog.vala:141
+#: src/Windows/PreferencesDialog.vala:137
 msgid "Close"
-msgstr ""
+msgstr "Užverti"
+
+#: src/Windows/PreferencesDialog.vala:167
+msgid "Pomodoro duration:"
+msgstr "Pomodoro trukmė:"
 
 #: src/Windows/PreferencesDialog.vala:171
-msgid "Pomodoro duration:"
-msgstr ""
+msgid "Short break duration:"
+msgstr "Trumpos pertraukos trukmė:"
 
 #: src/Windows/PreferencesDialog.vala:175
-msgid "Short break duration:"
-msgstr ""
+msgid "Long break duration:"
+msgstr "Ilgos pertraukos trukmė:"
 
 #: src/Windows/PreferencesDialog.vala:179
-msgid "Long break duration:"
-msgstr ""
-
-#: src/Windows/PreferencesDialog.vala:183
 msgid "Long break delay:"
-msgstr ""
+msgstr "Ilgos pertraukos delsa:"
 
-#: src/Windows/PreferencesDialog.vala:191
+#: src/Windows/PreferencesDialog.vala:187
 msgid "Reset:"
-msgstr ""
+msgstr "Atstatyti:"
 
-#: src/Windows/PreferencesDialog.vala:203
+#: src/Windows/PreferencesDialog.vala:199
 msgid "Behavior:"
-msgstr ""
+msgstr "Elgsena:"
 
-#: src/Windows/PreferencesDialog.vala:206
+#: src/Windows/PreferencesDialog.vala:202
 msgid "Reset work everyday:"
-msgstr ""
+msgstr "Kasdieną atstatyti darbą"
 
-#: src/Windows/PreferencesDialog.vala:209
+#: src/Windows/PreferencesDialog.vala:205
 msgid "Start new pomodoro manually:"
-msgstr ""
+msgstr "Pradėti naują pomodoro rankiniu būdu:"
 
-#: src/Windows/PreferencesDialog.vala:212
-msgid "Sound and notifications:"
-msgstr ""
+#: src/Windows/PreferencesDialog.vala:208
+msgid "Auto stop:"
+msgstr "Automatiškai stabdyti:"
 
-#: src/Windows/PreferencesDialog.vala:215
+#: src/Windows/PreferencesDialog.vala:211
+msgid "Sound:"
+msgstr "Garsas:"
+
+#: src/Windows/PreferencesDialog.vala:214
 msgid "Pomodoro sound:"
-msgstr ""
+msgstr "Pomodoro garsas:"
 
 #: src/Windows/PreferencesDialog.vala:218
-msgid "Warning notifications:"
-msgstr ""
-
-#: src/Windows/PreferencesDialog.vala:221
-msgid "Animations:"
-msgstr ""
-
-#: src/Windows/PreferencesDialog.vala:224
-msgid "Transition animations:"
-msgstr ""
-
-#: src/Windows/PreferencesDialog.vala:228
 msgid "Extras:"
-msgstr ""
+msgstr "Papildomi:"
 
 #: src/Tomato.vala:35
 msgid "Go have a coffee"
-msgstr ""
+msgstr "Eikite pasidarykite kavos"
 
 #: src/Tomato.vala:36
-msgid "Check your emails"
-msgstr ""
+msgid "Drink some water"
+msgstr "Atsigerkite vandens"
 
 #: src/Tomato.vala:37
-msgid "Drink some water"
-msgstr ""
+msgid "Get up and dance!"
+msgstr "Kelkitės ir šokite!"
 
 #: src/Tomato.vala:38
-msgid "Get up and dance!"
-msgstr ""
+msgid "Have a break, have a tomato"
+msgstr "Pailsėkite, suvalgykite pomidorą"
 
 #: src/Tomato.vala:39
-msgid "Have a break, have a tomato"
-msgstr ""
+msgid "Get up! Stand up! Fight for your fingers!"
+msgstr "Kelkitės! Stokitės! Kovokite už savo pirštus!"
 
 #: src/Tomato.vala:40
-msgid "Get up! Stand up! Fight for your fingers!"
-msgstr ""
+msgid "Take a break, save a life"
+msgstr "Pailsėkite, išgelbėkite gyvybę"
 
 #: src/Tomato.vala:41
-msgid "Take a break, save a life"
-msgstr ""
+msgid "Woot! Break time, baby!"
+msgstr "Valio! Pertraukos metas, mažuti!"
 
 #: src/Tomato.vala:42
-msgid "Woot! Break time, baby!"
-msgstr ""
+msgid "It's coffee time!"
+msgstr "Kavos pertraukėlė!"
 
 #: src/Tomato.vala:43
-msgid "It's coffee time!"
-msgstr ""
+msgid "What about a beer?"
+msgstr "Gal sulčių?"
 
 #: src/Tomato.vala:44
-msgid "What about a beer?"
-msgstr ""
+msgid "Take a walk outside"
+msgstr "Eikite pasivaikščioti į lauką"
 
 #: src/Tomato.vala:45
-msgid "You can check Facebook notifications"
-msgstr ""
-
-#: src/Tomato.vala:46
-msgid "You can use Twitter now!"
-msgstr ""
-
-#: src/Tomato.vala:47
-msgid "Take a walk outside"
-msgstr ""
-
-#: src/Tomato.vala:48
 msgid "Step away from the machine!"
-msgstr ""
+msgstr "Atsitraukite nuo kompiuterio!"
 
-#: src/Tomato.vala:150
-msgid "Tomato has been paused for a long time!"
-msgstr ""
+#: src/Tomato.vala:146
+msgid "Stopping in "
+msgstr "Stabdoma po "
 
-#: src/Tomato.vala:150
-msgid "Shouldn't you be working?"
+#: src/Tomato.vala:151
+msgid "Pomodoro was interrupted"
+msgstr "Pomodoro buvo pertraukta"
+
+#: src/Tomato.vala:151
+msgid ""
+"Tomato was paused for a long time. You might have lost focus. Try a new "
+"pomodoro!"
 msgstr ""
+"Pomidoras ilgą laiką buvo pristabdytas. Jūs, tikriausiai, išsiblaškėte. "
+"Pabandykite naują pomodoro!"
