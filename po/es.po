@@ -61,11 +61,11 @@ msgstr "Saltar"
 
 #: src/Managers/NotificationManager.vala:35
 msgid "Pomodoro Time"
-msgstr "Tiempo Pomodoro"
+msgstr "Tiempo del Pomodoro"
 
 #: src/Managers/NotificationManager.vala:36
 msgid "Get back to work!"
-msgstr "Vuelve al trabajo!"
+msgstr "¡Vuelve al trabajo!"
 
 #: src/Managers/NotificationManager.vala:38 src/Windows/MainWindow.vala:100
 msgid "Short Break"
@@ -73,7 +73,7 @@ msgstr "Descanso Corto"
 
 #: src/Managers/NotificationManager.vala:41
 msgid "Long Break!"
-msgstr "Descanso Largo!"
+msgstr "¡Descanso Largo!"
 
 #: src/Windows/MainWindow.vala:60
 msgid "Preferences…"
@@ -85,7 +85,7 @@ msgstr "Iniciar"
 
 #: src/Windows/MainWindow.vala:97
 msgid "Welcome"
-msgstr ""
+msgstr "Bienvenido"
 
 #: src/Windows/MainWindow.vala:103
 msgid "Long Break"
@@ -93,7 +93,7 @@ msgstr "Descanso Largo"
 
 #: src/Windows/MainWindow.vala:131
 msgid " of work"
-msgstr ""
+msgstr " de trabajo "
 
 #: src/Windows/PreferencesDialog.vala:60
 #: src/Windows/PreferencesDialog.vala:136
@@ -102,23 +102,23 @@ msgstr "Preferencias"
 
 #: src/Windows/PreferencesDialog.vala:92
 msgid "pomodoro"
-msgstr ""
+msgstr "pomodoro"
 
 #: src/Windows/PreferencesDialog.vala:92
 msgid "pomodoros"
-msgstr ""
+msgstr "pomodoros"
 
 #: src/Windows/PreferencesDialog.vala:123
 msgid "Default Settings"
-msgstr "Configuración predeterminada"
+msgstr "Configuración Predeterminada"
 
 #: src/Windows/PreferencesDialog.vala:124
 msgid "Reset Work"
-msgstr ""
+msgstr "Reiniciar Trabajo"
 
 #: src/Windows/PreferencesDialog.vala:132
 msgid "Timing"
-msgstr ""
+msgstr "Temporizador"
 
 #: src/Windows/PreferencesDialog.vala:141
 msgid "Close"
@@ -126,63 +126,63 @@ msgstr "Cerrar"
 
 #: src/Windows/PreferencesDialog.vala:171
 msgid "Pomodoro duration:"
-msgstr "Duración del Pomodoro"
+msgstr "Duración del pomodoro:"
 
 #: src/Windows/PreferencesDialog.vala:175
 msgid "Short break duration:"
-msgstr "Duración del Descanso Corto"
+msgstr "Duración del descanso corto:"
 
 #: src/Windows/PreferencesDialog.vala:179
 msgid "Long break duration:"
-msgstr "Duración del Descanso Largo"
+msgstr "Duración del descanso largo:"
 
 #: src/Windows/PreferencesDialog.vala:183
 msgid "Long break delay:"
-msgstr "Retraso del Descanso Largo"
+msgstr "Retraso del descanso largo:"
 
 #: src/Windows/PreferencesDialog.vala:191
 msgid "Reset:"
-msgstr ""
+msgstr "Reiniciar:"
 
 #: src/Windows/PreferencesDialog.vala:203
 msgid "Behavior:"
-msgstr ""
+msgstr "Comportamiento:"
 
 #: src/Windows/PreferencesDialog.vala:206
 msgid "Reset work everyday:"
-msgstr ""
+msgstr "Reiniciar trabajo diariamente:"
 
 #: src/Windows/PreferencesDialog.vala:209
 msgid "Start new pomodoro manually:"
-msgstr ""
+msgstr "Comienza un nuevo pomodoro manualmente:"
 
 #: src/Windows/PreferencesDialog.vala:212
 msgid "Sound and notifications:"
-msgstr ""
+msgstr "Sonido y notificaciones:"
 
 #: src/Windows/PreferencesDialog.vala:215
 msgid "Pomodoro sound:"
-msgstr ""
+msgstr "Sonido del pomodoro:"
 
 #: src/Windows/PreferencesDialog.vala:218
 msgid "Warning notifications:"
-msgstr ""
+msgstr "Notificaciones de advertencia:"
 
 #: src/Windows/PreferencesDialog.vala:221
 msgid "Animations:"
-msgstr ""
+msgstr "Animaciones"
 
 #: src/Windows/PreferencesDialog.vala:224
 msgid "Transition animations:"
-msgstr ""
+msgstr "Animaciones de transiciones"
 
 #: src/Windows/PreferencesDialog.vala:228
 msgid "Extras:"
-msgstr ""
+msgstr "Extras:"
 
 #: src/Tomato.vala:35
 msgid "Go have a coffee"
-msgstr "Ve a tomar un Café"
+msgstr "Ve a tomar un café"
 
 #: src/Tomato.vala:36
 msgid "Check your emails"
@@ -194,7 +194,7 @@ msgstr "Bebe algo de agua"
 
 #: src/Tomato.vala:38
 msgid "Get up and dance!"
-msgstr "Levántate y Baila!"
+msgstr "¡Levántate y Baila!"
 
 #: src/Tomato.vala:39
 msgid "Have a break, have a tomato"
@@ -202,7 +202,7 @@ msgstr "Tómate un descanso, tómate un tomate"
 
 #: src/Tomato.vala:40
 msgid "Get up! Stand up! Fight for your fingers!"
-msgstr ""
+msgstr "¡Levántate! ¡Ponte de pie! ¡Lucha por tus dedos!"
 
 #: src/Tomato.vala:41
 msgid "Take a break, save a life"
@@ -210,23 +210,23 @@ msgstr "Toma un descanso, salva una vida"
 
 #: src/Tomato.vala:42
 msgid "Woot! Break time, baby!"
-msgstr "Woot! hora del descanso, nena!"
+msgstr "¡Oh sí! ¡Hora del descanso, bebé!"
 
 #: src/Tomato.vala:43
 msgid "It's coffee time!"
-msgstr "Es hora del café!"
+msgstr "¡Es hora del café!"
 
 #: src/Tomato.vala:44
 msgid "What about a beer?"
-msgstr "Por qué no una cerveza?"
+msgstr "¿Por qué no una cerveza?"
 
 #: src/Tomato.vala:45
 msgid "You can check Facebook notifications"
-msgstr "Puedes chequear las notificaciones de Facebook"
+msgstr "Puedes revisar las notificaciones de Facebook"
 
 #: src/Tomato.vala:46
 msgid "You can use Twitter now!"
-msgstr "Puedes ir a Twitter ahora!"
+msgstr "¡Ya puedes usar Twitter!"
 
 #: src/Tomato.vala:47
 msgid "Take a walk outside"
@@ -234,18 +234,18 @@ msgstr "Ve a pasear afuera"
 
 #: src/Tomato.vala:48
 msgid "Step away from the machine!"
-msgstr "Aléjate de la computadora!"
+msgstr "¡Aléjate de la computadora!"
 
 #: src/Tomato.vala:150
 msgid "Tomato has been paused for a long time!"
-msgstr ""
+msgstr "¡Tomato ha sido pausado por un largo rato"
 
 #: src/Tomato.vala:150
 msgid "Shouldn't you be working?"
-msgstr ""
+msgstr "¿No deberías estar trabajando?"
 
 #~ msgid "Reset Pomodoros"
-#~ msgstr "Resetear Pomodoros"
+#~ msgstr "Reiniciar Pomodoros"
 
 #~ msgid "Reset pomodoros everyday:"
-#~ msgstr "Resetear los pomodoros diariamente"
+#~ msgstr "Reiniciar los pomodoros diariamente"
