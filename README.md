@@ -1,57 +1,62 @@
-# What is Tomato?
+[![Build Status](https://travis-ci.com/tomatoers/tomato.svg?branch=master)](https://travis-ci.com/tomatoers/tomato)
 
-_Tomato_ is a pomodoro app designed for elementaryOS. It is simple, usable and efficient.
+<p align="center">
+  <img src="data/icons/128x128/apps/com.github.luizaugustomm.tomato.png?raw=true" alt="Icon" />
+</p>
+<h1 align="center">Tomato</h1>
+<!--p align="center">
+  <a href="https://appcenter.elementary.io/com.github.tomatoers.tomato"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
+</p-->
 
-# How to install Tomato on elementaryOS?
+![Screenshot](data/screenshots/pomodoro.png?raw=true)
 
-Look for it on AppCenter!
+## Simple, usable, and efficient pomodoro timer
 
-# How to install Tomato on Ubuntu?
+<!--
+## Made for [elementary OS](https://elementary.io)
 
-You must have in mind that Tomato is exclusively designed for elementaryOS. But if you want to install Tomato on Ubuntu, you can add the official PPA.
-```
-$ sudo apt-add-repository ppa:tomato-team/tomato-stable
-$ sudo apt-get update
-$ sudo apt-get install tomato
-```
+Tomato is designed and developed on and for [elementary OS](https://elementary.io). Installing via AppCenter ensures instant updates straight from us. Get it on AppCenter for the best experience.
 
-# How to build Tomato?
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg?new)](https://appcenter.elementary.io/com.github.tomatoers.tomato)
 
-First of all, you need to install the following dependencies:
+Versions of Tomato may have been built and made available elsewhere by third-parties. These builds may have modifications or changes and **are not provided nor supported by us**. The only supported version is distributed via AppCenter on elementary OS.
+-->
+
+## Developing and Building
+
+If you want to hack on and build Tomato yourself, you'll need the following dependencies:
+
 - gtk3
 - granite
 - libcanberra
 - libunity
 
-Use the command bellow to install the dependencies
-```
-$ sudo apt install elementary-sdk libcanberra-dev libunity-dev
+Create a `build` directory
+
+```shell
+mkdir build
+cd build
 ```
 
-Clone this repository
-```
-$ git clone https://github.com/luizaugustomm/tomato.git
+Use `cmake` to configure the build environment and run `make` to build
+
+```shell
+cmake -DCMAKE_INSTALL_PREFIX=/usr ../
+make
 ```
 
-Go to the project's root folder and create a new one called _build_
-```
-$ cd tomato
-$ mkdir build
-$ cd build
-```
+To install, use `make install`, then execute with `com.github.luizaugustomm.tomato`
 
-Finally, build and install the app
-```
-$ cmake -DCMAKE_INSTALL_PREFIX=/usr ../
-$ make
-$ sudo make install
+```shell
+sudo make install
+com.github.luizaugustomm.tomato
 ```
 
 # Do you want to contribute?
 
-Tomato is open-source. You can contribute [translating](https://translations.launchpad.net/tomatoapp) it, reporting/fixing [bugs](https://github.com/luizaugustomm/tomato/issues) or proposing/implementing new [features](https://github.com/luizaugustomm/tomato/issues).
+Tomato is open source. You can contribute by reporting/fixing [bugs](https://github.com/tomatoers/tomato/issues) or proposing/implementing new [features](https://github.com/tomatoers/tomato/issues).
 
 Before getting started, read the following guidelines:
 
-- elementaryOS [HIG](https://elementary.io/docs/human-interface-guidelines#human-interface-guidelines)
-- elementaryOS [developer guide](https://elementary.io/docs/code/getting-started#developer-sdk)
+- elementary OS [HIG](https://elementary.io/docs/human-interface-guidelines#human-interface-guidelines)
+- elementary OS [developer guide](https://elementary.io/docs/code/getting-started#developer-sdk)
