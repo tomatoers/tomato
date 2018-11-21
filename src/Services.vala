@@ -35,7 +35,7 @@ namespace Tomato.Services {
         }
 
         public SavedState () {
-            base ("com.github.luizaugustomm.tomato.saved");
+            base ("com.github.tomatoers.tomato.saved");
         }
     }
 
@@ -46,7 +46,7 @@ namespace Tomato.Services {
         public int long_break_delay {get; set;}
 
         public Settings () {
-            base ("com.github.luizaugustomm.tomato.settings");
+            base ("com.github.tomatoers.tomato.settings");
         }
     }
 
@@ -59,7 +59,7 @@ namespace Tomato.Services {
         public bool debug_mode {get; set;}
 
         public Preferences () {
-            base ("com.github.luizaugustomm.tomato.preferences");
+            base ("com.github.tomatoers.tomato.preferences");
         }
     }
 }
