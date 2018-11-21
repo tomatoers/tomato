@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>com.github.luizaugustomm.tomato.desktop</id>
+  <id>com.github.tomatoers.tomato</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-2</project_license>
   <name>Tomato</name>
@@ -13,25 +13,25 @@
   <screenshots>
     <screenshot type="default">
       <caption>Pomodoro time</caption>
-      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/pomodoro.png</image>
+      <image>https://raw.githubusercontent.com/tomatoers/tomato/master/data/screenshots/pomodoro.png</image>
     </screenshot>
 
     <screenshot>
       <caption>Start page</caption>
-      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/start.png</image>
+      <image>https://raw.githubusercontent.com/tomatoers/tomato/master/data/screenshots/start.png</image>
     </screenshot>
 
     <screenshot>
       <caption>Short break time</caption>
-      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/break.png</image>
+      <image>https://raw.githubusercontent.com/tomatoers/tomato/master/data/screenshots/break.png</image>
     </screenshot>
   </screenshots>
 
-  <developer_name>Tomato Team</developer_name>
-  <url type="homepage">https://github.com/luizaugustomm/tomato</url>
-  <url type="bugtracker">https://github.com/luizaugustomm/tomato/issues</url>
-  <url type="help">https://github.com/luizaugustomm/tomato/issues</url>
-  <update_contact>luizaugustomm@gmail.com</update_contact>
+  <developer_name>Tomatoers</developer_name>
+  <url type="homepage">https://github.com/tomatoers/tomato</url>
+  <url type="bugtracker">https://github.com/tomatoers/tomato/issues</url>
+  <url type="help">https://github.com/tomatoers/tomato/issues</url>
+  <update_contact>c@ssidyjam.es</update_contact>
 
   <custom>
     <value key="x-appcenter-color-primary">#fff</value>
@@ -39,7 +39,7 @@
   </custom>
 
   <provides>
-    <binary>com.github.luizaugustomm.tomato</binary>
+    <binary>com.github.tomatoers.tomato</binary>
   </provides>
 
   <releases>
