@@ -1,7 +1,7 @@
 @define-color colorPrimary #8ea5af;
 /*@define-color bg_highlight_color shade (@colorPrimary, 1.4);*/
 
-.main-window .window-frame {
+.main-window decoration {
     border-radius: 4px;
     box-shadow:
         0 0 0 1px alpha (shade (@colorPrimary, 0.6), 0.55),
@@ -21,9 +21,13 @@
 
 .main-window .titlebar .title {
    color: #fff;
-   font-size: 8px;
+   font-size: 12px;
    text-shadow: none;
    icon-shadow: none;
+}
+
+.main-window .titlebar image {
+    color: white;
 }
 
 .pomodoro-button {
@@ -44,6 +48,10 @@
     color: #ebebeb;
     font-size: 14px;
     font-family: Open Sans Light;
+}
+
+frame {
+    border: none;
 }
 
 /* .pomodoro-window { */
