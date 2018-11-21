@@ -18,15 +18,15 @@
 
 namespace Constants {
 	public const string DATADIR = "/usr/share";
-	public const string PKG_DATADIR = "/usr/share/com.github.luizaugustomm.tomato";
-	public const string GETTEXT_PACKAGE = "com.github.luizaugustomm.tomato";
+	public const string PKG_DATADIR = "/usr/share/com.github.tomatoers.tomato";
+	public const string GETTEXT_PACKAGE = "com.github.tomatoers.tomato";
 	public const string RELEASE_NAME = "Stupice";
 	public const string VERSION = "2.0.2";
 	public const string VERSION_INFO = "Release";
 	public const string INSTALL_PREFIX = "/usr";
     public const string APP_NAME = "Tomato";
-	public const string EXEC_NAME = "com.github.luizaugustomm.tomato";
-	public const string ICON_NAME = "com.github.luizaugustomm.tomato";
+	public const string EXEC_NAME = "com.github.tomatoers.tomato";
+	public const string ICON_NAME = "com.github.tomatoers.tomato";
 }
 
 namespace Default {
