@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>com.github.tomatoers.tomato</id>
+  <id>com.github.tomatoers.tomato.desktop</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-2</project_license>
   <name>Tomato</name>
@@ -43,30 +43,30 @@
   </provides>
 
   <releases>
-  <release version="2.0.2" urgency="medium" date="2017-06-05">
-     ⁠<description>
-       <ul>
-         <li>Updated URLs</li>
-       </ul>
-     ⁠</description>
-   </release>
-
-    <release version="2.0.1" urgency="medium" date="2017-06-04">
+    <release version="2.0.2" urgency="medium" date="2017-06-05">
        ⁠<description>
          <ul>
-           <li>Solved app center issues</li>
+           <li>Updated URLs</li>
          </ul>
        ⁠</description>
      </release>
 
-    <release version="2.0.0" urgency="medium" date="2017-06-02">
-     ⁠<description>
-       <ul>
-         <li>UI redesign</li>
-         <li>Bug fixes</li>
-       </ul>
-     ⁠</description>
-     </release>
+      <release version="2.0.1" urgency="medium" date="2017-06-04">
+         ⁠<description>
+           <ul>
+             <li>Solved app center issues</li>
+           </ul>
+         ⁠</description>
+       </release>
+
+      <release version="2.0.0" urgency="medium" date="2017-06-02">
+       ⁠<description>
+         <ul>
+           <li>UI redesign</li>
+           <li>Bug fixes</li>
+         </ul>
+       ⁠</description>
+      </release>
 
       <release version="1.2.8" urgency="medium" date="2017-04-29">
          ⁠<description>
