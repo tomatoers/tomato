@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-    <enum id="com.github.luizaugustomm.tomato.status">
+    <enum id="com.github.tomatoers.tomato.status">
         <value value="0" nick="start"/>
         <value value="1" nick="pomodoro"/>
         <value value="2" nick="short-break"/>
         <value value="3" nick="long-break"/>
     </enum>
 
-    <schema path="/com/github/luizaugustomm/tomato/saved/" id="com.github.luizaugustomm.tomato.saved" gettext-domain="com.github.luizaugustomm.tomato">
+    <schema path="/com/github/tomatoers/tomato/saved/" id="com.github.tomatoers.tomato.saved" gettext-domain="com.github.tomatoers.tomato">
         <key name="date" type="s">
             <default>'2000-01-01'</default>
             <summary>Last date saved.</summary>
             <description>The last date Tomato was opened.</description>
         </key>
-        <key enum="com.github.luizaugustomm.tomato.status" name="status">
+        <key enum="com.github.tomatoers.tomato.status" name="status">
             <default>'start'</default>
             <summary>Last saved status.</summary>
             <description>The last status before Tomato was closed.</description>
@@ -35,7 +35,7 @@
         </key>
     </schema>
 
-    <schema path="/com/github/luizaugustomm/tomato/settings/" id="com.github.luizaugustomm.tomato.settings" gettext-domain="com.github.luizaugustomm.tomato">
+    <schema path="/com/github/tomatoers/tomato/settings/" id="com.github.tomatoers.tomato.settings" gettext-domain="com.github.tomatoers.tomato">
         <key name="pomodoro-duration" type="i">
             <default>25</default>
             <summary>Duration of pomodoros in minutes.</summary>
@@ -58,7 +58,7 @@
         </key>
     </schema>
 
-    <schema path="/com/github/luizaugustomm/tomato/preferences/" id="com.github.luizaugustomm.tomato.preferences">
+    <schema path="/com/github/tomatoers/tomato/preferences/" id="com.github.tomatoers.tomato.preferences">
         <key name="reset-work-everyday" type="b">
             <default>true</default>
             <summary>Work reset everyday</summary>

@@ -1,3 +1,3 @@
 
 include(GSettings)
-add_schema("com.github.luizaugustomm.tomato.gschema.xml")
+add_schema("com.github.tomatoers.tomato.gschema.xml")

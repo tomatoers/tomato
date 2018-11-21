@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/tomatoers/tomato.svg?branch=master)](https://travis-ci.com/tomatoers/tomato)
 
 <p align="center">
-  <img src="data/icons/128x128/apps/com.github.luizaugustomm.tomato.png?raw=true" alt="Icon" />
+  <img src="data/icons/128x128/apps/com.github.tomatoers.tomato.png?raw=true" alt="Icon" />
 </p>
 <h1 align="center">Tomato</h1>
 <!--p align="center">
@@ -45,11 +45,11 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr ../
 make
 ```
 
-To install, use `make install`, then execute with `com.github.luizaugustomm.tomato`
+To install, use `make install`, then execute with `com.github.tomatoers.tomato`
 
 ```shell
 sudo make install
-com.github.luizaugustomm.tomato
+com.github.tomatoers.tomato
 ```
 
 # Do you want to contribute?

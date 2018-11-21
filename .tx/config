@@ -3,7 +3,7 @@ host = https://www.transifex.com
 
 [tomato.luizaugustomm-tomato]
 file_filter = po/<lang>.po
-source_file = po/com.github.luizaugustomm.tomato.pot
+source_file = po/com.github.tomatoers.tomato.pot
 source_lang = en
 type = PO
 

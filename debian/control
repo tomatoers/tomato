@@ -1,7 +1,7 @@
-Source: com.github.luizaugustomm.tomato
+Source: com.github.tomatoers.tomato
 Section: utils
 Priority: optional
-Maintainer: Luiz Augusto Morais <luizaugustomm@gmail.com>
+Maintainer: Tomatoers <c@ssidyjam.es>
 Build-Depends: cmake (>= 2.8),
                debhelper (>= 8.0.0),
                valac-0.28 | valac (>= 0.28),
@@ -12,7 +12,7 @@ Build-Depends: cmake (>= 2.8),
                appstream,
                desktop-file-utils
 Standards-Version: 3.9.5
-Package: com.github.luizaugustomm.tomato
+Package: com.github.tomatoers.tomato
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Keep focused on your work
