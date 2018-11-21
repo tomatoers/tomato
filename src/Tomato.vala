@@ -61,12 +61,12 @@ namespace Tomato {
 
             app_years = "2017";
             app_icon = Constants.ICON_NAME;
-            app_launcher = "com.github.luizaugustomm.tomato.desktop";
-            application_id = "com.github.luizaugustomm.tomato";
+            app_launcher = "com.github.tomatoers.tomato.desktop";
+            application_id = "com.github.tomatoers.tomato";
 
-            main_url = "https://github.com/luizaugustomm/tomato";
-            bug_url = "https://github.com/luizaugustomm/tomato/issues";
-            help_url = "https://github.com/luizaugustomm/tomato";
+            main_url = "https://github.com/tomatoers/tomato";
+            bug_url = "https://github.com/tomatoers/tomato/issues";
+            help_url = "https://github.com/tomatoers/tomato";
             translate_url = "https://www.transifex.com/tomato-translators/tomato/translate/";
 
             about_authors = {"Luiz Augusto Morais <luizaugustomm@gmail.com>",
