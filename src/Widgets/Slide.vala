@@ -22,12 +22,12 @@ namespace Tomato.Widget {
 
         private List<Screen> screens;
 
-		public signal void changed (Screen s);
+        public signal void changed (Screen s);
 
         public Slide () {
             screens = new List<Screen> ();
             set_transition_duration (500);
-			this.expand = true;
+            this.expand = true;
         }
 
         public void add_screen (Screen screen) {
@@ -35,10 +35,13 @@ namespace Tomato.Widget {
             screens.append (screen);
         }
 
-        public void set_visible_screen (string name, Gtk.StackTransitionType transition = Gtk.StackTransitionType.SLIDE_LEFT) {
+        public void set_visible_screen (
+            string name,
+            Gtk.StackTransitionType transition = Gtk.StackTransitionType.SLIDE_LEFT
+        ) {
             set_visible_child_full (name, transition);
-			message (name);
-			changed (find_screen (name));
+            message (name);
+            changed (find_screen (name));
         }
 
         public Screen? get_visible_screen () {

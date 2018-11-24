@@ -58,7 +58,7 @@ namespace Tomato.Widget {
 
         public void add_controls (Gtk.Widget[] controls) {
             foreach (Gtk.Widget control in controls) {
-				add_control (control);
+                add_control (control);
             }
         }
 
@@ -78,7 +78,7 @@ namespace Tomato.Widget {
         private void setup_control_box () {
             control_box.set_layout (Gtk.ButtonBoxStyle.CENTER);
             control_box.set_spacing (6);
-			control_box.set_valign (Gtk.Align.END);
+            control_box.set_valign (Gtk.Align.END);
             control_box.set_margin_bottom (15);
         }
     }

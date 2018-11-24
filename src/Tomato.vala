@@ -148,7 +148,10 @@ namespace Tomato {
                 if (stop_countdown == -1) {
                     on_stop_clicked ();
                     stop_countdown = 14;
-                    notification.show (_("Pomodoro was interrupted"), _("Tomato was paused for a long time. You might have lost focus. Try a new pomodoro!"));
+                    notification.show (
+                        _("Pomodoro was interrupted"),
+                        _("Tomato was paused for a long time. You might have lost focus. Try a new pomodoro!")
+                    );
                 }
             } return paused;
         }
@@ -308,8 +311,8 @@ namespace Tomato {
         }
     }
 
-    public static void main(string[] args) {
-        Gtk.init(ref args);
+    public static void main (string[] args) {
+        Gtk.init (ref args);
 
         TomatoApp app = new TomatoApp ();
         app.run (args);

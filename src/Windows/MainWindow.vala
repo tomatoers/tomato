@@ -19,7 +19,7 @@
 namespace Tomato.Window {
 
     public class MainWindow : Gtk.Dialog {
-		private const string COLOR_PRIMARY = """
+        private const string COLOR_PRIMARY = """
             @define-color colorPrimary %s;
 
             .main-window.background,
@@ -40,11 +40,11 @@ namespace Tomato.Window {
 
         private TomatoApp app;
 
-		private Gtk.HeaderBar headerbar;
+        private Gtk.HeaderBar headerbar;
         private Gtk.MenuButton appmenu;
         private Gtk.MenuItem preferences;
         private Widget.Slide slide;
-		private Gtk.Box content;
+        private Gtk.Box content;
 
         private Gtk.Label countdown_label;
         private Gtk.Label total_time_label;
@@ -56,7 +56,7 @@ namespace Tomato.Window {
 
         // constructor
         public MainWindow (TomatoApp app) {
-			Object (use_header_bar: 1);
+            Object (use_header_bar: 1);
 
             this.app = app;
             this.title = Constants.APP_NAME;
@@ -75,8 +75,8 @@ namespace Tomato.Window {
             stop = new Gtk.Button.with_label (_("Stop"));
             skip = new Gtk.Button.with_label (_("Skip"));
 
-			content = this.get_content_area ();
-			headerbar = this.get_header_bar () as Gtk.HeaderBar;
+            content = this.get_content_area ();
+            headerbar = this.get_header_bar () as Gtk.HeaderBar;
 
             setup_layout ();
             setup_style ();
@@ -87,16 +87,16 @@ namespace Tomato.Window {
 
             next_status (Gtk.StackTransitionType.NONE);
 
-			/**
-			 *  Allow moving the window
-			 */
-			this.button_press_event.connect ((e) => {
-					if (e.button == Gdk.BUTTON_PRIMARY) {
-						this.begin_move_drag ((int) e.button, (int) e.x_root, (int) e.y_root, e.time);
-						return true;
-					}
-					return false;
-				});
+            /**
+             *  Allow moving the window
+             */
+            this.button_press_event.connect ((e) => {
+                    if (e.button == Gdk.BUTTON_PRIMARY) {
+                        this.begin_move_drag ((int) e.button, (int) e.x_root, (int) e.y_root, e.time);
+                        return true;
+                    }
+                    return false;
+                });
         }
 
         public void set_pause (bool topause = true) {
@@ -115,7 +115,7 @@ namespace Tomato.Window {
 
             if (saved.status == Status.START) {
                 slide.set_visible_screen ("start", transition);
-                this.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
+                this.set_title ("Pomodoro %d".printf (saved.pomodoro_count + 1));
                 appmenu.set_sensitive (true);
             } else if (saved.status == Status.SHORT_BREAK) {
                 slide.set_visible_screen ("break", transition);
@@ -127,7 +127,7 @@ namespace Tomato.Window {
                 appmenu.set_sensitive (true);
             } else {
                 slide.set_visible_screen ("pomodoro", transition);
-                this.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
+                this.set_title ("Pomodoro %d".printf (saved.pomodoro_count + 1));
                 appmenu.set_sensitive (false);
             }
 
@@ -156,7 +156,10 @@ namespace Tomato.Window {
         }
 
         public void update_total_time () {
-            if ((saved.status == Status.START || saved.status == Status.SHORT_BREAK || saved.status == Status.LONG_BREAK || paused) && saved.total_time != 0) {
+            if ((saved.status == Status.START || saved.status == Status.SHORT_BREAK
+                    || saved.status == Status.LONG_BREAK || paused)
+                && saved.total_time != 0
+            ) {
                 total_time_label.set_label (work.formatted_total_time () + _(" of work"));
             } else {
                 total_time_label.set_label ("");
@@ -176,13 +179,13 @@ namespace Tomato.Window {
             appmenu.set_image (menu_icon);
             appmenu.popup = menu;
 
-			appmenu.valign = Gtk.Align.CENTER;
+            appmenu.valign = Gtk.Align.CENTER;
 
-			appmenu.get_style_context ().add_class ("close");
-			appmenu.get_style_context ().add_class ("titlebutton");
-			appmenu.get_style_context ().remove_class ("image-button");
+            appmenu.get_style_context ().add_class ("close");
+            appmenu.get_style_context ().add_class ("titlebutton");
+            appmenu.get_style_context ().remove_class ("image-button");
 
-			headerbar.pack_end (appmenu);
+            headerbar.pack_end (appmenu);
         }
 
         private void setup_stack () {
@@ -203,7 +206,7 @@ namespace Tomato.Window {
         private void setup_layout () {
             setup_headerbar ();
             setup_stack ();
-			content.add (slide);
+            content.add (slide);
         }
 
         private void setup_style () {
@@ -227,12 +230,12 @@ namespace Tomato.Window {
             resume.get_style_context ().add_class ("pomodoro-button");
             pause.get_style_context ().add_class ("pomodoro-button");
             stop.get_style_context ().add_class ("pomodoro-button");
-			start.get_style_context ().add_class ("pomodoro-button");
+            start.get_style_context ().add_class ("pomodoro-button");
 
-			headerbar.get_style_context ().add_class ("compact");
-			headerbar.get_style_context ().add_class ("main-window");
+            headerbar.get_style_context ().add_class ("compact");
+            headerbar.get_style_context ().add_class ("main-window");
 
-			this.get_style_context ().add_class ("main-window");
+            this.get_style_context ().add_class ("main-window");
         }
 
         private void connect_signals () {
@@ -243,45 +246,49 @@ namespace Tomato.Window {
             skip.clicked.connect (() => {skip_clicked ();});
             preferences.activate.connect (() => {preferences_clicked ();});
 
-			this.slide.changed.connect ((s) => {
-					string color_primary;
+            this.slide.changed.connect ((s) => {
+                    string color_primary;
 
-					switch (s.get_name ()) {
-					case "start":
-						color_primary = "#8ea5af";
-						break;
-					case "pomodoro":
-						color_primary = "#df4b4b";
-						break;
-					case "break":
-						color_primary = "#05B560";
-						break;
-					default:
-						color_primary = "#8ea5af";
-						break;
-					}
+                    switch (s.get_name ()) {
+                    case "start":
+                        color_primary = "#8ea5af";
+                        break;
+                    case "pomodoro":
+                        color_primary = "#df4b4b";
+                        break;
+                    case "break":
+                        color_primary = "#05B560";
+                        break;
+                    default:
+                        color_primary = "#8ea5af";
+                        break;
+                    }
 
-					var provider = new Gtk.CssProvider ();
-					try {
-						var colored_css = COLOR_PRIMARY.printf (color_primary);
-						provider.load_from_data (colored_css, colored_css.length);
+                    var provider = new Gtk.CssProvider ();
+                    try {
+                        var colored_css = COLOR_PRIMARY.printf (color_primary);
+                        provider.load_from_data (colored_css, colored_css.length);
 
-						Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-					} catch (GLib.Error e) {
-						critical (e.message);
-					}
-				});
+                        Gtk.StyleContext.add_provider_for_screen (
+                            Gdk.Screen.get_default (),
+                            provider,
+                            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+                        );
+                    } catch (GLib.Error e) {
+                        critical (e.message);
+                    }
+                });
 
             this.delete_event.connect (quit);
         }
 
-		private bool quit () {
-			if (!paused) {
-				hide ();
-				return true;
-			}
-			Gtk.main_quit ();
-			return false;
-		}
+        private bool quit () {
+            if (!paused) {
+                hide ();
+                return true;
+            }
+            Gtk.main_quit ();
+            return false;
+        }
     }
 }
