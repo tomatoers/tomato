@@ -156,7 +156,10 @@ namespace Tomato.Window {
         }
 
         public void update_total_time () {
-            if ((saved.status == Status.START || saved.status == Status.SHORT_BREAK || saved.status == Status.LONG_BREAK || paused) && saved.total_time != 0) {
+            if ((saved.status == Status.START || saved.status == Status.SHORT_BREAK
+                    || saved.status == Status.LONG_BREAK || paused)
+                && saved.total_time != 0
+            ) {
                 total_time_label.set_label (work.formatted_total_time () + _(" of work"));
             } else {
                 total_time_label.set_label ("");
@@ -266,7 +269,11 @@ namespace Tomato.Window {
                         var colored_css = COLOR_PRIMARY.printf (color_primary);
                         provider.load_from_data (colored_css, colored_css.length);
 
-                        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+                        Gtk.StyleContext.add_provider_for_screen (
+                            Gdk.Screen.get_default (),
+                            provider,
+                            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+                        );
                     } catch (GLib.Error e) {
                         critical (e.message);
                     }

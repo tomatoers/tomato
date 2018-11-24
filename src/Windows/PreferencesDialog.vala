@@ -80,39 +80,50 @@ namespace Tomato.Window {
             /* ** options - scales ** */
             //pomodoro_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 5, 60, 1);
             pomodoro_scale = new Widget.ValueRange (5, 60, 1, _("minute"), _("minutes"));
-            settings.schema.bind ("pomodoro-duration", pomodoro_scale, "current-value", SettingsBindFlags.DEFAULT);
+            settings.schema.bind ("pomodoro-duration", pomodoro_scale,
+                                  "current-value", SettingsBindFlags.DEFAULT);
 
             short_break_scale = new Widget.ValueRange (1, 10, 1, _("minute"), _("minutes"));
-            settings.schema.bind ("short-break-duration", short_break_scale, "current-value", SettingsBindFlags.DEFAULT);
+            settings.schema.bind ("short-break-duration", short_break_scale,
+                                  "current-value", SettingsBindFlags.DEFAULT);
 
             long_break_scale = new Widget.ValueRange (10, 30, 1, _("minute"), _("minutes"));
-            settings.schema.bind ("long-break-duration", long_break_scale, "current-value", SettingsBindFlags.DEFAULT);
+            settings.schema.bind ("long-break-duration", long_break_scale,
+                                  "current-value", SettingsBindFlags.DEFAULT);
 
             long_break_delay_scale = new Widget.ValueRange (2, 8, 1, _("pomodoro"), _("pomodoros"));
-            settings.schema.bind ("long-break-delay", long_break_delay_scale, "current-value", SettingsBindFlags.DEFAULT);
+            settings.schema.bind ("long-break-delay", long_break_delay_scale,
+                                  "current-value", SettingsBindFlags.DEFAULT);
 
             /* ** options - switches ** */
             reset_work_everyday = new Gtk.Switch ();
-            preferences.schema.bind ("reset-work-everyday", reset_work_everyday, "active", SettingsBindFlags.DEFAULT);
+            preferences.schema.bind ("reset-work-everyday", reset_work_everyday,
+                                     "active", SettingsBindFlags.DEFAULT);
 
             pause_after_break = new Gtk.Switch ();
-            preferences.schema.bind ("pause-after-break", pause_after_break, "active", SettingsBindFlags.DEFAULT);
+            preferences.schema.bind ("pause-after-break", pause_after_break,
+                                     "active", SettingsBindFlags.DEFAULT);
 
             auto_stop_enabled = new Gtk.Switch ();
-            preferences.schema.bind ("auto-stop", auto_stop_enabled, "active", SettingsBindFlags.DEFAULT);
+            preferences.schema.bind ("auto-stop", auto_stop_enabled,
+                                     "active", SettingsBindFlags.DEFAULT);
 
             pomodoro_sound_enabled = new Gtk.Switch ();
-            preferences.schema.bind ("pomodoro-sound-enabled", pomodoro_sound_enabled, "active", SettingsBindFlags.DEFAULT);
+            preferences.schema.bind ("pomodoro-sound-enabled", pomodoro_sound_enabled,
+                                     "active", SettingsBindFlags.DEFAULT);
 
             if (preferences.debug_mode) {
                 pomodoro_scale = new Widget.ValueRange (1, 60, 1, _("minute"), _("minutes"));
-                settings.schema.bind ("pomodoro-duration", pomodoro_scale, "current-value", SettingsBindFlags.DEFAULT);
+                settings.schema.bind ("pomodoro-duration", pomodoro_scale,
+                                      "current-value", SettingsBindFlags.DEFAULT);
 
                 long_break_scale = new Widget.ValueRange (2, 30, 1, _("minute"), _("minutes"));
-                settings.schema.bind ("long-break-duration", long_break_scale, "current-value", SettingsBindFlags.DEFAULT);
+                settings.schema.bind ("long-break-duration", long_break_scale,
+                                      "current-value", SettingsBindFlags.DEFAULT);
 
                 debug_switch = new Gtk.Switch ();
-                preferences.schema.bind ("debug-mode", debug_switch, "active", SettingsBindFlags.DEFAULT);
+                preferences.schema.bind ("debug-mode", debug_switch,
+                                         "active", SettingsBindFlags.DEFAULT);
             }
 
             /* ** options - buttons ** */
@@ -268,7 +279,13 @@ namespace Tomato.Window {
             row++; //add one to row
         }
 
-        private void add_option (Gtk.Grid grid, Gtk.Widget label, Gtk.Widget switcher, ref int row, int margin_top = 0) {
+        private void add_option (
+            Gtk.Grid grid,
+            Gtk.Widget label,
+            Gtk.Widget switcher,
+            ref int row,
+            int margin_top = 0
+        ) {
             label.hexpand = true;
             label.halign = Gtk.Align.END;
             if (switcher is Gtk.Scale || switcher is Widget.ValueRange) label.valign = Gtk.Align.END;

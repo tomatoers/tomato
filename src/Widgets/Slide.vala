@@ -35,7 +35,10 @@ namespace Tomato.Widget {
             screens.append (screen);
         }
 
-        public void set_visible_screen (string name, Gtk.StackTransitionType transition = Gtk.StackTransitionType.SLIDE_LEFT) {
+        public void set_visible_screen (
+            string name,
+            Gtk.StackTransitionType transition = Gtk.StackTransitionType.SLIDE_LEFT
+        ) {
             set_visible_child_full (name, transition);
             message (name);
             changed (find_screen (name));
