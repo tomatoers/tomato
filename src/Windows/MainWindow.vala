@@ -115,7 +115,7 @@ namespace Tomato.Window {
 
             if (saved.status == Status.START) {
                 slide.set_visible_screen ("start", transition);
-                this.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
+                this.set_title ("Pomodoro %d".printf (saved.pomodoro_count + 1));
                 appmenu.set_sensitive (true);
             } else if (saved.status == Status.SHORT_BREAK) {
                 slide.set_visible_screen ("break", transition);
@@ -127,7 +127,7 @@ namespace Tomato.Window {
                 appmenu.set_sensitive (true);
             } else {
                 slide.set_visible_screen ("pomodoro", transition);
-                this.set_title ("Pomodoro %d".printf(saved.pomodoro_count+1));
+                this.set_title ("Pomodoro %d".printf (saved.pomodoro_count + 1));
                 appmenu.set_sensitive (false);
             }
 

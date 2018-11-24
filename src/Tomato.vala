@@ -308,8 +308,8 @@ namespace Tomato {
         }
     }
 
-    public static void main(string[] args) {
-        Gtk.init(ref args);
+    public static void main (string[] args) {
+        Gtk.init (ref args);
 
         TomatoApp app = new TomatoApp ();
         app.run (args);
