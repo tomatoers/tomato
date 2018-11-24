@@ -9,6 +9,7 @@ add_global_arguments (
   language: 'c'
 )
 
+i18n = import ('i18n')
 
 prefix = get_option ('prefix')
 datadir = join_paths (prefix, get_option ('datadir'))
