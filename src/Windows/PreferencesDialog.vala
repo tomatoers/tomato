@@ -21,7 +21,7 @@ namespace Tomato.Window {
     public class PreferencesDialog : Gtk.Dialog {
 
         //stacks
-        private Gtk.Stack         stack;
+        private Gtk.Stack stack;
         private Gtk.StackSwitcher stackswitcher;
 
         //options - scales
