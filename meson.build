@@ -1,7 +1,7 @@
 project(
   'com.github.tomatoers.tomato', 'vala', 'c',
   version : '2.0.2',
-  license : 'LGPL2+'
+  license : 'GPL2+'
 )
 
 add_global_arguments (
