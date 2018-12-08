@@ -1,15 +1,6 @@
-icon_sizes = ['16', '22', '24', '32', '48', '64', '128', '256']
-
-foreach i : icon_sizes
-  install_data (
-    join_paths ('icons', i + 'x' + i, 'apps', meson.project_name () + '.png'),
-    install_dir: join_paths (get_option ('datadir'), 'icons', 'hicolor', i + 'x' + i, 'apps')
-  )
-endforeach
-
-install_data (
-  join_paths ('icons', 'scalable', 'apps', meson.project_name () + '.svg'),
-  install_dir: join_paths (get_option ('datadir'), 'icons', 'hicolor', 'scalable', 'apps')
+install_subdir (
+  'icons',
+  install_dir: join_paths (get_option ('datadir'), 'icons', 'hicolor')
 )
 
 appdata = configure_file (
