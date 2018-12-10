@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>com.github.luizaugustomm.tomato.desktop</id>
+  <id>com.github.tomatoers.tomato.desktop</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-2</project_license>
   <name>Tomato</name>
@@ -13,25 +13,25 @@
   <screenshots>
     <screenshot type="default">
       <caption>Pomodoro time</caption>
-      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/pomodoro.png</image>
+      <image>https://raw.githubusercontent.com/tomatoers/tomato/master/data/screenshots/pomodoro.png</image>
     </screenshot>
 
     <screenshot>
       <caption>Start page</caption>
-      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/start.png</image>
+      <image>https://raw.githubusercontent.com/tomatoers/tomato/master/data/screenshots/start.png</image>
     </screenshot>
 
     <screenshot>
       <caption>Short break time</caption>
-      <image>https://raw.githubusercontent.com/luizaugustomm/tomato/master/data/screenshots/break.png</image>
+      <image>https://raw.githubusercontent.com/tomatoers/tomato/master/data/screenshots/break.png</image>
     </screenshot>
   </screenshots>
 
-  <developer_name>Tomato Team</developer_name>
-  <url type="homepage">https://github.com/luizaugustomm/tomato</url>
-  <url type="bugtracker">https://github.com/luizaugustomm/tomato/issues</url>
-  <url type="help">https://github.com/luizaugustomm/tomato/issues</url>
-  <update_contact>luizaugustomm@gmail.com</update_contact>
+  <developer_name>Tomatoers</developer_name>
+  <url type="homepage">https://github.com/tomatoers/tomato</url>
+  <url type="bugtracker">https://github.com/tomatoers/tomato/issues</url>
+  <url type="help">https://github.com/tomatoers/tomato/issues</url>
+  <update_contact>c@ssidyjam.es</update_contact>
 
   <custom>
     <value key="x-appcenter-color-primary">#fff</value>
@@ -39,34 +39,34 @@
   </custom>
 
   <provides>
-    <binary>com.github.luizaugustomm.tomato</binary>
+    <binary>com.github.tomatoers.tomato</binary>
   </provides>
 
   <releases>
-  <release version="2.0.2" urgency="medium" date="2017-06-05">
-     ⁠<description>
-       <ul>
-         <li>Updated URLs</li>
-       </ul>
-     ⁠</description>
-   </release>
-
-    <release version="2.0.1" urgency="medium" date="2017-06-04">
+    <release version="2.0.2" urgency="medium" date="2017-06-05">
        ⁠<description>
          <ul>
-           <li>Solved app center issues</li>
+           <li>Updated URLs</li>
          </ul>
        ⁠</description>
      </release>
 
-    <release version="2.0.0" urgency="medium" date="2017-06-02">
-     ⁠<description>
-       <ul>
-         <li>UI redesign</li>
-         <li>Bug fixes</li>
-       </ul>
-     ⁠</description>
-    ​ </release>
+      <release version="2.0.1" urgency="medium" date="2017-06-04">
+         ⁠<description>
+           <ul>
+             <li>Solved app center issues</li>
+           </ul>
+         ⁠</description>
+       </release>
+
+      <release version="2.0.0" urgency="medium" date="2017-06-02">
+       ⁠<description>
+         <ul>
+           <li>UI redesign</li>
+           <li>Bug fixes</li>
+         </ul>
+       ⁠</description>
+      </release>
 
       <release version="1.2.8" urgency="medium" date="2017-04-29">
          ⁠<description>
@@ -76,7 +76,7 @@
              <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
-     ​ </release>
+      </release>
 
       <release version="1.2.7" urgency="medium" date="2017-04-11">
          ⁠<description>
@@ -84,7 +84,7 @@
              <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
-     ​ </release>
+      </release>
 
       <release version="1.2.6" urgency="medium" date="2017-04-10">
          ⁠<description>
@@ -92,7 +92,7 @@
              <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
-     ​ </release>
+      </release>
 
       <release version="1.2.5" urgency="medium" date="2017-04-08"/>
 
@@ -103,7 +103,7 @@
              <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
-     ​ </release>
+      </release>
 
       <release version="1.2.3" urgency="medium" date="2017-04-06"/>
 
@@ -115,6 +115,6 @@
              <li>Integration with AppCenter</li>
            </ul>
          ⁠</description>
-     ​ </release>
+      </release>
   </releases>
 </component>

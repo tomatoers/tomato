@@ -1,19 +1,21 @@
-Source: com.github.luizaugustomm.tomato
-Section: utils
-Priority: optional
-Maintainer: Luiz Augusto Morais <luizaugustomm@gmail.com>
+Source: com.github.tomatoers.tomato
+Section: x11
+Maintainer: Tomatoers <c@ssidyjam.es>
 Build-Depends: cmake (>= 2.8),
-               debhelper (>= 8.0.0),
-               valac-0.28 | valac (>= 0.28),
+               debhelper (>= 9),
+               valac,
                libgtk-3-dev,
                libgranite-dev,
                libunity-dev,
                libcanberra-gtk3-dev,
                appstream,
                desktop-file-utils
-Standards-Version: 3.9.5
-Package: com.github.luizaugustomm.tomato
+Standards-Version: 3.9.6
+Homepage: https://github.com/tomatoers/tomato
+
+Package: com.github.tomatoers.tomato
 Architecture: any
+Priority: optional
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Keep focused on your work
  Tomato is a clean, easy-to-use time manager based on Pomodoro technique. It breaks down work into intervals to keep you focused and allows you to rest during strategic periods to reward your progress. It is a must-have app if you need to avoid procrastination.

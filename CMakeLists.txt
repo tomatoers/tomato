@@ -1,6 +1,6 @@
 
 # project name
-project (com.github.luizaugustomm.tomato)
+project (com.github.tomatoers.tomato)
 
 # the oldest stable cmake version we support
 cmake_minimum_required (VERSION 2.8)

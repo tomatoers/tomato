@@ -1,8 +1,24 @@
+---
+
+language: node_js
+
+node_js:
+  - lts/*
+
 sudo: required
-after_success:
-  - pip install virtualenv
-  - virtualenv ~/env
-  - source ~/env/bin/activate
-  - pip install transifex-client
-  - sudo echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"$TRANSIFEX_USER"$'\npassword = '"$TRANSIFEX_PASSWORD"$'\ntoken = '"$TRANSIFEX_API_TOKEN"$'\n' > ~/.transifexrc
-  - tx push -s
+
+services:
+  - docker
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - libstdc++-5-dev
+
+install:
+  - npm i -g @elementaryos/houston
+
+script:
+  - houston ci

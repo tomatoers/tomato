@@ -1,7 +1,7 @@
 Format: http://dep.debian.net/deps/dep5
 Upstream-Name: tomato
-Upstream-Contact: Luiz Augusto Morais <luizaugustomm@gmail.com>
-Source: https://code.launchpad.net/tomatoapp
+Upstream-Contact: Tomatoers <c@ssidyjam.es>
+Source: https://github.com/tomatoers/tomato
 
 Files: *
 Copyright: 2015 Luiz Augusto Morais <luizaugustomm@gmail.com>
