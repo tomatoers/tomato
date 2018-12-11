@@ -1,6 +1,7 @@
 install_subdir (
   'icons',
-  install_dir: join_paths (get_option ('datadir'), 'icons', 'hicolor')
+  install_dir: join_paths (get_option ('datadir'), 'icons', 'hicolor'),
+  strip_directory: true
 )
 
 appdata = configure_file (
