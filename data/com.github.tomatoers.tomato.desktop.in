@@ -1,19 +1,19 @@
 [Desktop Entry]
 Type=Application
 Name=@APP_NAME@
-_Comment=@COMMENT@
-_GenericName=@GENERIC_NAME@
+Comment=@COMMENT@
+GenericName=@GENERIC_NAME@
 StartupWMClass=@EXEC_NAME@
 Exec=@EXEC_NAME@
 Icon=@ICON_NAME@
 Terminal=false
 Categories=GNOME;GTK;Utility;
-_Keywords=Pomodoro;Time;Productivity;Tomato;
+Keywords=Pomodoro;Time;Productivity;Tomato;
 StartupNotify=true
 X-GNOME-Gettext-Domain=@GETTEXT_PACKAGE@
 X-GNOME-UsesNotifications=true
 Actions=AboutDialog;
 
 [Desktop Action AboutDialog]
-_Name=About Tomato
+Name=About Tomato
 Exec=@EXEC_NAME@ --about

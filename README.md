@@ -31,24 +31,17 @@ If you want to hack on and build Tomato yourself, you'll need the following depe
 - libcanberra
 - libunity
 
-Create a `build` directory
+Use `meson` to configure the build environment and run `ninja` to build
 
 ```shell
-mkdir build
-cd build
+meson build --prefix=/usr
+ninja -C build
 ```
 
-Use `cmake` to configure the build environment and run `make` to build
+To install, use `ninja -C build install`, then execute with `com.github.tomatoers.tomato`
 
 ```shell
-cmake -DCMAKE_INSTALL_PREFIX=/usr ../
-make
-```
-
-To install, use `make install`, then execute with `com.github.tomatoers.tomato`
-
-```shell
-sudo make install
+sudo ninja -C build install
 com.github.tomatoers.tomato
 ```
 

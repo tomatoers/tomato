@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2017 Luiz Augusto Morais <luizaugustomm@gmail.com> -->
 <component type="desktop">
-  <id>@PACKAGE_ID@.desktop</id>
+  <id>@PACKAGE_ID@</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-2</project_license>
   <name>@APP_NAME@</name>
-  <_summary>@COMMENT@</_summary>
+  <summary>@COMMENT@</summary>
 
   <description>
-    <_p>@DESCRIPTION@</_p>
+    <p>@DESCRIPTION@</p>
   </description>
 
   <screenshots>
@@ -47,7 +47,7 @@
     <release version="2.0.2" date="2017-06-05" urgency="medium">
        ⁠<description>
          <ul>
-           <_li>Updated URLs</_li>
+           <li>Updated URLs</li>
          </ul>
        ⁠</description>
      </release>
@@ -55,7 +55,7 @@
       <release version="2.0.1" date="2017-06-04" urgency="medium">
          ⁠<description>
            <ul>
-             <_li>Solved app center issues</_li>
+             <li>Solved app center issues</li>
            </ul>
          ⁠</description>
        </release>
@@ -63,8 +63,8 @@
       <release version="2.0.0" date="2017-06-02" urgency="medium">
        ⁠<description>
          <ul>
-           <_li>UI redesign</_li>
-           <_li>Bug fixes</_li>
+           <li>UI redesign</li>
+           <li>Bug fixes</li>
          </ul>
        ⁠</description>
       </release>
@@ -72,9 +72,9 @@
       <release version="1.2.8" date="2017-04-29" urgency="medium">
          ⁠<description>
            <ul>
-             <_li>Changed screenshots</_li>
-             <_li>Improved internationalization</_li>
-             <_li>Fixed minor bugs</_li>
+             <li>Changed screenshots</li>
+             <li>Improved internationalization</li>
+             <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
       </release>
@@ -82,7 +82,7 @@
       <release version="1.2.7" date="2017-04-11" urgency="medium">
          ⁠<description>
            <ul>
-             <_li>Fixed minor bugs</_li>
+             <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
       </release>
@@ -90,18 +90,18 @@
       <release version="1.2.6" date="2017-04-10" urgency="medium">
          ⁠<description>
            <ul>
-             <_li>Fixed minor bugs</_li>
+             <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
       </release>
 
-      <release version="1.2.5" date="2017-04-08" urgency="medium" />
+      <release version="1.2.5" date="2017-04-08" urgency="medium"/>
 
       <release version="1.2.4" date="2017-04-08" urgency="medium">
          ⁠<description>
            <ul>
-             <_li>Revamped icons</_li>
-             <_li>Fixed minor bugs</_li>
+             <li>Revamped icons</li>
+             <li>Fixed minor bugs</li>
            </ul>
          ⁠</description>
       </release>
@@ -111,9 +111,9 @@
       <release version="1.2.2" date="2017-04-06" urgency="medium">
          ⁠<description>
            <ul>
-             <_li>Notification when the app is auto stopped</_li>
-             <_li>Users can access preferences when the app is in break time</_li>
-             <_li>Integration with AppCenter</_li>
+             <li>Notification when the app is auto stopped</li>
+             <li>Users can access preferences when the app is in break time</li>
+             <li>Integration with AppCenter</li>
            </ul>
          ⁠</description>
       </release>
