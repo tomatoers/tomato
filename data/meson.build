@@ -45,16 +45,16 @@ install_data (
     install_dir : join_paths (get_option ('datadir'), 'glib-2.0', 'schemas')
 )
 
-dvf = find_program ('desktop-file-validate', required: false)
 asc = find_program ('appstreamcli', required: false)
+dfv = find_program ('desktop-file-validate', required: false)
 vala_lint = find_program ('io.elementary.vala-lint', required: false)
 
-if dvf.found ()
-test (
+if dfv.found ()
+  test (
     'Validate desktop file',
-    dvf,
+    dfv,
     args: join_paths (meson.current_build_dir (), meson.project_name () + '.desktop')
-)
+  )
 endif
 
 
