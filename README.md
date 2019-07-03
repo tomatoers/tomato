@@ -31,6 +31,12 @@ If you want to hack on and build Tomato yourself, you'll need the following depe
 - libcanberra
 - libunity
 
+Install the dependencies
+
+```shell
+sudo apt install elementary-sdk libcanberra-dev libunity-dev
+```
+
 Create a `build` directory
 
 ```shell
