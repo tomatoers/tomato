@@ -235,6 +235,7 @@ namespace Tomato.Window {
 
             headerbar.get_style_context ().add_class ("compact");
             headerbar.get_style_context ().add_class ("main-window");
+            headerbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
             this.get_style_context ().add_class ("main-window");
         }
