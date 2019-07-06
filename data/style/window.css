@@ -15,7 +15,7 @@
 .main-window.background {
     background-color: @colorPrimary;
     color: #fff;
-    icon-shadow: 0 1px 1px shade (@colorPrimary, 0.82);
+    -gtk-icon-shadow: 0 1px 1px shade (@colorPrimary, 0.82);
     text-shadow: 0 1px 1px shade (@colorPrimary, 0.82);
 }
 
@@ -23,7 +23,7 @@
    color: #fff;
    font-size: 12px;
    text-shadow: none;
-   icon-shadow: none;
+   -gtk-icon-shadow: none;
 }
 
 .main-window .titlebar image {
